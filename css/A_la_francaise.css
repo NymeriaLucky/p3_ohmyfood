@@ -1,0 +1,211 @@
+/* ****************************** smartphone only ****************************** */
+@media (max-width: 766px) {
+ 
+	h1 #rest_title {
+	  justify-content: flex-start;
+	} 
+	
+	.container .restaurant h2, h3 {
+	text-align: left;
+	}
+	
+	.container {
+	   padding: 0;
+	}
+	 
+	.fa-heard{
+	  align-items: flex-end;
+	}
+  
+	.image_D {
+		width: 30px;
+		font-size: 16px;
+		object-fit: cover;
+		margin-top: 4%;
+	}
+
+	.filters .filter_name {
+	   flex-basis: 100%;
+	}
+	 
+	header {
+	   width: 100%;
+	   padding: 0;
+	}
+	 
+	header .header .localisation, .header .filter{
+	   padding: 0 8px;
+	}
+	
+	.Commander {
+	  display: flex;
+	}
+	 
+	header i.fas.fa-arrow-left {
+		align-items: flex-start;
+		height: 35px;
+		margin-top: 25px;
+		font-size: 1.5em !important;
+	 }
+	
+	#logo {
+		display: flex;
+		flex-wrap: wrap;
+		position: absolute;
+		top: 0;
+		align-items: center;
+		margin-top: 6%;
+		left: 138px;
+		height: 35px;
+	  }
+
+	.bloc__menu {
+     border-radius: 15%;
+     background-color: white;
+	}
+  
+	.container__menu {
+	  border-radius: 15%; 
+	}
+
+	.containermenu__contenu {
+    border-radius: 15%;
+	}
+  
+	.containermenu__checked {
+	  color:blue;
+	  border-radius: 0 30% 30% 0;
+	}
+    /* Search button */
+    .container__menu {
+	 display: flex;
+	 flex-direction: row;
+	 margin-bottom: 5%;
+	 display: flex;
+	 align-content: flex-start;
+	 vertical-align:-16%;
+	 border-radius: 12px;
+	 height: 54px;
+  
+    .container__menu .containermenu__contenu {
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+	 color: blue;
+  
+	.container__menu .containermenu__contenu span {
+	 background-color: #F2F2F2;
+	 color: black;
+	 height: 52px;
+	 padding: 0 16px;
+	 line-height: 37px;
+	 border-radius: 12px 0 0 12px;
+	 align-content: stretch;
+    }
+  
+    .container__menu .containermenu__contenu input {
+	 height: 100%;
+	 border-radius: 0;
+	 padding-left: 5px;
+	 border: 1px solid #F2F2F2;
+	 font-weight: 600;
+    }
+  
+    .container__menu .containermenu__contenu input::placeholder {
+	 font-size: 15px;
+	 font-weight: bold;
+	 color: #000;
+	 margin-left: 35px;
+	 align-items: center;
+    }
+  
+    .container__menu .containermenu__contenu .containermenu__checked.fas fa-yes {
+	 background-color:#0065FC;
+	 color: white;
+    }
+  
+    .container__menu .containermenu__contenu .containermenu__checked {
+	 height: 100%;
+	 border: none;
+	 background-color: #0065FC;
+	 color: #fff;
+	 font-weight: 600;
+	 border-radius: 0 8px 8px 0;
+	 cursor: pointer;
+    }
+  
+    .container__menu .containermenu__contenu .containermenu__checked:hover {
+	 transform: translateY(-1px);
+	 box-shadow: 1px 1px 1px 1px #F2F2F2;
+    }
+     /*commande_button*/
+    .Commander {
+	  line-height: 2.5;
+	  height: 50px;
+	  margin: auto;
+	  width: 200px;
+	  text-align: center;
+	  color: white;
+	  text-shadow: 1px 1px 1px rgb(38, 27, 68);
+	  border-radius: 30px;
+	  background-color: rgba(245, 9, 205);
+	  background-image: linear-gradient(to top left,
+										rgba(231, 138, 240, 0.966),
+										rgb(240, 114, 208) 30%,
+										rgba(247, 208, 245, 0.959));
+	  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+				  inset -2px -2px 3px rgba(0, 0, 0, .6);
+    }
+  
+    .Commander:hover {
+	  background-color: rgb(238, 182, 226);
+    }
+  
+    .Commander:active {
+	  box-shadow: inset -2px -2px 3px rgba(233, 9, 203, 0.6),
+				  inset 2px 2px 3px rgba(0, 0, 0, .6);
+    }
+     /*boutons menu aussi dans les fiches*/
+    }
+  
+	footer {
+	 flex-direction: column;
+	 padding-bottom: 0;
+    }
+ 
+    #footer_logo a {
+     justify-content: initial;
+	 width: 60px;
+	 height: 10px;
+	 padding: 0;
+    }
+  
+    .footer_section {
+	 margin-bottom: 32px;
+    }
+  
+  } /* FIN smartphone only */
+  /* ****************************** Tablette ****************************** */
+  @media (min-width: 766px) and (max-width: 1200px) {
+   
+	body{
+		overflow-x:hidden;
+	  }
+
+    .container {
+	 width: 100%;
+	 padding: 0 16px;
+    }
+    /*cartes restaurant alignées 2 par 2 pour tablette*/
+    .restaurant_list_groupe1 .restaurant_list_groupe2 {
+	  flex-direction: column;
+	 width: 100%;
+    }
+  
+    .restau .restaurant_list {
+	 flex-basis: 100%;
+	 margin-right: 0;
+	 margin-top: 20px;
+	 order: 2;
+  }/* FIN tablet */
+ }

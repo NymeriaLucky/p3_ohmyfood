@@ -1,0 +1,792 @@
+* {box-sizing: border-box;}
+
+ body {
+  font-family:" Shrikhand, Roboto, Arial";
+  padding: 0;
+  box-sizing: border-box;
+  margin: 5px;
+  align-items: center;
+  cursor: pointer;
+  }
+
+@font-face {
+  font-family: "Shrikhand";
+  src: url("../police/shrikhand/Shrikhand-Regular.ttf") format("truetype"),
+       url("../police/shrikhand/Shrikhand-Bold.ttf") format("truetype")
+}
+/*Header*/
+@font-face {
+  font-family: "Roboto";
+  src: url("../police/roboto/Roboto-Regular.ttf") format("truetype"),
+       url("../police/roboto/Roboto-Bold.ttf") format("truetype")
+}
+/* Spinner
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}*/
+@keyframes disapeareness {
+  0%{
+    top: 0;
+  }
+
+  80%{
+    top: 0;
+  }
+
+  100%{
+    animation-timing-function: cubic-bezier(.71,.07,.83,.67);
+    top: -100%;
+  }
+}
+/*
+@keyframes space_spin{
+    0%{
+        scale: 1;
+    }
+    100% {
+        scale: 0;
+        display: none;
+    }
+}
+/* Spinner
+.loader_spinner {
+  font-size:88px;
+  color:red;
+  font-size:88px;
+  color:rgb(142, 255, 127);
+  font-size:88px;
+  color:aqua;
+  font-size:88px;
+  color:chartreuse;
+}
+.space_spinner{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255,0.9);
+  position: absolute;
+  display: grid;
+  place-items: center center;
+    & {
+      animation: space_spin 3000ms ease-in-out;
+              >.spinner{
+                  animation: spin infinite 3000ms ease-in-out;
+            }
+       }
+   }
+.spinner{
+  width: 50px;
+  height: 50px;
+  border: 10px dashed $color-one;
+  border-left-color: $color-two;
+  border-bottom-color: transparent;
+  border-right-color: $color-lighttwo ;
+  border-radius: 100%;
+}
+*/
+.container article {
+  text-align: center;
+}
+
+main {
+  margin: 0;
+  padding: 5px;
+  background-color: white;
+}
+
+main > h1, p, section {
+  padding: 15px;
+}
+
+section {
+  background-color: white;
+}
+
+section > h2, p {
+  margin: 4px;
+  font-size: 90%;
+}
+
+header {
+  display: flex;
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5 {
+font-family: Shirkhand;
+text-align: center;
+font-weight: bold;
+}
+
+h1 {
+  display: flex; 
+}
+
+h3 {
+  height: auto;
+}
+
+p {
+  font-family: Roboto;
+  padding: 20px;
+}
+
+#logo {
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 0;
+  font-size: 20px;
+  height: 25px;
+  align-items: center;
+  margin-bottom: 5%;
+  left: 138px;
+}
+/*search button Paris-Belleville*/
+.search_button {
+    margin-bottom: 15px;
+    line-height: 2.5;
+    padding: 0 20px;
+    text-align: center;
+    background-color: rgb(126, 121, 125);
+}
+
+.search_button:hover {
+    background-color: lightgray(165, 162, 162);
+}
+
+.search_button:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+
+aside {
+  background-color: white;
+}
+
+.index {
+  text-align: center;
+  padding-bottom: 10%;
+}
+/* Header filter */
+.filters .button {
+  flex-direction: column;
+  width: 90%;
+  cursor: pointer; 
+  }
+
+.filters ul {
+  list-style-type: none;
+  display: inline-block;
+}  
+
+.filter li .button li{
+  vertical-align: middle;
+  padding-top: 10px;
+  width: 25px;
+  line-height: 26px;
+  display: inline-block;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: center;
+  height:10px;
+}
+
+.filters .filter_name {
+  font-size: 16px;
+  color: #000;
+}
+
+.filter_item1, .filter_item2, .filter_item3 {
+  line-height: 35px;
+  text-align: center;
+  border: 2px solid #F2F2F2;
+  height: 38px;
+  position: relative;
+  border-radius: 39px;
+  padding-right: 8px;
+  text-transform: capitalize;
+  font-weight: bold; 
+  cursor: pointer;
+  width: 250px;
+  display: inline-block;
+  }
+
+ i.fas.fa-store {
+   color:#9356dc;
+ } 
+
+.filters .filter_item:hover {
+  background-color: #88b1ee;
+  color: #fff;
+  border: 2px solid #DEEBFF;
+  transform: translateY(-1px);
+  box-shadow: 1px 1px 1px 1px #DEEBFF;
+}
+/*localisation icone*/
+.span {
+  align-items: flex-start;
+  vertical-align: middle;
+  padding-top: 10px;
+  width: 25px;
+  line-height: 26px;
+  display: inline-block;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: center;
+  height:10px;
+  display: table-cell;
+}
+
+.info1 img {
+  vertical-align:-16%;
+  padding-top: 10px;
+  width: 25px;
+  line-height: 36px;
+  align-self: start;
+}
+/*exploration_button*/
+.exploration_button, .Commander {
+    line-height: 2.5;
+    height: 50px;
+    margin: auto;
+    width: 200px;
+    text-align: center;
+    color:white;
+    text-shadow: 1px 1px 1px rgb(38, 27, 68);
+    border-radius: 30px;
+    background-color: rgba(245, 9, 205);
+    background-image: linear-gradient(to top left,
+                                      rgba(231, 138, 240, 0.966),
+                                      rgb(240, 114, 208) 30%,
+                                      rgba(247, 208, 245, 0.959));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+.exploration_button:hover {
+    background-color: rgb(238, 182, 226);
+}
+
+.exploration_button:active {
+    box-shadow: inset -2px -2px 3px rgba(233, 9, 203, 0.6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+/*boutons menu aussi dans les fiches*/
+#circle {
+  border-radius: 50%;
+  color: white;
+  background-color: #9356dc;
+  font-weight: bold;
+  line-height: 38px;
+  text-align: center;
+  width: 40px;
+  justify-content: flex-start;
+  margin-top: 40px;
+  vertical-align: middle;
+  margin-bottom: 0px;
+  align-self: flex-start;
+}
+/*i {/*boutons menu aussi dans les fiches voir couleur
+      color: #8ebf42; h3
+      font-size: 2em;
+      }*/
+.image1, .image2, .image3, .image4 {
+  width: 23%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 200%;
+  border-radius: 10px 10px 0 0;
+  background-size: contain;
+  border-radius: 15px;
+  box-shadow: 0 0 6px 3px #F2F2F2;
+  width : 100% auto;
+  border-radius: 27px 27px; background-size: cover;
+  background-position: center;
+  height: auto;
+}
+
+.image1 {
+  max-width: 100%;
+  height: auto;
+  object-position: center;
+  border-radius: 8%;  background-size: cover;
+}
+
+.image3 {
+  max-width: 100%;
+  height: auto;
+}
+
+.image4 {
+  max-width: 100%;
+  height: auto;
+}
+
+#image_restaurant {
+    margin-top: 15px;
+    height: 200px;
+    border-radius: 5px;
+    background: url('images/restaurants/small/jay-wennington-N_Y88TWmGwA-unsplash-minSmall.png') no-repeat;
+    position: relative;
+    box-shadow: 0px 4px 4px #1c1a19;
+    margin-bottom: 25px;
+}
+/*--------------------------------------fiches restaurant------------------------------------*/
+/*background-size: cover;
+  height: auto; 
+  width: auto; border: 2px solid #F2F2F2;
+  max-width: 25%; 
+  max-height: 25%;
+*/ 
+.container.restaurant_description--arronded { 
+  font-size: 1rem;
+}
+
+.container .restaurant_description {
+  cursor: pointer;
+  background-color: #f6f6f6;
+} 
+/*boutons menu aussi dans les fiches*/
+.menu {
+  display: inline-flex;
+  height: 38px;
+  width: 38px;
+  justify-content: center;
+  align-items: center;
+  color: #81aae7;
+  background-color: #DEEBFF;
+  border-radius: 50%;
+  margin-right: 8px;
+  position: absolute;
+  left: -3px;
+}
+
+.Entrée .Plat .Dessert h2 {
+    display: flex;
+    float: left;
+    border-bottom: solid #0065FC;
+    color: black;
+    padding: 35px;
+    justify-content: stretch;
+    text-decoration: none;
+    font-size: 18px;
+    background-color: white;
+}
+/*boutons menu aussi dans les fiches*/
+.image_A {
+  width: 30px;
+  height: 30px;
+  border: solid 2px;
+  text-shadow: white 0px 0px 2px;
+  font-size: 16px;
+  background-size: 150px;
+  flex-basis: 60%;
+  object-fit: cover;
+}
+ 
+.image_B {
+    width: 30px;
+    height: 30px;
+    border: solid 2px;
+    text-shadow: white 0px 0px 2px;
+    font-size: 16px;
+    background-size: 150px;
+    object-fit: cover;
+  }
+ 
+.image_C {
+    width: 30px;
+    height: 30px;
+    border: solid 2px;
+    text-shadow: white 0px 0px 2px;
+    font-size: 16px;
+    background-size: 150px;
+    object-fit: cover;
+  }
+
+.image_D {
+    width: 30px;
+    height: 30px;
+    border: solid 2px;
+    text-shadow: white 0px 0px 2px;
+    font-size: 16px;
+    background-size: 150px;
+    object-fit: cover;
+  }
+  /*essai boutton à la francaise*/
+  .bloc__menu {
+border-radius: 15%;
+background-color: white;
+  }
+
+  .container__menu {
+    border-radius: 15%; 
+  }
+  .containermenu__contenu {
+border-radius: 15%;
+  }
+
+  .containermenu__checked {
+    color:blue;
+    border-radius: 0 30% 30% 0;
+  }
+/* a voir pour icone au bout de la ligne
+  aside h2 #populaire {
+    justify-content: flex-start;
+  }
+/*--------------------------------------fin fiches restaurant only-------------------------------*/
+.restaurants h2 {
+  text-align: center;
+  font-size: initial 1.5em;
+} 
+  
+.restaurant_list {
+  flex-basis: 70%;
+  padding: 15px;
+  margin: 0 15px 0 0;
+  border-radius: 8px;
+  background-color: #F2F2F2;
+  flex-grow: 1;
+}
+
+.restaurants .card__restaurant__title h3 {
+  font-size: 50px;
+  font-weight: bold;
+  text-align: left; 
+}
+
+.restaurants .card__restaurant__localisation h3 {
+  justify-content: initial;
+}
+
+.restaurant_list {
+  justify-content: center;
+  align-items: center;
+}
+
+.restau_list_group {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.restau_list_group .card_restaurant {
+  flex-basis: 45%;
+  justify-content:space-between ;
+  align-items: flex-start;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  float:left;
+  width:80%;
+}
+
+.card_restaurant:hover {
+  transform: scale(1.01);
+  box-shadow: 0 0 3px 2px #F2F2F2;
+}
+
+.card_restaurant .image {
+  max-height: 358px; 
+}
+
+.card_restaurant .image img {
+  width: 100%;
+  max-height: 200px; 
+  object-fit: cover;
+  object-position: center;
+}
+
+.card_restaurant .card_body {
+  margin-left: 10px;
+  width: 80%;
+}
+
+.restaurant_list .afficher {
+  display: block;
+  flex-basis: 100%;
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.restaurant_list .afficher:hover {
+  transform: scale(1);
+}
+
+i.far fa-heart:hover {
+  background-color: #ca00fc;
+  color: #fff;
+  border: 2px solid black;
+  transform: translateY(-1px);
+  box-shadow: 1px 1px 1px 1px #DEEBFF;
+}
+
+i.far fa-heart fa-2x {
+  border-color: black;
+  justify-content: initial;
+  color: hsl(317, 26%, 95%);
+  font-size: 13px;
+  top: 0;
+  align-items: flex-end; 
+}
+
+i.far fa-heart fa-2x:hover {
+  color: hsl(273, 52%, 60%);
+  font-size: 23px;
+}
+
+.menu {
+  border-radius:50px 10px 50px 10px;
+  margin: auto;
+  font-size: 1,6 rem;
+  color: white;
+  transform: rotate(0);
+  transition: >transition 0,5s;
+  border: 4mm ridge rgba(170, 50, 220, .6);
+  border-bottom: solid , blue; */pour entreé menu et dessert, bordure du bas*/
+}
+
+.fa, .far .fas{
+  font-family: Font Amesone 5 free;
+}
+
+.fah, .far{
+  font-weight: 400;
+}
+
+.fa, .fah, .fad, .fal, .far, .fas {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+}
+
+.menu .restaurant_description:hover :check-box {
+transform: translatex(0%);
+}
+
+.menu .restaurant --description.chek-box {
+  position: absolute;
+  display: flex;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 20%;
+  background-color:#00e2c4 ;
+  transition: >transform0.2s;
+}
+
+footer {
+	background-color: #252121;
+	display: flex;
+	align-items: flex-start;
+	padding: 30px;
+	color: white; 
+}
+
+footer ul li {
+  list-style-type: none;
+  padding: 5px ;
+}
+
+footer a {
+	color: white;
+}
+
+@media all and (max-width: 1024px) {
+
+article .container {
+   display: block;
+   width: auto;
+  }
+ 
+ h2 {
+   display: flex;
+ }
+  
+ .header__logo {
+  text-align: center;
+  top:0;
+ }
+ } /* FIN smartphone, tablet and screen until 1024px */
+ 
+ /* ****************************** smartphone only ****************************** */
+ @media (max-width: 766px) {
+ 
+h1 {
+  margin-top: 10px;
+  text-align: center;
+} 
+
+.container .restaurant h2, h3 {
+text-align: left;
+}
+
+.container {
+   padding: 0;
+ }
+ 
+.filters .filter_name {
+   flex-basis: 100%;
+ }
+ 
+header {
+   width: 100%;
+   padding: 0;
+ }
+ 
+header .header .localisation, .header .filter{
+   padding: 0 8px;
+ }
+
+.exploration_button {
+  display: flex;
+ }
+ 
+.header__logo {
+   position: absolute;
+   display: block;
+   height: 30px;
+   top: 15px;
+   justify-content: center;
+ }
+ 
+.container .restau_list_group .card_restaurant {
+   display: flex;
+   justify-content: space-between;
+ }
+ 
+ .card_restaurant .image {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 8px 8px 0 0;
+  flex-direction: column;
+  justify-content: space-between;
+}
+ 
+.restau .restaurant_list {
+   margin-top: 20px;
+   margin: 0;
+   padding: 0;
+   background-color: #fff;
+   flex-direction: column;
+ }
+ 
+.restaurant_name {
+  width: 100%;
+  display: flex;
+  height: 60px;
+  flex-direction: column;
+}
+
+.card__restaurant__title .card__restaurant__localisation h3 {
+  text-align: left;
+  justify-content: initial;
+  text-decoration-color: none;
+  color:black ;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 35px;;
+  font-size: 16px;
+  margin: 5px 0;
+  flex-shrink: 1;
+}
+
+.card_restaurant {
+   width: 90%;
+   box-shadow: 0 0 6px 3px rgba(180, 178, 178, 0.274);
+   border-radius: 15px;
+ }
+ 
+.restaurant .restaurant_list_group1 .restau_list_group2 .card_restaurant .image {
+   width: 100%;
+   height: 34rem; 
+ }
+ 
+.restaurant .restaurant_list_group1 .restau_list_group2 .card_restaurant .image img {
+   height: 100%;
+ }
+ 
+.restaurant .restaurant_list .afficher {
+   width: 90%;
+   padding-left: 15px;
+ }
+  
+.restaurant_list h2 {
+   width: 90%;
+   text-align: left;
+ }
+ 
+.restaurant_list .card_body {
+   flex-direction: column;
+   flex-wrap: nowrap;
+   width: 100%;
+   padding: 0; 
+   align-items:center;
+   height: 55rem;
+ }
+  
+ .button {
+ border-radius:
+ }
+
+ .image1, .image2, .image3, .image4 {
+    flex: 1;
+    max-width: 336px;
+    max-height: 174px;
+    object-position: center;
+    border-radius: 8%;
+    max-height:361px ;
+    justify-content: center;
+  }
+ 
+ footer {
+   flex-direction: column;
+   padding-bottom: 0;
+ }
+
+ #footer_logo a {
+  justify-content: initial;
+   width: 60px;
+   height: 10px;
+   padding: 0;
+  }
+ 
+ .footer_section {
+   margin-bottom: 32px;
+ }
+ 
+ } /* FIN smartphone only */
+ /* ****************************** Tablette ****************************** */
+ @media (min-width: 766px) and (max-width: 1200px) {
+ 
+ .container {
+   width: 100%;
+   padding: 0 16px;
+ }
+ /*cartes restaurant alignées 2 par 2 pour tablette*/
+ .restaurant_list_groupe1 .restaurant_list_groupe2 {
+   flex-direction: column;
+   width: 100%;
+ }
+ 
+ .restau .restaurant_list {
+   flex-basis: 100%;
+   margin-right: 0;
+   margin-top: 20px;
+   order: 2;
+ }/* FIN tablet */
+}
+
+
