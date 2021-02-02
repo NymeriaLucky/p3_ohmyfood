@@ -12,12 +12,14 @@ html {
 	  justify-content: flex-start;
 	} 
 	
-	.container .restaurant h2 {
+	article .restaurant h2 {
 	text-align: left;
 	}
 	
-	.container {
-	   padding: 0;
+	article {
+	    border-radius: 15%;
+		background-color:white;
+	  }
 	}
 	 
 	i .far fa-heard::before {

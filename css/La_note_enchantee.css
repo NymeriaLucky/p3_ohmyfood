@@ -1,1 +1,104 @@
-/* A completer */
+html {
+	box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+	box-sizing: inherit;
+  }/*initialisation des navigateur*/
+/* ****************************** smartphone only ****************************** */
+@media (max-width: 766px) {
+   #rest_title h1{
+	  justify-content: flex-start;
+	} 
+/*background-size: cover;
+  height: auto; 
+  width: auto; border: 2px solid #F2F2F2;
+  max-width: 25%; 
+  max-height: 25%;
+*/ 
+.container.restaurant_description--arronded { 
+  font-size: 1rem;
+}
+
+.container .restaurant_description {
+  cursor: pointer;
+  background-color: #f6f6f6;
+} 
+/*boutons menu aussi dans les fiches*/
+.menu {
+  display: inline-flex;
+  height: 38px;
+  width: 38px;
+  justify-content: center;
+  align-items: center;
+  color: #81aae7;
+  background-color: #DEEBFF;
+  border-radius: 50%;
+  margin-right: 8px;
+  position: absolute;
+  left: -3px;
+}
+/*boutons menu aussi dans les fiches*/
+.image_A {
+  width: 30px;
+  height: 30px;
+  border: solid 2px;
+  text-shadow: white 0px 0px 2px;
+  font-size: 16px;
+  background-size: 150px;
+  flex-basis: 60%;
+  object-fit: cover;
+}
+ 
+.image_B {
+    width: 30px;
+    height: 30px;
+    border: solid 2px;
+    text-shadow: white 0px 0px 2px;
+    font-size: 16px;
+    background-size: 150px;
+    object-fit: cover;
+  }
+ 
+.image_C {
+    width: 30px;
+    height: 30px;
+    border: solid 2px;
+    text-shadow: white 0px 0px 2px;
+    font-size: 16px;
+    background-size: 150px;
+    object-fit: cover;
+  }
+
+.image_D {
+    width: 30px;
+    height: 30px;
+    border: solid 2px;
+    text-shadow: white 0px 0px 2px;
+    font-size: 16px;
+    background-size: 150px;
+    object-fit: cover;
+  }
+  /*essai boutton à la francaise*/
+  .bloc__menu {
+border-radius: 15%;
+background-color: white;
+  }
+
+  .container__menu {
+    border-radius: 15%; 
+  }
+  .containermenu__contenu {
+border-radius: 15%;
+  }
+
+  .containermenu__checked {
+    color:blue;
+    border-radius: 0 30% 30% 0;
+  }
+}
+/* a voir pour icone au bout de la ligne
+  aside h2 #populaire {
+    justify-content: flex-start;
+  }
