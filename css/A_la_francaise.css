@@ -1,11 +1,18 @@
+html {
+	box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+	box-sizing: inherit;
+  }/*initialisation des navigateur*/
 /* ****************************** smartphone only ****************************** */
 @media (max-width: 766px) {
- 
-	h1 #rest_title {
+   #rest_title h1{
 	  justify-content: flex-start;
 	} 
 	
-	.container .restaurant h2, h3 {
+	.container .restaurant h2 {
 	text-align: left;
 	}
 	
@@ -13,32 +20,22 @@
 	   padding: 0;
 	}
 	 
-	.fa-heard{
-	  align-items: flex-end;
-	}
+	i .far fa-heard::before {
+	  position: absolute;
+	  right: 0;
+    }
   
 	.image_D {
 		width: 30px;
 		font-size: 16px;
 		object-fit: cover;
 		margin-top: 4%;
-	}
-
-	.filters .filter_name {
-	   flex-basis: 100%;
+		image-rendering: auto;
 	}
 	 
 	header {
 	   width: 100%;
-	   padding: 0;
-	}
-	 
-	header .header .localisation, .header .filter{
 	   padding: 0 8px;
-	}
-	
-	.Commander {
-	  display: flex;
 	}
 	 
 	header i.fas.fa-arrow-left {
@@ -59,41 +56,45 @@
 		height: 35px;
 	  }
 
+    h1 {
+		display: flex;
+		justify-content: space-between;
+	  
+		span, i {
+		  display: inline-block;
+		}
+	  }
+
 	.bloc__menu {
-     border-radius: 15%;
+     border-radius: 15% O O 15%;
      background-color: white;
 	}
-  
-	.container__menu {
-	  border-radius: 15%; 
-	}
 
-	.containermenu__contenu {
-    border-radius: 15%;
-	}
-  
+    .containermenu__contenu:hover .valide {
+	transform: translateX(0px)
+    }
+	
 	.containermenu__checked {
 	  color:blue;
 	  border-radius: 0 30% 30% 0;
+	  transform: translateX(60px);
 	}
-    /* Search button */
+	
     .container__menu {
 	 display: flex;
-	 flex-direction: row;
 	 margin-bottom: 5%;
-	 display: flex;
 	 align-content: flex-start;
 	 vertical-align:-16%;
 	 border-radius: 12px;
 	 height: 54px;
+	 flex-basis: 100%;
+	}
   
     .container__menu .containermenu__contenu {
 	 display: flex;
 	 justify-content: center;
 	 align-items: center;
 	 color: blue;
-  
-	.container__menu .containermenu__contenu span {
 	 background-color: #F2F2F2;
 	 color: black;
 	 height: 52px;
@@ -103,20 +104,24 @@
 	 align-content: stretch;
     }
   
-    .container__menu .containermenu__contenu input {
+	.Entrée .Plat .Dessert h2 {
+		display: flex;
+		float: left;
+		border-bottom: solid #0065FC;
+		color: black;
+		padding: 35px;
+		justify-content: stretch;
+		text-decoration: none;
+		font-size: 18px;
+		background-color: white;
+	}
+
+    .container__menu .containermenu__contenu {
 	 height: 100%;
 	 border-radius: 0;
 	 padding-left: 5px;
 	 border: 1px solid #F2F2F2;
 	 font-weight: 600;
-    }
-  
-    .container__menu .containermenu__contenu input::placeholder {
-	 font-size: 15px;
-	 font-weight: bold;
-	 color: #000;
-	 margin-left: 35px;
-	 align-items: center;
     }
   
     .container__menu .containermenu__contenu .containermenu__checked.fas fa-yes {
@@ -132,12 +137,44 @@
 	 font-weight: 600;
 	 border-radius: 0 8px 8px 0;
 	 cursor: pointer;
-    }
-  
+	}
+  /*bouton rechercher idem*/
     .container__menu .containermenu__contenu .containermenu__checked:hover {
 	 transform: translateY(-1px);
 	 box-shadow: 1px 1px 1px 1px #F2F2F2;
-    }
+	}
+
+	.containermenu__price{
+		display: flex;
+		align-items: flex-end;
+		font-size: bold 0.4;
+		height: 100%;
+		width: 40px;
+		transition: margin 300ms ease-in-out;
+	  }
+	  
+	  .containermenu__checked {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: black;
+		height: 70px;
+		width: 57px;
+		background-color: lightgrey;
+		position: absolute;
+		right: -57px;
+		font-size: bold;
+		transition: margin 300ms ease-in-out;
+	  }
+	  
+	.containermenu__checked .i {
+		  transform: rotate(0deg);
+		  transition: transform 420ms ease;
+	  }
+	  
+	.Commander {
+		display: flex;
+	  }
      /*commande_button*/
     .Commander {
 	  line-height: 2.5;
@@ -166,24 +203,23 @@
 				  inset 2px 2px 3px rgba(0, 0, 0, .6);
     }
      /*boutons menu aussi dans les fiches*/
-    }
-  
-	footer {
-	 flex-direction: column;
-	 padding-bottom: 0;
-    }
- 
-    #footer_logo a {
-     justify-content: initial;
-	 width: 60px;
-	 height: 10px;
-	 padding: 0;
-    }
-  
-    .footer_section {
-	 margin-bottom: 32px;
-    }
-  
+	 footer {
+		background-color: #252121;
+		display: flex;
+		align-items: flex-start;
+		padding: 30px;
+		color: white; 
+	}
+	
+	footer ul li {
+	  list-style-type: none;
+	  padding: 5px ;
+	}
+	
+	footer a {
+		color: white;
+	}
+	
   } /* FIN smartphone only */
   /* ****************************** Tablette ****************************** */
   @media (min-width: 766px) and (max-width: 1200px) {

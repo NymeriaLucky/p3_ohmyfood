@@ -1,12 +1,12 @@
 .container.restaurant_description--arronded { 
   font-size: 1rem;
 }
-
+/* ****************************** smartphone only ****************************** */
+@media (max-width: 766px) {
 .container .restaurant_description {
   cursor: pointer;
   background-color: #f6f6f6;
 }
-
 /* boutons menu aussi dans les fiches */
 .menu {
   display: inline-flex;
@@ -35,10 +35,7 @@
 }
 /* boutons menu aussi dans les fiches */
 
-/* ****************************** smartphone only ****************************** */
- @media (max-width: 766px) {
- 
-  h1 #rest_title {
+h1 #rest_title {
     justify-content: flex-start;
   } 
   
@@ -56,6 +53,33 @@
 
    i fas fa-arrow {
      align-items: flex-start;
+   }
+
+  .Entrée .Plat .Dessert h2 {
+    display: flex;
+    float: left;
+    border-bottom: solid #0065FC;
+    color: black;
+    padding: 35px;
+    justify-content: stretch;
+    text-decoration: none;
+    font-size: 18px;
+    background-color: white;
+ }
+
+.course .choix {
+   line-height: 35px;
+   text-align: center;
+   border: 2px solid #F2F2F2;
+   height: 38px;
+   position: relative;
+   border-radius: 39px;
+   padding-right: 8px;
+   text-transform: capitalize;
+   font-weight: bold; 
+   cursor: pointer;
+   width: 250px;
+   display: inline-block;
    }
 
   .filters .filter_name {
@@ -81,7 +105,7 @@
     margin-bottom: 25px;
   }
 
-  .exploration_button {
+  .Commande_button {
     display: flex;
    }
    
@@ -93,14 +117,15 @@
      justify-content: center;
    }
 
-.bloc__menu {
-border-radius: 15%;
-background-color: white;
+ .bloc__menu {
+  border-radius: 15%;
+  background-color: white;
   }
 
   .container__menu {
     border-radius: 15%; 
   }
+
   .containermenu__contenu {
 border-radius: 15%;
   }

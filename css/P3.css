@@ -1,4 +1,11 @@
-* {box-sizing: border-box;}
+html {
+	box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+	box-sizing: inherit;
+  }/*initialisation des navigateur*/
 
  body {
   font-family:" Shrikhand, Roboto, Arial";
@@ -116,14 +123,17 @@ header {
   text-align: center;
 }
 
+.index{
+  h1{
+    text-align:center;
+    display: flex; 
+  }
+}
+
 h1, h2, h3, h4, h5 {
 font-family: Shirkhand;
 text-align: center;
 font-weight: bold;
-}
-
-h1 {
-  display: flex; 
 }
 
 h3 {
@@ -366,18 +376,6 @@ aside {
   position: absolute;
   left: -3px;
 }
-
-.Entrée .Plat .Dessert h2 {
-    display: flex;
-    float: left;
-    border-bottom: solid #0065FC;
-    color: black;
-    padding: 35px;
-    justify-content: stretch;
-    text-decoration: none;
-    font-size: 18px;
-    background-color: white;
-}
 /*boutons menu aussi dans les fiches*/
 .image_A {
   width: 30px;
@@ -555,22 +553,6 @@ i.far fa-heart fa-2x:hover {
   border-bottom: solid , blue; */pour entreé menu et dessert, bordure du bas*/
 }
 
-.fa, .far .fas{
-  font-family: Font Amesone 5 free;
-}
-
-.fah, .far{
-  font-weight: 400;
-}
-
-.fa, .fah, .fad, .fal, .far, .fas {
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  line-height: 1;
-}
-
 .menu .restaurant_description:hover :check-box {
 transform: translatex(0%);
 }
@@ -682,11 +664,30 @@ header .header .localisation, .header .filter{
    flex-direction: column;
  }
  
-.restaurant_name {
+.restaurant_name{
   width: 100%;
   display: flex;
-  height: 60px;
   flex-direction: column;
+}
+
+.fa, .far .fas{
+  font-family: Font Amesone 5 free;
+}
+
+.fah, .far{
+  font-weight: 400;
+}
+
+.fa, .fah, .fad, .fal, .far, .fas{
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+}
+
+.restaurant_name span i .far fa-heart{
+justify-items: left;
 }
 
 .card__restaurant__title .card__restaurant__localisation h3 {
@@ -754,18 +755,30 @@ header .header .localisation, .header .filter{
  footer {
    flex-direction: column;
    padding-bottom: 0;
+   list-style-type: none;
  }
 
  #footer_logo a {
   justify-content: initial;
-   width: 60px;
+   width: 50px;
    height: 10px;
    padding: 0;
   }
  
- .footer_section {
+ footer .footer__seclect {
    margin-bottom: 32px;
+   list-style-type: none;
  }
+
+ footer .footer__seclect a, ul, li{
+  list-style-type: none;
+  margin-top: 15px;
+  margin: 0;
+  padding: 0; 
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 140%;
+}
  
  } /* FIN smartphone only */
  /* ****************************** Tablette ****************************** */

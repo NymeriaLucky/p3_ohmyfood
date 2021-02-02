@@ -1,1 +1,66 @@
-/* A completer */
+html {
+	box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+	box-sizing: inherit;
+  }/*initialisation des navigateur*/
+/* ****************************** smartphone only ****************************** */
+@media (max-width: 766px) {
+   #rest_title h1{
+	  justify-content: flex-start;
+	} 
+	
+	.container .restaurant h2 {
+	text-align: left;
+	}
+	
+	.container {
+	   padding: 0;
+	}
+	 
+	i .far fa-heard::before {
+	  position: absolute;
+	  right: 0;
+    }
+  
+	.image_D {
+		width: 30px;
+		font-size: 16px;
+		object-fit: cover;
+		margin-top: 4%;
+		image-rendering: auto;
+	}
+	 
+	header {
+	   width: 100%;
+	   padding: 0 8px;
+	}
+	 
+	header i.fas.fa-arrow-left {
+		align-items: flex-start;
+		height: 35px;
+		margin-top: 25px;
+		font-size: 1.5em !important;
+	 }
+	
+	#logo {
+		display: flex;
+		flex-wrap: wrap;
+		position: absolute;
+		top: 0;
+		align-items: center;
+		margin-top: 6%;
+		left: 138px;
+		height: 35px;
+	  }
+
+    h1 {
+		display: flex;
+		justify-content: space-between;
+	  
+		span, i {
+		  display: inline-block;
+		}
+	  }
