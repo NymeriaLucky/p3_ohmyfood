@@ -8,7 +8,7 @@ html {
   }/*initialisation des navigateur*/
 /* ****************************** smartphone only ****************************** */
 @media (max-width: 766px) {
-   #rest_title h1{
+   #rest_title h1 {
 	  justify-content: flex-start;
 	} 
 /*background-size: cover;
@@ -16,7 +16,16 @@ html {
   width: auto; border: 2px solid #F2F2F2;
   max-width: 25%; 
   max-height: 25%;
-*/ 
+  */ 
+i.fas.fa-arrow-left {
+    color:black;
+}
+
+i .far.fa-heard::before {
+ position: absolute;
+ right: 0;
+}
+
 .container.restaurant_description--arronded { 
   font-size: 1rem;
 }

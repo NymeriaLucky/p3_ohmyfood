@@ -8,10 +8,29 @@ html {
   }/*initialisation des navigateur*/
 /* ****************************** smartphone only ****************************** */
 @media (max-width: 766px) {
-   #rest_title h1{
+  
+	i.fas.fa-arrow-left {
+		color:black;
+	 }
+ 
+	i .far.fa-heard::before {
+	   position: absolute;
+	   right: 0;
+	 }
+	
+	#rest_title h1{
 	  justify-content: flex-start;
 	} 
 	
+	i.fas.fa-arrow-left {
+		color:black;
+	 }
+ 
+	 i .far.fa-heard::before {
+	   position: absolute;
+	   right: 0;
+	 }
+
 	.container .restaurant h2 {
 	text-align: left;
 	}

@@ -7,6 +7,14 @@
   cursor: pointer;
   background-color: #f6f6f6;
 }
+i.fas.fa-arrow-left {
+  color:black;
+}
+
+i .far.fa-heard::before {
+position: absolute;
+right: 0;
+}
 /* boutons menu aussi dans les fiches */
 .menu {
   display: inline-flex;
@@ -34,7 +42,16 @@
     background-color: white;
 }
 /* boutons menu aussi dans les fiches */
-
+/*
+#image_restaurant {
+    margin-top: 15px;
+    height: 200px;
+    border-radius: 5px;
+    background: url('images/restaurants/small/jay-wennington-N_Y88TWmGwA-unsplash-minSmall.png') no-repeat;
+    position: relative;
+    box-shadow: 0px 4px 4px #1c1a19;
+    margin-bottom: 25px;
+}*/
 h1 #rest_title {
     justify-content: flex-start;
   } 
