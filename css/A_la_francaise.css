@@ -8,95 +8,35 @@ html {
   }/*initialisation des navigateur*/
 /* ****************************** smartphone only ****************************** */
 @media (max-width: 766px) {
-   /* essai avec format Search button */
-   .container__menu {
-	display: flex;
-	flex-direction: row;
-	margin-bottom: 5%;
-	align-content: flex-start;
-	vertical-align:-16%;
-	border-radius: 12px;
-	height: 54px;
-  }
-  
-  .container__menu .containermenu__contenu{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	color: blue;
-  }
-    
-  .container__menu .containermenu__contenu input {
-	height: 100%;
-	border-radius: 0;
-	padding-left: 5px;
-	border: 1px solid #F2F2F2;
-	font-weight: 600;
-  }
-    
-  .container__menu .containermenu__contenu .containermenu__price span i{
-	background-color:#0065FC;
-	color: white;
-  }
-  
-  .container__menu .containermenu__contenu .containermenu__price:hover {
-	height: 100%;
-	border: none;
-	background-color: #0065FC;
-	color: #fff;
-	font-weight: 600;
-	border-radius: 0 8px 8px 0;
-	cursor: pointer;
-  }
-  
-  .container__menu .containermenu__contenu .containermenu__price:hover {
-	transform: translateY(-1px);
-	box-shadow: 1px 1px 1px 1px #F2F2F2;
-  }
-/*fin search exemple button*/	
-  #rest_title h1 {
-	  justify-content: flex-start;
-	} 
-	
-	article .restaurant h2 {
-	text-align: left;
-	}
-	
-	article {
-	    border-radius: 15%;
-		background-color:white;
-	}
-	 
-	i.fas.fa-arrow-left {
-       color:black;
-	}
+ 
+ body, html {
+   margin: 0;
+   font-family: Roboto,sans-serif;
+   scroll-behavior: smooth;
+ }
 
-	i .far.fa-heard::before {
+ i.fas.fa-arrow-left {
+	align-items: flex-start;
+	height: 35px;
+	margin-top: 25px;
+	font-size: 1.5em !important;
+    color:black;
+ }
+
+ i .far.fa-heard::before {
 	  position: absolute;
 	  right: 0;
-    }
+ }
   
-	.image_D {
-		width: 30px;
-		font-size: 16px;
-		object-fit: cover;
-		margin-top: 4%;
-		image-rendering: auto;
-	}
-	 
-	header {
-	   width: 100%;
-	   padding: 0 8px;
-	}
-	 
-	header i.fas.fa-arrow-left {
-		align-items: flex-start;
-		height: 35px;
-		margin-top: 25px;
-		font-size: 1.5em !important;
-	 }
-	
-	#logo {
+ .image_D {
+	width: 30px;
+	font-size: 16px;
+	object-fit: cover;
+	margin-top: 4%;
+	image-rendering: auto;
+  }
+	 	 	
+ #logo {
 		display: flex;
 		flex-wrap: wrap;
 		position: absolute;
@@ -105,9 +45,25 @@ html {
 		margin-top: 6%;
 		left: 138px;
 		height: 35px;
-	  }
+ }
 
-    h1 {
+ .container_menu {
+		max-width: 1280px;
+		margin: auto;
+		position: relative;
+ }
+	
+ main {
+		display: block;
+	 }
+
+.menu_header h2 {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+  
+ h2 {
 		display: flex;
 		justify-content: space-between;
 	  
@@ -116,176 +72,135 @@ html {
 		}
 	  }
 
-	.bloc__menu {
+section {
+		  display: block;
+}
+
+.bloc__menu {
+	  max-width: 100%;
+	  overflow: hidden;
+	  padding: 0 1rem;
+}
+
+.bloc_menu__title {
+		text-transform: uppercase;
+		position: relative;
+		padding-bottom: .5rem;
+		font-weight: 400;
+	}
+	
+h3 {
+		display: block;
+		font-size: 1.17em;
+		margin-block-start: 1em;
+		margin-block-end: 1em;
+		margin-inline-start: 0px;
+		margin-inline-end: 0px;
+		font-weight: bold;
+}
+
+.bloc_menu__title:after {
+			content: "";
+			width: 3rem;
+			height: .25rem;
+			background-color: #99e2d0;
+			position: absolute;
+			left: 0;
+			bottom: 0;
+}
+
+.check  { 
+	opacity:0;
+	transform: translateX(100%);
+	transition: all 300ms;
+	color: white;
+	width:0px;
+}
+	  
+.casesmenu:hover .check {
+		  opacity: 1;
+		  transform: translateX(0%);
+		  border-top-right-radius: 0.75rem;
+		  border-bottom-right-radius: 0.75rem; 
+		  background-color:#99E2D0;
+		  margin:-10px;
+		  padding: 20px;
+		  width: auto;
+}
+	  
+.check i {
+		  transition: all 400ms;
+	  }
+	  
+.casesmenu:hover .check i {
+		  transform: rotate(720deg);
+	  } 
+	  
+.casesmenu {
+	background-color: white;
+	box-shadow:-1px 5px 10px 1px rgba(0, 0, 0,.1);
+	border-radius:0.75rem;
+	margin-top:20px;
+	padding:10px;
+	display: flex;
+	justify-content: space-between;
+} 
+	  
+.casesmenu p {
+		  width:300px;
+		  white-space: nowrap;
+		  overflow: hidden;
+		  text-overflow: ellipsis;
+}
+	  
+.casesmenu strong {
+	font-size: 18px;
+}
+	  
+.prix {
+	padding-top: 22px;
+	font-weight: bold;
+}
+	  
+.bloc__menu {
      border-radius: 15% O O 15%;
      background-color: white;
-	}
+	}  
 
-    .containermenu__contenu:hover .valide {
-	transform: translateX(0px)
-    }
-	
-	.containermenu__checked {
-	  color:blue;
-	  border-radius: 0 30% 30% 0;
-	  transform: translateX(60px);
+	 
+	#footer_logo a {
+	   justify-content: initial;
+		width: 50px;
+		height: 10px;
+		padding: 0;
 	}
-	
-    .container__menu {
-	 display: flex;
-	 margin-bottom: 5%;
-	 align-content: flex-start;
-	 vertical-align:-16%;
-	 border-radius: 12px;
-	 height: 54px;
-	 flex-basis: 100%;
-	}
-  
-    .container__menu .containermenu__contenu {
-	 display: flex;
-	 justify-content: center;
-	 align-items: center;
-	 color: blue;
-	 background-color: #F2F2F2;
-	 color: black;
-	 height: 52px;
-	 padding: 0 16px;
-	 line-height: 37px;
-	 border-radius: 12px 0 0 12px;
-	 align-content: stretch;
-    }
-  
-	.Entrée .Plat .Dessert h2 {
-		display: flex;
-		float: left;
-		text-decoration-line: underline;
-		border-bottom: solid #0065FC;
-		color: black;
-		padding: 35px;
-		justify-content: stretch;
-		text-decoration: none;
-		font-size: 18px;
-		background-color: white;
-	}
-	/*i {boutons menu aussi dans les fiches voir couleur
-      color: #8ebf42; h3
-      font-size: 2em;
-      }
-.menu {
-	border-radius:50px 10px 50px 10px;
-	margin: auto;
-	font-size: 1,6 rem;
-	color: white;
-	transform: rotate(0);
-	transition: >transition 0,5s;
-	border: 4mm ridge rgba(170, 50, 220, .6);
-	border-bottom: solid , blue; *pour entreé menu et dessert, bordure du bas
-  }
-  */.container__menu .containermenu__contenu {
-	 height: 100%;
-	 border-radius: 0;
-	 padding-left: 5px;
-	 border: 1px solid #F2F2F2;
-	 font-weight: 600;
-    }
-  
-    .container__menu .containermenu__contenu .containermenu__checked.fas fa-yes {
-	 background-color:#0065FC;
-	 color: white;
-    }
-  
-    .container__menu .containermenu__contenu .containermenu__checked {
-	 height: 100%;
-	 border: none;
-	 background-color: #0065FC;
-	 color: #fff;
-	 font-weight: 600;
-	 border-radius: 0 8px 8px 0;
-	 cursor: pointer;
-	}
-  /*bouton rechercher idem*/
-    .container__menu .containermenu__contenu .containermenu__checked:hover {
-	 transform: translateY(-1px);
-	 box-shadow: 1px 1px 1px 1px #F2F2F2;
-	}
-
-	.containermenu__price{
-		display: flex;
-		align-items: flex-end;
-		font-size: bold 0.4;
-		height: 100%;
-		width: 40px;
-		transition: margin 300ms ease-in-out;
+	 
+	footer img {
+	   display: flex;
+	   flex-wrap: wrap;
+	   position: relative;
+	   top: 0;
+	   font-size: 20px;
+	   height: 35px;
+	   margin-bottom: 8%;
+	} 
+	 
+	footer .footer__seclect {
+		margin-bottom: 32px;
+		list-style-type: none;
 	  }
-	  
-	  .containermenu__checked {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		color: black;
-		height: 70px;
-		width: 57px;
-		background-color: lightgrey;
-		position: absolute;
-		right: -57px;
-		font-size: bold;
-		transition: margin 300ms ease-in-out;
+	 
+	footer .footer__seclect a, ul, li {
+	   list-style-type: none;
+	   margin-top: 15px;
+	   margin: 0;
+	   padding: 0; 
+	   text-decoration: none;
+	   font-size: 18px; 
+	   line-height: 140%;
 	  }
-	  
-	.containermenu__checked .i {
-		  transform: rotate(0deg);
-		  transition: transform 420ms ease;
-	  }
-	  
-	.Commander {
-		display: flex;
-	  }
-     /*commande_button*/
-    .Commander {
-	  line-height: 2.5;
-	  height: 50px;
-	  margin: auto;
-	  width: 200px;
-	  text-align: center;
-	  color: white;
-	  text-shadow: 1px 1px 1px rgb(38, 27, 68);
-	  border-radius: 30px;
-	  background-color: rgba(245, 9, 205);
-	  background-image: linear-gradient(to top left,
-										rgba(231, 138, 240, 0.966),
-										rgb(240, 114, 208) 30%,
-										rgba(247, 208, 245, 0.959));
-	  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
-				  inset -2px -2px 3px rgba(0, 0, 0, .6);
-    }
-  
-    .Commander:hover {
-	  background-color: rgb(238, 182, 226);
-    }
-  
-    .Commander:active {
-	  box-shadow: inset -2px -2px 3px rgba(233, 9, 203, 0.6),
-				  inset 2px 2px 3px rgba(0, 0, 0, .6);
-    }
-     /*boutons menu aussi dans les fiches*/
-	 footer {
-		background-color: #252121;
-		display: flex;
-		align-items: flex-start;
-		padding: 30px;
-		color: white; 
-	}
-	
-	footer ul li {
-	  list-style-type: none;
-	  padding: 5px ;
-	}
-	
-	footer a {
-		color: white;
-	}
-	
-  } /* FIN smartphone only */
+	} */
+	  /* FIN smartphone only */
   /* ****************************** Tablette ****************************** */
   @media (min-width: 766px) and (max-width: 1200px) {
    

@@ -97,7 +97,7 @@ body {
   border-radius: 100%;
 }
 */
-section.container {
+section .container {
   padding: 0;
 }
 
@@ -136,17 +136,6 @@ p, li{
   font-family: Roboto;
 }
 
-#logo {
-  display: flex;
-  flex-wrap: wrap;
-  position: relative;
-  top: 0;
-  font-size: 20px;
-  height: 35px;
-  align-items: center;
-  margin-bottom: 8%;
-  left: 120px;
-}
 /*search button Paris-Belleville*/
 .search_button {
     margin-bottom: 14px;
@@ -236,6 +225,37 @@ p, li{
   box-shadow: 1px 1px 1px 1px #DEEBFF;
  }
 
+/*exploration_button*/
+.exploration_button, .Commander {
+  line-height: 2;
+  justify-content: initial;
+  align-items: center;
+  padding: 20px;
+  margin:auto;
+  height: 50px;
+  margin: auto;
+  width: 210px;
+  color:white;
+  text-shadow: 1px 1px 1px rgb(38, 27, 68);
+  border-radius: 30px;
+  background-color: #aa5edc;
+  background-image: linear-gradient(to top left,
+                                    #ee73da,
+                                    #e972da 30%,
+                                    rgba(247, 208, 245, 0.959));
+  box-shadow: inset 2px 2px 3px   #a05adc,
+              inset -2px -2px 3px #aa5edc;
+}
+
+.exploration_button:hover {
+  background-color: rgb(238, 182, 226);
+}
+
+.exploration_button:active {
+  box-shadow: inset -2px -2px 3px rgba(233, 9, 203, 0.6),
+              inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+
 i.fas.fa-store {
   color:#9356dc;
 }
@@ -274,6 +294,11 @@ i.fas.fa-store {
 
 .container .restaurant_description:hover :check-box {
   transform: translatex(0%);
+}
+
+.restaurant .restaurant_list {
+  width: 90%;
+  padding-left: 15px;
 }
 
 .restaurant_description .image {
@@ -327,11 +352,11 @@ i.far fa-heart:hover {
     font-family: Font Amesone 5 free;
   }
   
-.fah, .far{
+.fab, .far{
     font-weight: 400;
   }
   
-.fa, .fah, .fad, .fal, .far, .fas{
+.fa, .fab, .fad, .fal, .far, .fas{
     display: inline-block;
     font-style: normal;
     font-variant: normal;
@@ -355,13 +380,24 @@ footer ul li {
 footer a {
   color: white;
 }
-
 } /* FIN smartphone, tablet and screen until 1024px */
  
  /* ****************************** smartphone only ****************************** */
 @media (max-width: 766px) {
 /* Header filter */
 
+#logo {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  top: 0;
+  font-size: 20px;
+  height: 35px;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 8%;
+  left: 150px;
+}
 .filters {
   cursor: pointer; 
 }
@@ -378,52 +414,13 @@ footer a {
 .search_button{
   margin-top: 5%;
 }
-/*exploration_button*/
-.exploration_button, .Commander {
-    line-height: 2;
-    justify-content: initial;
-    align-items: center;
-    padding: 20px;
-    margin:auto;
-    height: 50px;
-    margin: auto;
-    width: 210px;
-    color:white;
-    text-shadow: 1px 1px 1px rgb(38, 27, 68);
-    border-radius: 30px;
-    background-color: rgb(224, 108, 205);
-    background-image: linear-gradient(to top left,
-                                      rgba(239, 161, 247, 0.966),
-                                      rgb(240, 114, 208) 30%,
-                                      rgba(247, 208, 245, 0.959));
-    box-shadow: inset 2px 2px 3px rgba(184, 4, 190, 0.6),
-                inset -2px -2px 3px rgb(173, 3, 145);
-}
-
-.exploration_button:hover {
-    background-color: rgb(238, 182, 226);
-}
-
-.exploration_button:active {
-    box-shadow: inset -2px -2px 3px rgba(233, 9, 203, 0.6),
-                inset 2px 2px 3px rgba(0, 0, 0, .6);
-}
-
-.restaurant_list {
-  flex-basis: 70%;
-  padding: 15px;
-  margin: 0 15px 0 0;
-  border-radius: 18%;
-  background-color: #F2F2F2;
-  flex-grow: 1;
-  align-items: center;
-}
 
 .card_restaurant .image img {
   width: 100%;
   max-height: 220px; 
   object-fit: cover;
   object-position: center;
+  text-decoration: none;
 }
 
 .card_restaurant:hover {
@@ -495,16 +492,16 @@ h2 .restaurants {
 
 .retaurant_name .restaurant_localisation span h3 {
   justify-content: initial;
+  text-decoration: none;
   text-align: left;
   color:black;
 }
 
 .container .restaurant_description .card__body {
    display: flex;
-
-   justify-content: space-between;
    margin-left: 10px;
-   width: 80%;
+   width: 85%;
+   text-decoration-line: none;
 }
  
  .restaurant_description .image {
@@ -516,47 +513,20 @@ h2 .restaurants {
   position: center;
 }
  
-.restaurant_list {
-   margin-top: 20px;
-   border-radius: 15%;
-   margin: 0;
-   padding: 0;
-   background-color: #fff;
-   flex-direction: column;
- }
-
-.card__restaurant__title .card__restaurant__localisation h3 {
+.restaurant_name .card__restaurant__localisation h3 {
    display: flex;
    justify-content: space-between;
+   text-decoration: none;
   
    span, i {
     display: inline-block;
    }
 }
-   
+
 .card_restaurant {
    width: 100%;
    box-shadow: 0 0 6px 3px rgba(180, 178, 178, 0.274);
-   border-radius: 15px;
- }
- 
-.restaurant .restaurant_list_group1 .restau_list_group2 .card_restaurant .image {
-   width: 100%;
-   height: 34rem; 
- }
- 
-.restaurant .restaurant_list_group1 .restau_list_group2 .card_restaurant .image img {
-   height: 100%;
- }
- 
-.restaurant .restaurant_list .afficher {
-   width: 90%;
-   padding-left: 15px;
- }
-  
-.restaurant_list h2 {
-   width: 90%;
-   text-align: left;
+   border-radius: 15%;
  }
  
 .restaurant_list .card__body {
@@ -564,6 +534,7 @@ h2 .restaurants {
    display: inline-block;
    padding: 0;
    justify-content: space-between;
+   color:black;
   }
   
 .restaurant_name h3 span {
@@ -599,13 +570,23 @@ h2 .restaurants {
    height: 10px;
    padding: 0;
   }
- 
+
+ footer img {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  top: 0;
+  font-size: 20px;
+  height: 35px;
+  margin-bottom: 8%;
+ } 
+
  footer .footer__seclect {
    margin-bottom: 32px;
    list-style-type: none;
  }
 
- footer .footer__seclect a, ul, li{
+ footer .footer__seclect a, ul, li {
   list-style-type: none;
   margin-top: 15px;
   margin: 0;
@@ -613,7 +594,7 @@ h2 .restaurants {
   text-decoration: none;
   font-size: 18px; 
   line-height: 140%;
-}
+ }
  
  } /* FIN smartphone only */
  /* ****************************** Tablette ****************************** */
@@ -634,7 +615,7 @@ h2 .restaurants {
 }
 
  
- .restau .restaurant_list {
+ .restaurants .restaurant_list {
    flex-basis: 100%;
    margin-right: 0;
    margin-top: 20px;

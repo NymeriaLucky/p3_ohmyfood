@@ -8,106 +8,220 @@ html {
   }/*initialisation des navigateur*/
 /* ****************************** smartphone only ****************************** */
 @media (max-width: 766px) {
-   #rest_title h1 {
-	  justify-content: flex-start;
-	} 
-/*background-size: cover;
-  height: auto; 
-  width: auto; border: 2px solid #F2F2F2;
-  max-width: 25%; 
-  max-height: 25%;
-  */ 
-i.fas.fa-arrow-left {
+ 
+ body, html {
+   margin: 0;
+   font-family: Roboto,sans-serif;
+   scroll-behavior: smooth;
+ }
+
+ i.fas.fa-arrow-left {
+	align-items: flex-start;
+	height: 35px;
+	margin-top: 25px;
+	font-size: 1.5em !important;
     color:black;
+ }
+
+ i .far.fa-heard::before {
+	  position: absolute;
+	  right: 0;
+ }
+  
+ .image_D {
+	width: 30px;
+	font-size: 16px;
+	object-fit: cover;
+	margin-top: 4%;
+	image-rendering: auto;
+  }
+	 	 	
+ #logo {
+		display: flex;
+		flex-wrap: wrap;
+		position: absolute;
+		top: 0;
+		align-items: center;
+		margin-top: 6%;
+		left: 138px;
+		height: 35px;
+ }
+
+ .container_menu {
+		max-width: 1280px;
+		margin: auto;
+		position: relative;
+ }
+	
+ main {
+		display: block;
+	 }
+
+.menu_header h2 {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+  
+ h2 {
+		display: flex;
+		justify-content: space-between;
+	  
+		span, i {
+		  display: inline-block;
+		}
+	  }
+
+section {
+		  display: block;
 }
 
-i .far.fa-heard::before {
- position: absolute;
- right: 0;
+.bloc__menu {
+	  max-width: 100%;
+	  overflow: hidden;
+	  padding: 0 1rem;
 }
 
-.container.restaurant_description--arronded { 
-  font-size: 1rem;
+.bloc_menu__title {
+		text-transform: uppercase;
+		position: relative;
+		padding-bottom: .5rem;
+		font-weight: 400;
+	}
+	
+h3 {
+		display: block;
+		font-size: 1.17em;
+		margin-block-start: 1em;
+		margin-block-end: 1em;
+		margin-inline-start: 0px;
+		margin-inline-end: 0px;
+		font-weight: bold;
 }
 
-.container .restaurant_description {
-  cursor: pointer;
-  background-color: #f6f6f6;
+.bloc_menu__title:after {
+			content: "";
+			width: 3rem;
+			height: .25rem;
+			background-color: #99e2d0;
+			position: absolute;
+			left: 0;
+			bottom: 0;
+}
+
+.check  { 
+	opacity:0;
+	transform: translateX(100%);
+	transition: all 300ms;
+	color: white;
+	width:0px;
+}
+	  
+.casesmenu:hover .check {
+		  opacity: 1;
+		  transform: translateX(0%);
+		  border-top-right-radius: 0.75rem;
+		  border-bottom-right-radius: 0.75rem; 
+		  background-color:#99E2D0;
+		  margin:-10px;
+		  padding: 20px;
+		  width: auto;
+}
+	  
+.check i {
+		  transition: all 400ms;
+	  }
+	  
+.casesmenu:hover .check i {
+		  transform: rotate(720deg);
+	  } 
+	  
+.casesmenu {
+	background-color: white;
+	box-shadow:-1px 5px 10px 1px rgba(0, 0, 0,.1);
+	border-radius:0.75rem;
+	margin-top:20px;
+	padding:10px;
+	display: flex;
+	justify-content: space-between;
 } 
-/*boutons menu aussi dans les fiches*/
-.menu {
-  display: inline-flex;
-  height: 38px;
-  width: 38px;
-  justify-content: center;
-  align-items: center;
-  color: #81aae7;
-  background-color: #DEEBFF;
-  border-radius: 50%;
-  margin-right: 8px;
-  position: absolute;
-  left: -3px;
+	  
+.casesmenu p {
+		  width:300px;
+		  white-space: nowrap;
+		  overflow: hidden;
+		  text-overflow: ellipsis;
 }
-/*boutons menu aussi dans les fiches*/
-.image_A {
-  width: 30px;
-  height: 30px;
-  border: solid 2px;
-  text-shadow: white 0px 0px 2px;
-  font-size: 16px;
-  background-size: 150px;
-  flex-basis: 60%;
-  object-fit: cover;
+	  
+.casesmenu strong {
+	font-size: 18px;
 }
- 
-.image_B {
-    width: 30px;
-    height: 30px;
-    border: solid 2px;
-    text-shadow: white 0px 0px 2px;
-    font-size: 16px;
-    background-size: 150px;
-    object-fit: cover;
-  }
- 
-.image_C {
-    width: 30px;
-    height: 30px;
-    border: solid 2px;
-    text-shadow: white 0px 0px 2px;
-    font-size: 16px;
-    background-size: 150px;
-    object-fit: cover;
-  }
-
-.image_D {
-    width: 30px;
-    height: 30px;
-    border: solid 2px;
-    text-shadow: white 0px 0px 2px;
-    font-size: 16px;
-    background-size: 150px;
-    object-fit: cover;
-  }
-  /*essai boutton à la francaise*/
-  .bloc__menu {
-border-radius: 15%;
-background-color: white;
-  }
-
-  .container__menu {
-    border-radius: 15%; 
-  }
-  .containermenu__contenu {
-border-radius: 15%;
-  }
-
-  .containermenu__checked {
-    color:blue;
-    border-radius: 0 30% 30% 0;
-  }
+	  
+.prix {
+	padding-top: 22px;
+	font-weight: bold;
 }
-/* a voir pour icone au bout de la ligne
-  aside h2 #populaire {
-    justify-content: flex-start;
-  }
+	  
+.bloc__menu {
+     border-radius: 15% O O 15%;
+     background-color: white;
+	}  
+
+	 
+	#footer_logo a {
+	   justify-content: initial;
+		width: 50px;
+		height: 10px;
+		padding: 0;
+	}
+	 
+	footer img {
+	   display: flex;
+	   flex-wrap: wrap;
+	   position: relative;
+	   top: 0;
+	   font-size: 20px;
+	   height: 35px;
+	   margin-bottom: 8%;
+	} 
+	 
+	footer .footer__seclect {
+		margin-bottom: 32px;
+		list-style-type: none;
+	  }
+	 
+	footer .footer__seclect a, ul, li {
+	   list-style-type: none;
+	   margin-top: 15px;
+	   margin: 0;
+	   padding: 0; 
+	   text-decoration: none;
+	   font-size: 18px; 
+	   line-height: 140%;
+	  }
+	} */
+	  /* FIN smartphone only */
+  /* ****************************** Tablette ****************************** */
+  @media (min-width: 766px) and (max-width: 1200px) {
+   
+	body{
+		overflow-x:hidden;
+	  }
+
+    .container {
+	 width: 100%;
+	 padding: 0 16px;
+    }
+    /*cartes restaurant alignées 2 par 2 pour tablette*/
+    .restaurant_list_groupe1 .restaurant_list_groupe2 {
+	  flex-direction: column;
+	 width: 100%;
+    }
+  
+    .restau .restaurant_list {
+	 flex-basis: 100%;
+	 margin-right: 0;
+	 margin-top: 20px;
+	 order: 2;
+  }/* FIN tablet */
+ }
