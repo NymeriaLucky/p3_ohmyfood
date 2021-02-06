@@ -29,7 +29,7 @@ body {
   src: url("../police/roboto/Roboto-Regular.ttf") format("truetype"),
        url("../police/roboto/Roboto-Bold.ttf") format("truetype")
 }
-/* Spinner
+ Spinner
 @keyframes spin{
     0%{
         transform: rotate(0deg);
@@ -107,7 +107,7 @@ article .container {
  }
 
 main {
-  margin: 0;
+  margin: 0px;
   padding: 5px;
   background-color: white;
 }
@@ -116,20 +116,26 @@ main > h1, p, section {
   padding: 15px;
 }
 
-.header__logo {
-  text-align: center;
+.header__logo a {
+  align-items: center;
+  justify-content: center;
   top:0;
 }
 
-.index {
+.index h3 {
   justify-content:space-between;
+  font-style: normal;
+
 }
 
 h1, h4, h5 {
-font-family: Shirkhand;
 text-align: center;
 font-weight: bold;
 color:black;
+}
+
+h1,h2,h3,h4,h5{
+  font-family: Shirkhand;
 }
 
 p, li{
@@ -173,60 +179,13 @@ p, li{
   padding-bottom: 5%;
 }
 
-.filters li {
-  position: center;
+.filters {
+  position: relative;
+  text-decoration: none;
+  justify-content: initial;
 }
-
-.filters .filter_name {
-  flex-basis: 100%;
-  text-align: center;
-}
-
-.filters ul {
- list-style-type: none;
- display: inline-block;
-}  
-
-.filter li {
- vertical-align: middle;
- padding-top: 10px;
- width: 25px;
- line-height: 26px;
- display: inline-block;
- flex-wrap: nowrap;
- flex-direction: row;
- align-items: center;
- height:10px;
- text-align: right;
-}
-
-.filter_item1, .filter_item2, .filter_item3 {
- line-height: 35px;
- text-align: center;
- border: 2px solid #F2F2F2;
- height: 39px;
- position: relative;
- border-radius: 39px;
- padding-right: 8px;
- text-transform: capitalize;
- font-weight: bold; 
- cursor: pointer;
- width: 280px;
- display: inline-block;
- flex-direction: column;
- justify-content:center;
- }
-
-.filters .filter_item:hover {
-  background-color: #88b1ee;
-  color: #fff;
-  border: 2px solid #DEEBFF;
-  transform: translateY(-1px);
-  box-shadow: 1px 1px 1px 1px #DEEBFF;
- }
-
 /*exploration_button*/
-.exploration_button, .Commander {
+.exploration_button {
   line-height: 2;
   justify-content: initial;
   align-items: center;
@@ -309,17 +268,24 @@ i.fas.fa-store {
   max-width: 100%;
   height: auto;
   object-position: center;
-  border-radius: 8%;  background-size: cover;
+  border-radius: 8%;
+  background-size: cover;
 }
 
 .image3 {
   max-width: 100%;
   height: auto;
+  object-position: center;
+  border-radius: 8%;  
+  background-size: cover;
 }
 
 .image4 {
   max-width: 100%;
   height: auto;
+  object-position: center;
+  border-radius: 8%;  
+  background-size: cover;
 }
 
 .restaurants h2 {
@@ -327,7 +293,7 @@ i.fas.fa-store {
     font-size: initial 1.5em;
 }
 
-i.far fa-heart fa-2x {
+i.far .fa-heart .fa-2x {
     border-color: black;
     color: hsl(317, 26%, 95%);
     font-size: 13px;
@@ -335,19 +301,24 @@ i.far fa-heart fa-2x {
     align-items: flex-end; 
   }
   
-i.far fa-heart fa-2x:hover {
+i.far.fa-heart.fa-2x:hover, :active {
     color: hsl(273, 52%, 60%);
     font-size: 23px;
   }
-  
-i.far fa-heart:hover {
+
+  i.far.fa-heart.fa-2x:active {
+    color: hsl(273, 52%, 60%);
+    font-size: 23px; 
+  }
+
+ i.far.fa-heart:hover {
     background-color: #ca00fc;
     color: #fff;
     border: 2px solid black;
     transform: translateY(-1px);
     box-shadow: 1px 1px 1px 1px #DEEBFF;
   }
-
+      
 .fa, .far .fas{
     font-family: Font Amesone 5 free;
   }
@@ -364,7 +335,7 @@ i.far fa-heart:hover {
     line-height: 1;
   }
 
-  footer {
+footer {
   background-color: #252121;
   display: flex;
   align-items: flex-start;
@@ -398,9 +369,61 @@ footer a {
   margin-bottom: 8%;
   left: 150px;
 }
+
 .filters {
   cursor: pointer; 
+  position: relative;
 }
+
+.filters .filter_name {
+  flex-basis: 100%;
+  text-align: left;
+}
+
+.filter_list ul {
+ position:relative;
+ list-style-type: none;
+ display: inline-block;
+}  
+
+.filter li {
+ position: relative;
+ vertical-align: middle;
+ padding-top: 10px;
+ width: 25px;
+ line-height: 26px;
+ display: inline-block;
+ flex-wrap: nowrap;
+ flex-direction: row;
+ align-items: center;
+ height:10px;
+ text-align: right;
+}
+
+.filter_item1, .filter_item2, .filter_item3 {
+ line-height: 35px;
+ text-align: center;
+ border: 2px solid #F2F2F2;
+ height: 39px;
+ position: relative;
+ border-radius: 39px;
+ padding-right: 8px;
+ text-transform: capitalize;
+ font-weight: bold; 
+ cursor: pointer;
+ width: 280px;
+ display: inline-block;
+ flex-direction: column;
+ justify-content:center;
+ }
+
+.filters .filter_item:hover {
+  background-color: #88b1ee;
+  color: #fff;
+  border: 2px solid #DEEBFF;
+  transform: translateY(-1px);
+  box-shadow: 1px 1px 1px 1px #DEEBFF;
+ }
 
 .info1 img {
   vertical-align:-16%;
@@ -429,15 +452,28 @@ footer a {
 }
 
 .card_restaurant {
-  display: flex;
+  display: block;
+  position: relative;
   flex-basis: 45%;
   justify-content:space-between ;
   flex-direction: column;
   background-color: #fff;
   margin-bottom: 20px;
-  float:left;
   width:100%;
   align-items:center;
+  text-decoration: none;
+  border-radius: 1rem;
+  color: inherit;
+}
+
+.card__badge {
+  background-color: #99e2d0;
+  color: #1b6150;
+  padding: .5rem;
+  border-radius: .125rem;
+  position: absolute;
+  top: 1rem;
+  right: .75rem;
 }
 /*
 .image1, .image2, .image3, .image4 {
@@ -527,6 +563,7 @@ h2 .restaurants {
    width: 100%;
    box-shadow: 0 0 6px 3px rgba(180, 178, 178, 0.274);
    border-radius: 15%;
+   text-decoration: none;
  }
  
 .restaurant_list .card__body {
@@ -547,6 +584,7 @@ h2 .restaurants {
     
 .restaurant_name i.fas .fa-heard{
       display: inline-block;
+      text-decoration: none;
 }
 
  .image1, .image2, .image3, .image4 {

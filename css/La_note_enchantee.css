@@ -6,6 +6,23 @@ html {
   *:after {
 	box-sizing: inherit;
   }/*initialisation des navigateur*/
+
+  footer {
+	background-color: #252121;
+	display: flex;
+	align-items: flex-start;
+	padding: 30px;
+	color: white; 
+  }
+  
+  footer ul li {
+	list-style-type: none;
+	padding: 5px ;
+  }
+  
+  footer a {
+	color: white;
+  }
 /* ****************************** smartphone only ****************************** */
 @media (max-width: 766px) {
  
@@ -23,10 +40,22 @@ html {
     color:black;
  }
 
+ h1,h2,h3,h4,h5{
+	font-family: Shirkhand;
+  }
+
  i .far.fa-heard::before {
 	  position: absolute;
 	  right: 0;
  }
+
+ i.far fa-heart:hover {
+    background-color: #ca00fc;
+    color: #fff;
+    border: 2px solid black;
+    transform: translateY(-1px);
+    box-shadow: 1px 1px 1px 1px #DEEBFF;
+  }
   
  .image_D {
 	width: 30px;
@@ -90,13 +119,13 @@ section {
 	}
 	
 h3 {
-		display: block;
-		font-size: 1.17em;
-		margin-block-start: 1em;
-		margin-block-end: 1em;
-		margin-inline-start: 0px;
-		margin-inline-end: 0px;
-		font-weight: bold;
+	display: block;
+	font-size: 1.17em;
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+	font-weight: bold;
 }
 
 .bloc_menu__title:after {
@@ -115,6 +144,7 @@ h3 {
 	transition: all 300ms;
 	color: white;
 	width:0px;
+	font-size: 24px;
 }
 	  
 .casesmenu:hover .check {
@@ -124,7 +154,7 @@ h3 {
 		  border-bottom-right-radius: 0.75rem; 
 		  background-color:#99E2D0;
 		  margin:-10px;
-		  padding: 20px;
+		  padding: 30px;
 		  width: auto;
 }
 	  
@@ -168,14 +198,14 @@ h3 {
 	}  
 
 	 
-	#footer_logo a {
+#footer_logo a {
 	   justify-content: initial;
 		width: 50px;
 		height: 10px;
 		padding: 0;
-	}
+}
 	 
-	footer img {
+footer img {
 	   display: flex;
 	   flex-wrap: wrap;
 	   position: relative;
@@ -183,14 +213,14 @@ h3 {
 	   font-size: 20px;
 	   height: 35px;
 	   margin-bottom: 8%;
-	} 
+} 
 	 
-	footer .footer__seclect {
+footer .footer__seclect {
 		margin-bottom: 32px;
 		list-style-type: none;
-	  }
+}
 	 
-	footer .footer__seclect a, ul, li {
+footer .footer__seclect a, ul, li {
 	   list-style-type: none;
 	   margin-top: 15px;
 	   margin: 0;
@@ -199,7 +229,7 @@ h3 {
 	   font-size: 18px; 
 	   line-height: 140%;
 	  }
-	} */
+} 
 	  /* FIN smartphone only */
   /* ****************************** Tablette ****************************** */
   @media (min-width: 766px) and (max-width: 1200px) {
