@@ -49,7 +49,7 @@ html {
 	  right: 0;
  }
   
- .image_D {
+ .image_restaurant {
 	width: 30px;
 	font-size: 16px;
 	object-fit: cover;
@@ -101,6 +101,7 @@ section {
 	  max-width: 100%;
 	  overflow: hidden;
 	  padding: 0 1rem;
+	  background-color: #f6f6f6;
 }
 
 .bloc_menu__title {
@@ -183,20 +184,31 @@ h3 {
 	padding-top: 22px;
 	font-weight: bold;
 }
-	  
-.bloc__menu {
-     border-radius: 15% O O 15%;
-     background-color: white;
-	}  
 
-.Commander {
+.menu__header {
+    padding: 1rem 2rem 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/*	  
+.menu_header {
+     border-radius: 15% O O 15%;
+	 background-color: white;
+	 padding: 50px;
+	 height:50px;
+	}  
+*/
+	.Commander {
 		line-height: 2;
 		justify-content: initial;
 		align-items: center;
-		margin: auto;
 		height: 50px;
 		margin: auto;
+		margin-bottom: 55px;
 		width: 210px;
+		padding-top: 10px;
+		text-align: center;
 		color:white;
 		text-shadow: 1px 1px 1px rgb(38, 27, 68);
 		border-radius: 30px;
@@ -240,7 +252,7 @@ footer .footer__seclect {
 		list-style-type: none;
 }
 	 
-	footer .footer__seclect a, ul, li {
+footer .footer__seclect a, ul, li {
 	   list-style-type: none;
 	   margin-top: 15px;
 	   margin: 0;
@@ -249,7 +261,7 @@ footer .footer__seclect {
 	   font-size: 18px; 
 	   line-height: 140%;
 	  }
-} */
+} 
 	  /* FIN smartphone only */
   /* ****************************** Tablette ****************************** */
   @media (min-width: 766px) and (max-width: 1200px) {

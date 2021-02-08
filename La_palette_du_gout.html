@@ -25,26 +25,23 @@
            <image src="images/logo/ohmyfood_2x.svg
            " alt="logo du site ohmyfood"id="logo">
       </a>
-</div>
+    </div>
   </header>
-   
-    <div id="Image_restaurant">
-      <div class="image_D"> 
-        <img src="images/restaurants/small/jay-wennington-N_Y88TWmGwA-unsplash-minSmall.png">
+   <div class="image_restaurant">
+      <img src="images/restaurants/small/jay-wennington-N_Y88TWmGwA-unsplash-minSmall.png">
      </div>
-     </div>
-     <main class ="container menu">
-      <article>
-     <header class = "menu_header">
-      <h2>
+     <main class="container_menu">
+     <div class="menu_header">
+       <h2>
         <span><i>La palette du goût</i></span>
         <i class="far fa-heart"></i>
       </h2>
 
-     </header>
-     <div class="bloc menu">
+     </div><!--fin menu_header-->
       <section>
-      <h3 class="bloc_menu__title">Entrées</h3>
+        <div class="bloc__menu"> 
+          <h3 class="bloc_menu__title">Entrées</h3>
+      
         <div class="casesmenu">
           <p><strong>Fricassé d'escargot</strong>
           <br>Aux piments d'Espelette
@@ -53,17 +50,17 @@
           <span class="check">
             <i class="fas fa-check-circle"></i>
           </span>
-          </div>
+        </div>
       
         <div class="casesmenu">
-      <p><strong>Foie-gras de canards mi-cuit</strong>
-     <br>Et ses copeaux de truffe noire
-    </p>
-      <span class="prix">35€</span>
-      <span class="check">
+        <p><strong>Foie-gras de canards mi-cuit</strong>
+        <br>Et ses copeaux de truffe noire
+        </p>
+         <span class="prix">35€</span>
+         <span class="check">
         <i class="fas fa-check-circle"></i>
-    </span>
-</div>
+         </span>
+       </div>
 
  <div class="casesmenu">
  <p><strong>Oeuf au plat</strong>
@@ -77,10 +74,11 @@
       </div>
 
      </section>
-    <section>
-      <div class=" bloc menu">
-      <h3 class="bloc_menu__title">Plats</h3>
-    <div class="casesmenu">
+     <section>
+      <div class="bloc__menu"> 
+        <h3 class="bloc_menu__title">Plats</h3>
+    
+      <div class="casesmenu">
     <p><strong>Filet de boeuf aux herbes</strong>
     <br>Accompagné de sa ribambelle de légumes
     </p>
@@ -111,14 +109,15 @@
   </div>
   </div>
   </section>
+
   <section>
     <div class="bloc__menu"> 
       <h3 class="bloc_menu__title">Desserts</h3>
   
     <div class="casesmenu">
     <p><strong>Paris-Brest</strong>
-  <br>Revisité
-  </p>
+    <br>Revisité
+    </p>
   <span class="prix">18€</span>
   <span class="check">
     <i class="fas fa-check-circle"></i>
@@ -147,13 +146,11 @@
    </div>
   </section>
 </div>
-</article>
-  <section>
-    <div class="Commander">
-      <span class="commander"type="button"
-      value="Commander"></span><!--exploration button-->
-    </div>   
-     </section> 
+<section>
+  <div class="Commander">
+    <div class="commande_button" aria aria-hidden="true">&nbsp;Commander</div>
+  </div>   
+</section>
 <!-- essai pour style différent   
     <section>
      <div class="conteneur_menu">

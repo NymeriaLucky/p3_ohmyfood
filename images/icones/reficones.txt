@@ -1,9 +1,0 @@
-<img src="images/icones/iconsM8-cercl%C3%A9-1-c-48.png"id="circle">
-       <a href="https://icons8.com/icon/63276/cerclé-1-c">
-       
-<a href="https://icons8.com/icon/63277/cerclé-2-c"></a>
-    <img src="images/icones/iconsM8-cercl%C3%A9-2-c-48.png
-    "id="cercle"> 
-    
-<a href="https://icons8.com/icon/63278/cerclé-3-c"></a>
-     <img src="images/icones/iconsM8-cercl%C3%A9-3-c-48.png"id="cercle">          

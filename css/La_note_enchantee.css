@@ -57,13 +57,14 @@ html {
     box-shadow: 1px 1px 1px 1px #DEEBFF;
   }
   
- .image_D {
-	width: 30px;
-	font-size: 16px;
+  .img {
+	justify-content: initial;
+    max-width: 100%;
+    max-height: 20rem;
+    width: 100%;
 	object-fit: cover;
-	margin-top: 4%;
-	image-rendering: auto;
-  }
+	object-position: center;
+}
 	 	 	
  #logo {
 		display: flex;
@@ -87,10 +88,12 @@ html {
 	 }
 
 .menu_header h2 {
+	    border radius: 15%;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-	}
+		background-color: white;
+}
   
  h2 {
 		display: flex;
@@ -109,6 +112,7 @@ section {
 	  max-width: 100%;
 	  overflow: hidden;
 	  padding: 0 1rem;
+	  background-color: #f6f6f6;
 }
 
 .bloc_menu__title {
@@ -197,14 +201,16 @@ h3 {
      background-color: white;
 	}  
 
-.Commander {
+	.Commander {
 		line-height: 2;
 		justify-content: initial;
 		align-items: center;
-		margin: auto;
 		height: 50px;
 		margin: auto;
+		margin-bottom: 55px;
 		width: 210px;
+		padding-top: 10px;
+		text-align: center;
 		color:white;
 		text-shadow: 1px 1px 1px rgb(38, 27, 68);
 		border-radius: 30px;
@@ -250,7 +256,7 @@ footer .footer__seclect {
 	 
 footer .footer__seclect a, ul, li {
 	   list-style-type: none;
-	   margin-top: 15px;
+	   margin-top: 8px;
 	   margin: 0;
 	   padding: 0; 
 	   text-decoration: none;

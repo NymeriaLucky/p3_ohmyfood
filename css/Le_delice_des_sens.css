@@ -8,6 +8,7 @@ html {
   }/*initialisation des navigateur*/
 
 footer {
+	justify-content: initial;
 	background-color: #252121;
 	display: flex;
 	align-items: flex-start;
@@ -50,7 +51,7 @@ footer {
 	  right: 0;
  }
   
- .image_D {
+ .image_restaurant {
 	width: 30px;
 	font-size: 16px;
 	object-fit: cover;
@@ -186,18 +187,22 @@ h3 {
 }
 	  
 .bloc__menu {
-     border-radius: 15% O O 15%;
-     background-color: white;
-	}  
+	max-width: 100%;
+	overflow: hidden;
+	padding: 0 1rem;
+	background-color: #f6f6f6;
+}
 	
-.Commander {
+	.Commander {
 		line-height: 2;
 		justify-content: initial;
 		align-items: center;
-		margin: auto;
 		height: 50px;
 		margin: auto;
+		margin-bottom: 55px;
 		width: 210px;
+		padding-top: 10px;
+		text-align: center;
 		color:white;
 		text-shadow: 1px 1px 1px rgb(38, 27, 68);
 		border-radius: 30px;
