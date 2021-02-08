@@ -1,4 +1,3 @@
-@media all and (max-width: 1024px) {
 
 html {
 	box-sizing: border-box;
@@ -13,10 +12,15 @@ body {
   font-family:" Shrikhand, Roboto, Arial";
   padding: 0;
   box-sizing: border-box;
-  margin: 5px;
   align-items: center;
   cursor: pointer;
   }
+
+body, html {
+    margin: 0;
+    font-family: Roboto, Arial;
+    scroll-behavior: smooth;
+}
 
 @font-face {
   font-family: "Shrikhand";
@@ -29,15 +33,36 @@ body {
   src: url("../police/roboto/Roboto-Regular.ttf") format("truetype"),
        url("../police/roboto/Roboto-Bold.ttf") format("truetype")
 }
- Spinner
-@keyframes spin{
-    0%{
+
+.loader {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: hsla(0,0%,100%,.9);
+  animation: loader .01s;
+  animation-delay: 1.75s;
+  animation-fill-mode: both;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Spinner*/
+@keyframes loader{
+  100% {
+    opacity: 0;
+    z-index: -10;
+   }
+  0%{
         transform: rotate(0deg);
     }
     100% {
         transform: rotate(360deg);
     }
-}*/
+}
+
 @keyframes disapeareness {
   0%{
     top: 0;
@@ -52,7 +77,7 @@ body {
     top: -100%;
   }
 }
-/*
+
 @keyframes space_spin{
     0%{
         scale: 1;
@@ -101,11 +126,6 @@ section .container {
   padding: 0;
 }
 
-article .container {
-  display: block;
-  width: auto;
- }
-
 main {
   margin: 0px;
   padding: 5px;
@@ -117,15 +137,43 @@ main > h1, p, section {
 }
 
 .header__logo a {
-  align-items: center;
-  justify-content: center;
-  top:0;
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    font-family: Shrikhand,"cursive";
+    top:0;
+    text-align: center;
+}
+
+.index {
+  padding: 2rem;
+  text-align: center;
+  background-color: #fafafa;
+  padding-bottom: 5%;
 }
 
 .index h3 {
-  justify-content:space-between;
-  font-style: normal;
+  font-weight: 300;
+  margin: 1.5rem 0;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
 
+.index h1 {
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
 }
 
 h1, h4, h5 {
@@ -134,14 +182,13 @@ font-weight: bold;
 color:black;
 }
 
-h1,h2,h3,h4,h5{
+h1,h2,h3,h4,h5 {
   font-family: Shirkhand;
 }
 
-p, li{
+p, li {
   font-family: Roboto;
 }
-
 /*search button Paris-Belleville*/
 .search_button {
     margin-bottom: 14px;
@@ -161,7 +208,6 @@ p, li{
 }
 /*localisation icone*/
 .fa.fa-map-maker {
-  align-items: flex-start;
   vertical-align: middle;
   padding-top: 10px;
   width: 25px;
@@ -174,9 +220,64 @@ p, li{
   display: table-cell;
 }
 
-.index {
-  text-align: center;
-  padding-bottom: 5%;
+.filter_list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: compteListe;
+}
+
+.info1:before {
+  counter-increment: compteListe 1;
+  content: counter(compteListe) " ";
+  background: #9356dc;
+  background-image: initial;
+  background-position-x: initial;
+  background-position-y: initial;
+  background-size: initial;
+  background-repeat-x: initial;
+  background-repeat-y: initial;
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: rgb(147, 86, 220);
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 100px;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  position: absolute;
+  left: -.75rem;
+}
+
+.filter_list ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  list-style-position: initial;
+  list-style-image: initial;
+  list-style-type: none;
+  counter-reset: compteListe;
+}
+
+li {
+  padding: 1.5rem;
+  margin: 1rem 0 1rem .75rem;
+  box-shadow: 0.25rem 0.25rem 0.5rem rgb(0 0 0 / 13%);
+  border-radius: 1.25rem;
+  background-color: #f6f6f6;
+  display: flex;
+  position: relative;
+}
+
+li:first-child {
+  margin-top: 0;
 }
 
 .filters {
@@ -189,8 +290,7 @@ p, li{
   line-height: 2;
   justify-content: initial;
   align-items: center;
-  padding: 20px;
-  margin:auto;
+  margin: auto;
   height: 50px;
   margin: auto;
   width: 210px;
@@ -212,51 +312,40 @@ p, li{
 
 .exploration_button:active {
   box-shadow: inset -2px -2px 3px rgba(233, 9, 203, 0.6),
-              inset 2px 2px 3px rgba(0, 0, 0, .6);
+              inset 2px 2px 3px rgba(0, 0, 0, 0.6);
 }
 
-i.fas.fa-store {
+.filter_list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: compteListe;
+}
+
+ol {
+  display: block;
+  list-style-type: decimal;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+
+i.fas.fa-mobile-alt, i.fas.fa-list-ul, i.fas.fa-store {
+  color:#7e7e7e;
+ }
+
+i.fas.fa-mobile-alt:hover, i.fas.fa-list-ul:hover, i.fas.fa-store:hover {
   color:#9356dc;
-}
-
-.fas.fa-mobile-alt, .fas.fa-list-ul {
- color:#7e7e7e;
-}
-/*boutons menu aussi dans les fiches ? a voir*/
-#circle {
-  border-radius: 50%;
-  color: white;
-  background-color: #9356dc;
-  border: 1px #9356dc;
-  font-weight: bold;
-  line-height: 38px;
-  text-align: center;
-  width: 40px;
-  justify-content: flex-start;
-  margin-top: 40px;
-  vertical-align: middle;
-  margin-bottom: 0px;
-  align-self: flex-start;
-  flex-shrink: 0;
-}
-
-.container .restaurants --description.chek-box {
-  position: absolute;
-  display: flex;
-  right: 0;
-  top: 0;
-  height: 100%;
-  width: 20%;
-  background-color:#00e2c4 ;
-  transition: >transform0.2s;
 }
 
 .container .restaurant_description:hover :check-box {
   transform: translatex(0%);
 }
 
-.restaurant .restaurant_list {
-  width: 90%;
+.restaurant .restaurant_list_groupe1 .restaurant_list_groupe2 {
+  width: 100%;
   padding-left: 15px;
 }
 
@@ -264,28 +353,25 @@ i.fas.fa-store {
   max-height: 358px; 
 }
 
-.image1 {
-  max-width: 100%;
-  height: auto;
-  object-position: center;
-  border-radius: 8%;
-  background-size: cover;
+.restaurant_list_groupe1{
+  diplay:flex;
+  flex-direction:row;
+  justify-content:stretch;
 }
 
-.image3 {
-  max-width: 100%;
-  height: auto;
-  object-position: center;
-  border-radius: 8%;  
-  background-size: cover;
+.restaurant_list_groupe2{
+  display:flex;
+  flex-direction:row;
+  justify-content:stretch;
 }
 
-.image4 {
-  max-width: 100%;
-  height: auto;
-  object-position: center;
-  border-radius: 8%;  
-  background-size: cover;
+.image1, .image2, .image3, .image4 {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    object-position: center;
+    border-radius: 8%;
+    background-size: cover;
 }
 
 .restaurants h2 {
@@ -321,11 +407,11 @@ i.far.fa-heart.fa-2x:hover, :active {
       
 .fa, .far .fas{
     font-family: Font Amesone 5 free;
-  }
+}
   
 .fab, .far{
     font-weight: 400;
-  }
+}
   
 .fa, .fab, .fad, .fal, .far, .fas{
     display: inline-block;
@@ -333,9 +419,9 @@ i.far.fa-heart.fa-2x:hover, :active {
     font-variant: normal;
     text-rendering: auto;
     line-height: 1;
-  }
+}
 
-footer {
+footer img {
   background-color: #252121;
   display: flex;
   align-items: flex-start;
@@ -351,8 +437,8 @@ footer ul li {
 footer a {
   color: white;
 }
+
 } /* FIN smartphone, tablet and screen until 1024px */
- 
  /* ****************************** smartphone only ****************************** */
 @media (max-width: 766px) {
 /* Header filter */
@@ -370,21 +456,50 @@ footer a {
   left: 150px;
 }
 
+h1 {
+  margin-top: 10px;
+  text-align: center;
+} 
+
+header {
+  width: 100%;
+  text-align: center;
+  padding: 0;
+}
+
+.exploration_button {
+ display: flex;
+}
+
+.header__logo {
+  position: absolute;
+  display: block;
+  height: 30px;
+  top: 15px;
+  justify-content: center;
+}
+ 
+.filter_name h2 {
+  text-align: left;
+}
+
+h2 .restaurants {
+  text-align: left;
+}
+
 .filters {
   cursor: pointer; 
   position: relative;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: compteListe;
 }
 
 .filters .filter_name {
   flex-basis: 100%;
   text-align: left;
 }
-
-.filter_list ul {
- position:relative;
- list-style-type: none;
- display: inline-block;
-}  
 
 .filter li {
  position: relative;
@@ -400,23 +515,6 @@ footer a {
  text-align: right;
 }
 
-.filter_item1, .filter_item2, .filter_item3 {
- line-height: 35px;
- text-align: center;
- border: 2px solid #F2F2F2;
- height: 39px;
- position: relative;
- border-radius: 39px;
- padding-right: 8px;
- text-transform: capitalize;
- font-weight: bold; 
- cursor: pointer;
- width: 280px;
- display: inline-block;
- flex-direction: column;
- justify-content:center;
- }
-
 .filters .filter_item:hover {
   background-color: #88b1ee;
   color: #fff;
@@ -425,13 +523,33 @@ footer a {
   box-shadow: 1px 1px 1px 1px #DEEBFF;
  }
 
-.info1 img {
-  vertical-align:-16%;
-  padding-top: 10px;
-  width: 25px;
-  line-height: 36px;
-  align-self: start;
-  flex-shrink: 0;
+.info1:first-child {
+  margin-top: 0;
+}
+ 
+.info1 {
+  padding: 1.5rem;
+  margin: 1rem 0 1rem .75rem;
+  box-shadow: 0.25rem 0.25rem 0.5rem rgb(0 0 0 / 13%);
+  border-radius: 1.25rem;
+  background-color: #f6f6f6;
+  display: flex;
+  position: relative;
+}
+
+.ol {
+  display: block;
+  list-style-type: decimal;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
 }
 
 .search_button{
@@ -475,56 +593,6 @@ footer a {
   top: 1rem;
   right: .75rem;
 }
-/*
-.image1, .image2, .image3, .image4 {
-  width: 23%;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  height: 200%;
-  border-radius: 10px 10px 0 0;
-  background-size: contain;
-  border-radius: 15px;
-  box-shadow: 0 0 6px 3px #F2F2F2;
-  width : 100% auto;
-  border-radius: 27px 27px; background-size: cover;
-  background-position: center;
-  height: auto;
-}   /*a examiner^Î*/
-h1 {
-  margin-top: 10px;
-  text-align: center;
-} 
-
-header {
-  width: 100%;
-  text-align: center;
-  padding: 0;
-}
-
-.exploration_button {
- display: flex;
-}
-
-.header__logo {
-  position: absolute;
-  display: block;
-  height: 30px;
-  top: 15px;
-  justify-content: center;
-}
- 
-.filters {
-  text-align: center;
-}
-
-.filter_name h2 {
-  text-align: left;
-}
-
-h2 .restaurants {
-  text-align: left;
-}
 
 .retaurant_name .restaurant_localisation span h3 {
   justify-content: initial;
@@ -551,6 +619,7 @@ h2 .restaurants {
  
 .restaurant_name .card__restaurant__localisation h3 {
    display: flex;
+   color: black;
    justify-content: space-between;
    text-decoration: none;
   
@@ -587,7 +656,7 @@ h2 .restaurants {
       text-decoration: none;
 }
 
- .image1, .image2, .image3, .image4 {
+.image1, .image2, .image3, .image4 {
     flex: 1;
     max-height: 220px;
     object-position: center;
@@ -609,31 +678,44 @@ h2 .restaurants {
    padding: 0;
   }
 
- footer img {
-  display: flex;
-  flex-wrap: wrap;
-  position: relative;
-  top: 0;
-  font-size: 20px;
-  height: 35px;
-  margin-bottom: 8%;
- } 
-
- footer .footer__seclect {
-   margin-bottom: 32px;
-   list-style-type: none;
- }
-
- footer .footer__seclect a, ul, li {
-  list-style-type: none;
-  margin-top: 15px;
-  margin: 0;
-  padding: 0; 
-  text-decoration: none;
-  font-size: 18px; 
-  line-height: 140%;
- }
+  footer {
+    flex-direction: column;
+    padding-bottom: 0;
+    list-style-type: none;
+  }
  
+  #footer_logo a {
+   justify-content: initial;
+    width: 50px;
+    height: 10px;
+    padding: 0;
+   }
+ 
+  footer img {
+   display: flex;
+   flex-wrap: wrap;
+   position: relative;
+   top: 0;
+   font-size: 20px;
+   height: 35px;
+   margin-bottom: 8%;
+  } 
+ 
+  footer .footer__seclect {
+    margin-bottom: 32px;
+    list-style-type: none;
+  }
+ 
+  footer .footer__seclect a, ul, li {
+   list-style-type: none;
+   margin-top: 15px;
+   margin: 0;
+   padding: 0; 
+   text-decoration: none;
+   font-size: 18px; 
+   line-height: 140%;
+  }
+  
  } /* FIN smartphone only */
  /* ****************************** Tablette ****************************** */
  @media (min-width: 766px) and (max-width: 1200px) {
