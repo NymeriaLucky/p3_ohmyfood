@@ -1,3 +1,4 @@
+/**** STYLE GÉNÉRAL ****/
 html {
 	box-sizing: border-box;
   }
@@ -6,7 +7,8 @@ html {
   *:after {
 	box-sizing: inherit;
   }/*initialisation des navigateur*/
-  footer {
+ 
+footer {
 	background-color: #252121;
 	display: flex;
 	align-items: flex-start;
@@ -19,15 +21,13 @@ html {
 	padding: 5px ;
   }
   
-  footer a {
+ footer a {
 	color: white;
-  }
-/* ****************************** smartphone only ****************************** */
-@media (max-width: 766px) {
- 
+  }/* ****************************** smartphone only ****************************** *//**** SMARTPHONE ***
+@media (max-width: 768px) {*/
  body, html {
    margin: 0;
-   font-family: Roboto,sans-serif;
+   font-family: Roboto, sans-serif;
    scroll-behavior: smooth;
  }
 
@@ -43,19 +43,38 @@ html {
 	font-family: Shirkhand;
   }
 
+p {
+  font-family: Roboto;
+   font-style: initial;
+   text-decoration: none;
+}  
+
  i .far.fa-heard::before {
 	  position: absolute;
 	  right: 0;
  }
   
  .image_restaurant {
-	width: 30px;
+	max-width: 100%;
+    height: auto;
 	font-size: 16px;
 	object-fit: cover;
 	margin-top: 4%;
 	image-rendering: auto;
   }
-	 	 	
+
+  img{
+	  position: static;
+	  align-items:center;
+	  width:auto;
+      margin: left auto;
+      margin:right auto;
+  }
+
+  header{
+	padding-bottom: 20px;
+	} 
+
  #logo {
 		display: flex;
 		flex-wrap: wrap;
@@ -63,7 +82,7 @@ html {
 		top: 0;
 		align-items: center;
 		margin-top: 6%;
-		left: 138px;
+		margin-left: 265px;
 		height: 35px;
  }
 
@@ -83,7 +102,7 @@ html {
 		justify-content: space-between;
 	}
   
- h2 {
+h2 {
 		display: flex;
 		justify-content: space-between;
 	  
@@ -94,6 +113,15 @@ html {
 
 section {
 		  display: block;
+}
+
+i.far .fa-heart {
+    border: black;
+    color: hsl(317, 26%, 95%);
+    font-size: 13px;
+    top: 0;
+    align-items: stretch;
+	font-weight: lighter;
 }
 
 .bloc__menu {
@@ -218,7 +246,6 @@ section {
 					inset 2px 2px 3px rgba(0, 0, 0, 0.6);
 }
 
-	 
 #footer_logo a {
 	   justify-content: initial;
 		width: 50px;
@@ -249,13 +276,9 @@ footer .footer__seclect a, ul, li {
 	   text-decoration: none;
 	   font-size: 18px; 
 	   line-height: 140%;
-}
-} */
-	  /* FIN smartphone only */
-  /* ****************************** Tablette ****************************** */
-  @media (min-width: 766px) and (max-width: 1200px) {
-   
-	body{
+}/*}  /* FIN smartphone only *//**** TABLETTE ***
+@media (max-width: 1024px) {*/
+   body{
 		overflow-x:hidden;
 	  }
 
@@ -274,5 +297,5 @@ footer .footer__seclect a, ul, li {
 	 margin-right: 0;
 	 margin-top: 20px;
 	 order: 2;
-  }/* FIN tablet */
- }
+	}/* FIN tablet 
+     }*/

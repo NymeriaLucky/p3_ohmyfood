@@ -1,4 +1,5 @@
 
+/**** STYLE GÉNÉRAL ****/
 html {
 	box-sizing: border-box;
   }
@@ -6,7 +7,7 @@ html {
   *:before,
   *:after {
 	box-sizing: inherit;
-  }/*initialisation des navigateur*/
+  } /*initialisation des navigateur*/
 
 body {
   font-family:" Shrikhand, Roboto, Arial";
@@ -27,13 +28,13 @@ body, html {
   src: url("../police/shrikhand/Shrikhand-Regular.ttf") format("truetype"),
        url("../police/shrikhand/Shrikhand-Bold.ttf") format("truetype")
 }
-/*Header*/
+
 @font-face {
   font-family: "Roboto";
   src: url("../police/roboto/Roboto-Regular.ttf") format("truetype"),
        url("../police/roboto/Roboto-Bold.ttf") format("truetype")
 }
-
+/*
 .loader {
   position: fixed;
   height: 100%;
@@ -49,7 +50,7 @@ body, html {
   align-items: center;
   justify-content: center;
 }
-/* Spinner*/
+/* Spinner
 @keyframes loader{
   100% {
     opacity: 0;
@@ -114,7 +115,6 @@ body, html {
             }
       }
 }
-
 .spinner{
   width: 50px;
   height: 50px;
@@ -123,8 +123,7 @@ body, html {
   border-bottom-color: transparent;
   border-right-color: $color-lighttwo ;
   border-radius: 100%;
-}
-
+}*/
 section .container {
   padding: 0;
 }
@@ -192,6 +191,7 @@ h1,h2,h3,h4,h5 {
 p, li {
   font-family: Roboto;
 }
+
 /*search button Paris-Belleville*/
 .search_button {
     margin-bottom: 14px;
@@ -209,6 +209,7 @@ p, li {
   box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
               inset 2px 2px 3px rgba(0, 0, 0, .6);
 }
+
 /*localisation icone*/
 .fa.fa-map-maker {
   vertical-align: middle;
@@ -269,7 +270,7 @@ p, li {
   counter-reset: compteListe;
 }
 
-li {
+.info1 li {
   padding: 1.5rem;
   margin: 1rem 0 1rem .75rem;
   box-shadow: 0.25rem 0.25rem 0.5rem rgb(0 0 0 / 13%);
@@ -340,12 +341,7 @@ i.fas.fa-mobile-alt, i.fas.fa-list-ul, i.fas.fa-store {
   color:#7e7e7e;
  }
 
-i.fa-heart{
-   border:black;
-   color:white;
- }
-
-i.fas.fa-mobile-alt:hover, i.fas.fa-list-ul:hover, i.fas.fa-store:hover, i.fa-heart {
+i.fas.fa-mobile-alt:hover, i.fas.fa-list-ul:hover, i.fas.fa-store:hover {
   color:#9356dc;
 }
 
@@ -359,13 +355,17 @@ i.fas.fa-mobile-alt:hover, i.fas.fa-list-ul:hover, i.fas.fa-store:hover, i.fa-he
 }
 
 .restaurant_description .image {
-  max-height: 358px; 
+  max-height: 368px; 
 }
 
 .restaurant_list_groupe1{
   diplay:flex;
   flex-direction:row;
   justify-content:stretch;
+}
+.restaurant_list_groupe1 .restaurant_list_groupe2{
+   display: flex;
+  flex-direction: column;
 }
 
 .restaurant_list_groupe2{
@@ -388,30 +388,36 @@ i.fas.fa-mobile-alt:hover, i.fas.fa-list-ul:hover, i.fas.fa-store:hover, i.fa-he
     font-size: initial 1.5em;
 }
 
-i.far .fa-heart .fa-2x {
-    border-color: black;
-    color: hsl(317, 26%, 95%);
-    font-size: 13px;
-    top: 0;
-    align-items: flex-end; 
+i.fas.fa-heart .fa-2x {
+  border:black;
+  color:white;
 }
   
-i.far.fa-heart.fa-2x:hover, :active {
+i.far.fa-heart.fa-2x:hover {
     color: hsl(273, 52%, 60%);
     font-size: 23px;
+    font-weight:bold;
 }
 
 i.far.fa-heart.fa-2x:active {
-    color: hsl(273, 52%, 60%);
-    font-size: 23px; 
+  color: hsl(273, 52%, 60%);
+  font-size: 23px;
+  font-weight:bold;
 }
 
-i.far.fa-heart:hover {
+i.fas.fa-heart:active {
+    color: hsl(273, 52%, 60%);
+    font-size: 23px; 
+    font-weight: bold;
+}
+
+i.fas.fa-heart:hover {
     background-color: #ca00fc;
     color: #fff;
     border: 2px solid black;
     transform: translateY(-1px);
     box-shadow: 1px 1px 1px 1px #DEEBFF;
+    font-weight: bold;
 }
       
 .fa, .far .fas{
@@ -438,18 +444,20 @@ footer {
 	color: white; 
   }
   
-footer ul li {
+  footer ul li {
 	list-style-type: none;
 	padding: 5px ;
-}
+  }
   
-footer a {
+  footer a {
 	color: white;
-}  /* FIN smartphone, tablet and screen until 1024px */
+  }
+ /* FIN smartphone, tablet and screen until 1024px */
  /* ****************************** smartphone only ****************************** */
-@media (max-width: 766px) {
-/* Header filter */
+  /**** SMARTPHONE ****/
 
+/* @media (max-width: 768px) { */
+/* Header filter */
 #logo {
   display: flex;
   flex-wrap: wrap;
@@ -460,7 +468,7 @@ footer a {
   text-align: center;
   justify-content: center;
   margin-bottom: 8%;
-  left: 200px;
+  left: 300px;
 }
 
 h1 {
@@ -613,6 +621,7 @@ li {
    margin-left: 10px;
    width: 85%;
    text-decoration-line: none;
+   height: 130px;
 }
  
  .restaurant_description .image {
@@ -671,42 +680,36 @@ li {
     max-height:361px ;
     justify-content: center;
 }
- 
-#footer_logo a {
-justify-content: initial;
- width: 50px;
- height: 10px;
- padding: 0;
-}
 
+footer {
+	background-color: #252121;
+	display: flex;
+	align-items: flex-start;
+	padding: 30px;
+	color: white; 
+  }
+  
 footer img {
-  display: flex;
-  flex-wrap: wrap;
-  position: relative;
-  top: 0;
-  font-size: 20px;
-  height: 35px;
-  margin-bottom: 8%;
-} 
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    top: 0;
+    font-size: 20px;
+    height: 35px;
+    margin-bottom: 8%;
+  } 
 
-footer .footer__seclect {
- margin-bottom: 32px;
- list-style-type: none;
-}
-
-footer .footer__seclect a, ul, li {
-  list-style-type: none;
-  margin-top: 15px;
-  margin: 0;
-  padding: 0; 
-  text-decoration: none;
-  font-size: 18px; 
-  line-height: 140%;
- }
-} /* FIN smartphone only */
- /* ****************************** Tablette ****************************** */
- @media (min-width: 766px) and (max-width: 1200px) {
- 
+footer ul li {
+	list-style-type: none;
+	padding: 5px ;
+  }
+  
+footer a {
+	color: white;
+  }
+/* } * /* FIN smartphone only */
+/**** TABLETTE ****
+@media (max-width: 1024px) {*/
  .container {
    width: 100%;
    padding: 0 16px;
@@ -721,13 +724,13 @@ footer .footer__seclect a, ul, li {
    flex-wrap: nowrap;
 }
 
- 
  .restaurants .restaurant_list {
    flex-basis: 100%;
    margin-right: 0;
    margin-top: 20px;
    order: 2;
- }/* FIN tablet */
-}
+ }
+
+/*} /* FIN tablet */
 
 
