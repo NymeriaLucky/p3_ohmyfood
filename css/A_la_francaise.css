@@ -16,9 +16,10 @@ footer {
 	color: white; 
   }
   
-  footer ul li {
+  footer ul li a {
 	list-style-type: none;
-	padding: 5px ;
+	padding: 5px;
+	text-decoration: none;
   }
   
  footer a {
@@ -49,44 +50,48 @@ p {
    text-decoration: none;
 }  
 
- i .far.fa-heard::before {
+i .far.fa-heard::before {
 	  position: absolute;
 	  right: 0;
  }
-  
- .image_restaurant {
-	max-width: 100%;
+
+.image_restaurant img {
+    width: 100%;
+    max-height: 220px;
+    object-fit: cover;
+    object-position: center;
+    text-decoration: none;
+}
+
+#imageC {
+	flex: 1 1 0%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0%;
+    object-position: center center;
+    max-height: 361px;
+    justify-content: center;
+    max-width: 100%;
     height: auto;
-	font-size: 16px;
-	object-fit: cover;
-	margin-top: 4%;
-	image-rendering: auto;
-  }
+    display: block;
+    background-size: cover;
+}
 
-  img{
-	  position: static;
-	  align-items:center;
-	  width:auto;
-      margin: left auto;
-      margin:right auto;
-  }
-
-  header{
-	padding-bottom: 20px;
-	} 
-
- #logo {
+header{
+	padding-bottom: 30px;
+	}
+#logo {
 		display: flex;
 		flex-wrap: wrap;
 		position: absolute;
 		top: 0;
 		align-items: center;
-		margin-top: 6%;
+		margin-top: 3%;
 		margin-left: 265px;
 		height: 35px;
  }
 
- .container_menu {
+.container_menu {
 		max-width: 1280px;
 		margin: auto;
 		position: relative;
@@ -133,8 +138,9 @@ i.far .fa-heart {
 .bloc_menu__title {
 		text-transform: uppercase;
 		position: relative;
+		padding-bottom: .5rem;
 		font-weight: 400;
-	    display: block;
+        display: block;
 	    font-size: 1.17em;
 	    margin-block-start: 1em;
 	    margin-block-end: 1em;
@@ -213,6 +219,22 @@ i.far .fa-heart {
 	overflow: hidden;
 	padding: 0 1rem;
 	background-color: #f6f6f6;
+}
+
+.menu_header {
+    position: relative;
+    border-radius: 1.5rem 1.5rem 0 0;
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    padding: 2.4rem 0 0 1.5rem;
+    padding-top: 2.4rem;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 1.5rem;
+    margin-top: -2rem;
+    background-color: #f6f6f6;
 }
 
 .Commander {

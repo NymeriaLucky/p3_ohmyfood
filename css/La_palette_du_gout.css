@@ -16,9 +16,10 @@ html {
 	color: white; 
   }
   
-  footer ul li {
+  footer ul li a{
 	list-style-type: none;
 	padding: 5px ;
+	text-decoration: none;
   }
   
   footer a {
@@ -40,24 +41,44 @@ html {
     color:black;
  }
 
- h2 h3 h4 h5 {
+ h1 h2 h3 h4 h5 {
 	font-family: Shirkhand;
   }
-
- i .far.fa-heard::before {
+  
+  p {
+	font-family: Roboto, sans-serif;
+	 font-style: initial;
+	 text-decoration: none;
+  }  
+ 
+  i .far.fa-heard::before {
 	  position: absolute;
 	  right: 0;
  }
   
- .image_restaurant {
-	width: 30px;
-	font-size: 16px;
-	object-fit: cover;
-	margin-top: 4%;
-	image-rendering: auto;
-  }
+ .image_restaurant img {
+    width: 100%;
+    max-height: 220px;
+    object-fit: cover;
+    object-position: center;
+    text-decoration: none;
+}
 
-  header{
+#imageA {
+    flex: 1 1 0%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0%;
+    object-position: center center;
+    max-height: 361px;
+    justify-content: center;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    background-size: cover;
+}
+
+header{
 	padding-bottom: 20px;
 	}
 	 	 	
@@ -67,8 +88,8 @@ html {
 		position: absolute;
 		top: 0;
 		align-items: center;
-		margin-top: 6%;
-		margin-left: 250px;
+		margin-top: 3%;
+		margin-left: 265px;
 		height: 35px;
  }
 
@@ -114,7 +135,6 @@ i.far .fa-heart {
 	  max-width: 100%;
 	  overflow: hidden;
 	  padding: 0 1rem;
-	  background-color: #f6f6f6;
 }
 
 .bloc_menu__title {
@@ -122,16 +142,14 @@ i.far .fa-heart {
 		position: relative;
 		padding-bottom: .5rem;
 		font-weight: 400;
-	}
-	
-h3 {
-		display: block;
+	display: block;
 		font-size: 1.17em;
 		margin-block-start: 1em;
 		margin-block-end: 1em;
 		margin-inline-start: 0px;
 		margin-inline-end: 0px;
 		font-weight: bold;
+		border-bottom: skyblue;
 }
 
 .bloc_menu__title:after {
@@ -197,22 +215,29 @@ h3 {
 	padding-top: 22px;
 	font-weight: bold;
 }
-
-.menu__header {
-    padding: 1rem 2rem 0 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.bloc__menu {
+	max-width: 100%;
+	overflow: hidden;
+	padding: 0 1rem;
+	background-color: #f6f6f6;
 }
-/*	  
 .menu_header {
-     border-radius: 15% O O 15%;
-	 background-color: white;
-	 padding: 50px;
-	 height:50px;
-	}  
-*/
-	.Commander {
+    position: relative;
+    border-radius: 1.5rem 1.5rem 0 0;
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    padding: 2.4rem 0 0 1.5rem;
+    padding-top: 2.4rem;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 1.5rem;
+    margin-top: -2rem;
+    background-color: #f6f6f6;
+}
+
+.Commander {
 		line-height: 2;
 		justify-content: initial;
 		align-items: center;
@@ -267,7 +292,7 @@ footer .footer__seclect {
 	 
 footer .footer__seclect a, ul, li {
 	   list-style-type: none;
-	   margin-top: 15px;
+	   margin-top: 8px;
 	   margin: 0;
 	   padding: 0; 
 	   text-decoration: none;
@@ -296,5 +321,4 @@ footer .footer__seclect a, ul, li {
 	 margin-right: 0;
 	 margin-top: 20px;
 	 order: 2;
-/*  }/* FIN tablette */
- }
+    }/* FIN tablette /*}

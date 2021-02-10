@@ -444,9 +444,10 @@ footer {
 	color: white; 
   }
   
-  footer ul li {
+  footer ul li a {
 	list-style-type: none;
 	padding: 5px ;
+  text-decoration: none;
   }
   
   footer a {

@@ -16,9 +16,10 @@ html {
 	color: white; 
   }
   
-  footer ul li {
+  footer ul li a {
 	list-style-type: none;
 	padding: 5px ;
+	text-decoration: none;
   }
   
   footer a {
@@ -27,7 +28,7 @@ html {
 @media (max-width: 768px) {*/
 body, html {
    margin: 0;
-   font-family: Roboto,sans-serif;
+   font-family: Roboto, sans-serif;
    scroll-behavior: smooth;
  }
 
@@ -39,22 +40,40 @@ body, html {
     color:black;
  }
 
- h1,h2,h3,h4,h5{
+ h2,h3,h4,h5 {
 	font-family: Shirkhand;
   }
-
+ p {
+	font-family: Roboto;
+	 font-style: initial;
+	 text-decoration: none;
+  }  
  i .far.fa-heard::before {
 	  position: absolute;
 	  right: 0;
  }
   
- .image_restaurant {
-	width: 30px;
-	font-size: 16px;
-	object-fit: cover;
-	margin-top: 4%;
-	image-rendering: auto;
-  }
+.image_restaurant img {
+    width: 100%;
+    max-height: 220px;
+    object-fit: cover;
+    object-position: center;
+    text-decoration: none;
+}
+
+#imageD {
+    flex: 1 1 0%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0%;
+    object-position: center center;
+    max-height: 361px;
+    justify-content: center;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    background-size: cover;
+}
 
 header{
 	padding-bottom: 30px;
@@ -66,8 +85,8 @@ header{
 		position: absolute;
 		top: 0;
 		align-items: center;
-		margin-top: 6%;
-		margin-left: 260px;
+		margin-top: 3%;
+		margin-left: 265px;
 		height: 35px;
  }
 
@@ -120,9 +139,6 @@ i.far .fa-heart {
 		position: relative;
 		padding-bottom: .5rem;
 		font-weight: 400;
-	}
-	
-h3 {
 		display: block;
 		font-size: 1.17em;
 		margin-block-start: 1em;
@@ -130,6 +146,7 @@ h3 {
 		margin-inline-start: 0px;
 		margin-inline-end: 0px;
 		font-weight: bold;
+		border-bottom: skyblue;
 }
 
 .bloc_menu__title:after {
@@ -202,8 +219,24 @@ h3 {
 	padding: 0 1rem;
 	background-color: #f6f6f6;
 }
-	
-	.Commander {
+
+.menu_header {
+    position: relative;
+    border-radius: 1.5rem 1.5rem 0 0;
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    padding: 2.4rem 0 0 1.5rem;
+    padding-top: 2.4rem;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 1.5rem;
+    margin-top: -2rem;
+    background-color: #f6f6f6;
+}
+
+.Commander {
 		line-height: 2;
 		justify-content: initial;
 		align-items: center;
