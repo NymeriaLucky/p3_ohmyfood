@@ -178,13 +178,13 @@ main > h1, p, section {
   font-weight: bold;
 }
 
-h1, h4, h5 {
+h1 h2 h5 {
 text-align: center;
 font-weight: bold;
 color:black;
 }
 
-h1,h2,h3,h4,h5 {
+h1 h2 h3 h4 h5 {
   font-family: Shirkhand;
 }
 
@@ -192,11 +192,14 @@ p, li {
   font-family: Roboto;
 }
 
+p {
+  text-align: left;
+}
 /*search button Paris-Belleville*/
 .search_button {
-    margin-bottom: 14px;
+    margin-bottom: 10px;
     line-height: 2.5;
-    padding: 0 20px;
+    padding: 0px;
     text-align: center;
     background-color: rgb(126, 121, 125);
  }
@@ -389,7 +392,7 @@ i.fas.fa-mobile-alt:hover, i.fas.fa-list-ul:hover, i.fas.fa-store:hover {
 }
 
 i.fas.fa-heart .fa-2x {
-  border:black;
+  border:rgba(207, 197, 197, 0.219);
   color:white;
 }
   
@@ -402,16 +405,16 @@ i.far.fa-heart.fa-2x:hover {
 i.far.fa-heart.fa-2x:active {
   color: hsl(273, 52%, 60%);
   font-size: 23px;
-  font-weight:bold;
+  border-width: thin;
 }
 
-i.fas.fa-heart:active {
+i.fas.fa-heart .fa-2x:active {
     color: hsl(273, 52%, 60%);
     font-size: 23px; 
     font-weight: bold;
 }
 
-i.fas.fa-heart:hover {
+i.fas.fa-heart .fa-2x:hover {
     background-color: #ca00fc;
     color: #fff;
     border: 2px solid black;
@@ -419,7 +422,7 @@ i.fas.fa-heart:hover {
     box-shadow: 1px 1px 1px 1px #DEEBFF;
     font-weight: bold;
 }
-      
+     
 .fa, .far .fas{
     font-family: Font Amesone 5 free;
 }
@@ -456,49 +459,38 @@ footer {
  /* FIN smartphone, tablet and screen until 1024px */
  /* ****************************** smartphone only ****************************** */
   /**** SMARTPHONE ****/
-
 /* @media (max-width: 768px) { */
 /* Header filter */
-#logo {
-  display: flex;
-  flex-wrap: wrap;
-  position: relative;
-  top: 0;
-  font-size: 20px;
-  height: 35px;
-  text-align: center;
-  justify-content: center;
-  margin-bottom: 8%;
-  left: 300px;
-}
-
 h1 {
-  margin-top: 10px;
+  margin-top: 5px;
   text-align: center;
 } 
 
 header {
   width: 100%;
   text-align: center;
-  padding: 0;
+  padding-bottom: 5px;
+}
+
+ #logo {
+    margin: auto;
+		display: flex;
+		flex-wrap: wrap;
+		position: relative;
+		top: 0;
+		align-items: center;
+		margin-top: 2%;
+		height: 35px;
 }
 
 .search_button {
-  margin-top: 5%;
+  margin-top: 2%;
 }
 
 .exploration_button {
  display: flex;
 }
 
-.header__logo {
-  position: absolute;
-  display: block;
-  height: 30px;
-  top: 15px;
-  justify-content: center;
-}
- 
 .filter_name h2 {
   text-align: left;
 }
@@ -596,8 +588,6 @@ li {
   width:100%;
   align-items: center;
   text-decoration: none;
-  border-radius: 1rem;
-  color: inherit;
 }
 
 .card__badge {
@@ -645,10 +635,17 @@ li {
    }
 }
 
+.card__restaurant__localisation {
+  display: flex;
+  justify-content: flex-start;
+  text-align: left;
+  margin-left: -13px;
+}
+
 .card_restaurant {
    width: 100%;
    box-shadow: 0 0 6px 3px rgba(180, 178, 178, 0.274);
-   border-radius: 15%;
+   border-radius: 30px;
    text-decoration: none;
  }
  
@@ -666,6 +663,7 @@ li {
     justify-content: space-between;
     color:black;
     text-align: left;
+    margin-top: 30px;
 }
     
 .restaurant_name i.fas .fa-heard{
@@ -677,7 +675,7 @@ li {
     flex: 1;
     max-height: 220px;
     object-position: center;
-    border-radius: 8% 8% 0 0;
+    border-radius: 30px 30px 0 0;
     max-height:361px ;
     justify-content: center;
 }
@@ -733,5 +731,29 @@ footer a {
  }
 
 /*} /* FIN tablet */
+@media (min-width: 768px) { 
+   
+   aside {
+    order: 1;
+    width: 100%;
+    margin-bottom: 20px;
+    align-items: left;
+  }
 
+  aside {
+    order: 2;
+    flex-basis: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    padding: 12px;
+    display: none !important;
+  }
+ }
+/* masquer les éléments superflus 
 
+.hide_mobile {
+  display: none !important;
+}
+*/

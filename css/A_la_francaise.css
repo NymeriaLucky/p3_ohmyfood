@@ -77,18 +77,22 @@ i .far.fa-heard::before {
     background-size: cover;
 }
 
-header{
-	padding-bottom: 30px;
+.header__logo a {
+	width: 100%;
+	padding-bottom: 10px;
+	display: inline-block;
+	flex-direction: row;
 	}
+  
 #logo {
-		display: flex;
-		flex-wrap: wrap;
-		position: absolute;
-		top: 0;
-		align-items: center;
-		margin-top: 3%;
-		margin-left: 265px;
-		height: 35px;
+	margin:auto;
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+	top: 0;
+	align-items: center;
+	height: 35px;
+	text-align: center;
  }
 
 .container_menu {
@@ -251,7 +255,7 @@ i.far .fa-heart {
 		text-shadow: 1px 1px 1px rgb(38, 27, 68);
 		border-radius: 30px;
 		background-color: #aa5edc;
-		background-image: linear-gradient(to top left,
+		background-image: linear-gradient(to top left,#9356DC,#FF79DA, 
 										  #ee73da,
 										  #e972da 30%,
 										  rgba(247, 208, 245, 0.959));
