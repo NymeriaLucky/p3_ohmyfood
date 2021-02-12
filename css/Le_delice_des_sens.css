@@ -67,7 +67,7 @@ body, html {
     flex-shrink: 1;
     flex-basis: 0%;
     object-position: center center;
-    max-height: 361px;
+    max-height: 370px;
     justify-content: center;
     max-width: 100%;
     height: auto;
@@ -75,12 +75,17 @@ body, html {
     background-size: cover;
 }
 
-.header__logo a {
-	width: 100%;
-	padding-bottom: 10px;
-	display: inline-block;
-	flex-direction: row;
-	}
+.header__logo {
+	display: block;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    font-family: Shrikhand,"cursive";
+    margin: 0;
+    text-align: left;
+}
   
 #logo {
 	margin:auto;
@@ -238,29 +243,51 @@ i.far .fa-heart {
     margin-top: -2rem;
     background-color: #f6f6f6;
 }
-
+  
 .Commander {
-		line-height: 2;
-		justify-content: initial;
-		align-items: center;
-		height: 50px;
-		margin: auto;
-		margin-bottom: 55px;
-		width: 210px;
-		padding-top: 10px;
-		text-align: center;
-		color:white;
-		text-shadow: 1px 1px 1px rgb(38, 27, 68);
-		border-radius: 30px;
-		background-color: #aa5edc;
-		background-image: linear-gradient(to top left #9356DC,#FF79DA, 
-										  #a956cff3,
-										  #e972da 30%,
-										  rgba(247, 208, 245, 0.959));
-		box-shadow: inset 2px 2px 3px   #a05adc,
-					inset -2px -2px 3px #aa5edc;
+	padding-left: 25px;
+    line-height: 2;
+    justify-content: initial;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+    height: 50px;
+    width: 210px;
+    border: 0;padding-left: 25px;
+    font-weight: 500;
+    font-size: 1.1rem;
+    border-radius: 100px;
+    color: #fff;
+    background-color: #686868;
+    background-image: linear-gradient(
+0deg
+,rgba(147,86,220,.9),rgba(255,121,218,.9));
+    transition-duration: .25s;
+    box-shadow: 0.25rem 0.25rem 10px rgb(0 0 0 / 25%);
+    cursor: pointer;
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: -internal-light-dark(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    cursor: default;
+    background-color: -internal-light-dark(rgb(239, 239, 239), rgb(59, 59, 59));
+    box-sizing: border-box;
+    margin: 0em;
+    font: 400 13.3333px Roboto;
+    padding: 1px 6px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
 }
-	  
+
 .Commander:hover {
 		background-color: rgb(238, 182, 226);
 }
@@ -269,8 +296,6 @@ i.far .fa-heart {
 		box-shadow: inset -2px -2px 3px rgba(233, 9, 203, 0.6),
 					inset 2px 2px 3px rgba(0, 0, 0, 0.6);
 }
-
-
 
 #footer_logo a {
 	justify-content: initial;

@@ -112,14 +112,16 @@ html {
 		justify-content: space-between;
 	}
   
- h2 {
-		display: flex;
-		justify-content: space-between;
-	  
-		span, i {
-		  display: inline-block;
-		}
-	  }
+h2 {
+	display: flex;
+	justify-content: space-between;
+	display: inline-block;
+}
+
+h2 span ,i {
+	display:inline-block;
+}
+
 
 section {
 		  display: block;
