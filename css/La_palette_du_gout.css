@@ -78,8 +78,9 @@ html {
     background-size: cover;
 }
 
-.header__logo a {
+.header__logo a ,i {
 	width: 100%;
+	display:inline-block;
 	padding-bottom: 10px;
 	display: inline-block;
 	flex-direction: row;
@@ -119,9 +120,8 @@ h2 {
 }
 
 h2 span ,i {
-	display:inline-block;
+	display: inline-block;
 }
-
 
 section {
 		  display: block;
@@ -242,40 +242,34 @@ i.far .fa-heart {
     background-color: #f6f6f6;
 }
 
-.Commander {
-		line-height: 2;
-		justify-content: initial;
-		align-items: center;
-		height: 50px;
-		margin: auto;
-		margin-bottom: 55px;
-		width: 210px;
-		padding-top: 10px;
-		text-align: center;
-		color:white;
-		text-shadow: 1px 1px 1px rgb(38, 27, 68);
-		border-radius: 30px;
-		background-color: #aa5edc;
-		background-image: linear-gradient(to top left,#9356DC,#FF79DA, 
-										  #eb60d4,
-										  #e972da 30%,
-										  rgba(247, 208, 245, 0.959));
-		box-shadow: inset 2px 2px 3px   #a05adc,
-					inset -2px -2px 3px #aa5edc;
-	  }
-	  
-	background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
-	}	  
-	  
-.Commander:hover {
-		background-color:#f9d2f3;
-	  }
-	  
-.Commander:active {
-		box-shadow: inset -2px -2px 3px rgba(233, 9, 203, 0.6),
-					inset 2px 2px 3px rgba(0, 0, 0, 0.6);
-	  }
-	 
+.commande_button {
+	padding: 8px;
+	line-height: 2;
+	justify-content: initial;
+	align-items: center;
+	margin: auto;
+	text-align: center;
+	height: 50px;
+	width: 210px;
+	color:white;
+	text-shadow: 1px 1px 1px rgb(38, 27, 68);
+	border-radius: 30px;
+	background-color: #aa5edc;
+	background-image: linear-gradient(to bottom right, #ec73da, #ac5edb 50%);
+									  rgba(247, 208, 245, 0.959));
+	box-shadow: inset 2px 2px 3px   #a05adc,
+				inset -2px -2px 3px #aa5edc;
+  }
+  
+.commande_button:hover {
+			opacity: 0.8;
+  }
+  
+.commande_button:active {
+	box-shadow: inset -2px -2px 3px rgba(233, 9, 203, 0.6),
+				inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+  }
+
 #footer_logo a {
 	   justify-content: initial;
 		width: 50px;

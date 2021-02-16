@@ -52,12 +52,12 @@
       <h1><strong>Réservez le menu qui vous convient</strong></h1>      
        <h3>Découvrez des restaurants d'exception, selectionnés par nos soins.</h3>
          <!--exploration button-->
-          <button class="exploration_button" aria-hidden="true">&nbsp; Explorer nos restaurants</button>
+          <div class="exploration_button" aria-hidden="true">&nbsp; Explorer nos restaurants</button>
          </div>
       </div>
  </section>
 <aside>
-  <h2 class= "filters_name">Fonctionnement</h2>
+  <h2 class="filters_name">Fonctionnement</h2>
    <div class="filters">
      <ol class="filter_list">
        <li class="info1">
@@ -70,11 +70,12 @@
         <i class="fas fa-store" aria-hidden="true"></i><span class="text">&nbsp; Dégustez au restaurant
           </span></li>
       </ol>
+  <center><img class="barre_img" src="images/Animations/001.gif" alt="barre_de_separation"></center>
   </div>
   </aside>
   <div class="container">
    <h2 class="restaurants">Restaurants</h2>
-    <div class="restaurant_list">
+    <div class="restaurant_list"><!--row-->
       <div class="restaurant_list_groupe1">
         
         <div class="restaurant_description">
@@ -83,8 +84,7 @@
             <span class="card__badge">Nouveau</span>                                
            <img class="image1"src="images/restaurants/small/jay-wennington-N_Y88TWmGwA-unsplash-minSmall.png"
              alt="nouveau restaurant la palette du goût">
-            
-           </div>
+            </div>
            <div class="card__body">
             <div class="restaurant_name">
               <h3 class="card__restaurant__title">
@@ -118,13 +118,12 @@
        </div> 
      </div>
      <div class="restaurant_liste_groupe2">
-     
-      <div class="restaurant_description">
-        <a href="A_la_francaise.html" class="card_restaurant">
-         <div class="image">
-          <img class = "image3"src="images/restaurants/small/toa-heftiba-DQKerTsQwi0-unsplashsmall.png" 
-          alt="restaurant A la française">
-         </div>
+        <div class="restaurant_description">
+         <a href="A_la_francaise.html" class="card_restaurant">
+          <div class="image">
+           <img class = "image3"src="images/restaurants/small/toa-heftiba-DQKerTsQwi0-unsplashsmall.png" 
+           alt="restaurant A la française">
+          </div>
          <div class="card__body">
           <div class="restaurant_name">
             <h3 class="card__restaurant__title">
@@ -153,9 +152,9 @@
              <p class="card__restaurant__localisation">Folie-Méricourt</p>
            </div>
         </div>
-      </a>
-     </div>     
-    </div>
+        </a>
+       </div>     
+     </div>
   </div>
  </div>
  </main>
