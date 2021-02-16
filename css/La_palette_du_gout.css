@@ -24,8 +24,7 @@ html {
   
   footer a {
 	color: white;
-  }
-/* ****************************** smartphone only ****************************** *//**** SMARTPHONE ****
+  }/* ****************************** smartphone only ****************************** *//**** SMARTPHONE ****
 @media (max-width: 768px) { */
  body, html {
    margin: 0;
@@ -41,7 +40,7 @@ html {
     color:black;
  }
 
- h1 h2 h3 h4 h5 {
+ h2 h3 h4 h5 {
 	font-family: Shirkhand;
   }
   
@@ -51,7 +50,7 @@ html {
 	 text-decoration: none;
   }  
  
-  i .far.fa-heart::before {
+  i .far.fa-heard::before {
 	  position: absolute;
 	  right: 0;
  }
@@ -70,7 +69,7 @@ html {
     flex-shrink: 1;
     flex-basis: 0%;
     object-position: center center;
-    max-height: 361px;
+    max-height: 370px;
     justify-content: center;
     max-width: 100%;
     height: auto;
@@ -78,14 +77,12 @@ html {
     background-size: cover;
 }
 
-.header__logo a ,i {
+.header__logo a {
 	width: 100%;
-	display:inline-block;
 	padding-bottom: 10px;
 	display: inline-block;
 	flex-direction: row;
-	}
-  
+}  
 #logo {
 	margin:auto;
 	display: flex;
@@ -119,7 +116,7 @@ h2 {
 	display: inline-block;
 }
 
-h2 span ,i {
+h2 span,i {
 	display: inline-block;
 }
 
@@ -147,7 +144,7 @@ i.far .fa-heart {
 		position: relative;
 		padding-bottom: .5rem;
 		font-weight: 400;
-	display: block;
+	    display: block;
 		font-size: 1.17em;
 		margin-block-start: 1em;
 		margin-block-end: 1em;
@@ -269,7 +266,6 @@ i.far .fa-heart {
 	box-shadow: inset -2px -2px 3px rgba(233, 9, 203, 0.6),
 				inset 2px 2px 3px rgba(0, 0, 0, 0.6);
   }
-
 #footer_logo a {
 	   justify-content: initial;
 		width: 50px;
@@ -301,9 +297,9 @@ footer .footer__seclect a, ul, li {
 	   font-size: 18px; 
 	   line-height: 140%;
 	  }
-/*} /* FIN smartphone only */
-  /**** TABLETTE ****
-@media (max-width: 1024px) {*/
+} /* FIN smartphone only */
+  /**** TABLETTE ****/
+@media (max-width: 1024px) {
    body{
 		overflow-x:hidden;
 	  }
@@ -323,4 +319,6 @@ footer .footer__seclect a, ul, li {
 	 margin-right: 0;
 	 margin-top: 20px;
 	 order: 2;
-    }/* FIN tablette /*}
+	}
+	 /* }/* FIN tablette */
+

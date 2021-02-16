@@ -45,7 +45,7 @@ footer {
   }
 
 p {
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
    font-style: initial;
    text-decoration: none;
 }  
@@ -69,7 +69,7 @@ i .far.fa-heard::before {
     flex-shrink: 1;
     flex-basis: 0%;
     object-position: center center;
-    max-height: 361px;
+    max-height: 370px;
     justify-content: center;
     max-width: 100%;
     height: auto;
@@ -101,24 +101,25 @@ i .far.fa-heard::before {
 		position: relative;
  }
 	
- main {
+main {
 		display: block;
-	 }
+}
 
 .menu_header h2 {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-	}
+}
   
 h2 {
 		display: flex;
 		justify-content: space-between;
-	  
-		span, i {
-		  display: inline-block;
-		}
-	  }
+		display: inline-block;
+}
+
+h2 span, i{
+	display: inline-block
+}
 
 section {
 		  display: block;

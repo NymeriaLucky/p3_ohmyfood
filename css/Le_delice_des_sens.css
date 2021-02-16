@@ -24,8 +24,8 @@ html {
   
   footer a {
 	color: white;
-  }/* ****************************** smartphone only ****************************** *//**** SMARTPHONE ***
-@media (max-width: 768px) {*/
+  }/* ****************************** smartphone only ****************************** *//**** SMARTPHONE ***/
+@media (max-width: 768px) {
 body, html {
    margin: 0;
    font-family: Roboto, sans-serif;
@@ -35,7 +35,7 @@ body, html {
  i.fas.fa-arrow-left {
 	align-items: flex-start;
 	height: 35px;
-	margin-top: 15px;
+	margin-top: 25px;
 	font-size: 1.5em !important;
     color:black;
  }
@@ -44,10 +44,11 @@ body, html {
 	font-family: Shirkhand;
   }
  p {
-	font-family: Roboto;
+	font-family: Roboto, sans-serif;
 	 font-style: initial;
 	 text-decoration: none;
-  }  
+  }
+
  i .far.fa-heard::before {
 	  position: absolute;
 	  right: 0;
@@ -117,11 +118,12 @@ body, html {
  h2 {
 		display: flex;
 		justify-content: space-between;
-	  
-		span, i {
-		  display: inline-block;
-		}
-	  }
+		display: inline-block;
+}
+
+h2 span,i {
+	display: inline-block;
+}
 
 section {
 		  display: block;
@@ -272,7 +274,6 @@ i.far .fa-heart {
 				inset 2px 2px 3px rgba(0, 0, 0, 0.6);
   }
 
-
 #footer_logo a {
 	justify-content: initial;
 	 width: 50px;
@@ -297,15 +298,16 @@ footer .footer__seclect {
   
 footer .footer__seclect a, ul, li {
 	list-style-type: none;
-	margin-top: 15px;
+	margin-top: 8px;
 	margin: 0;
 	padding: 0; 
 	text-decoration: none;
 	font-size: 18px; 
 	line-height: 140%;
-   }/*}  /* FIN smartphone only */
-  /**** TABLETTE ***
-@media (max-width: 1024px) {*/
+   }
+}  /* FIN smartphone only */
+  /**** TABLETTE ***/
+@media (max-width: 1024px) {
    body{
 		overflow-x:hidden;
 	  }
@@ -324,5 +326,6 @@ footer .footer__seclect a, ul, li {
 	 flex-basis: 100%;
 	 margin-right: 0;
 	 margin-top: 20px;
-	 order: 2;/* }/* FIN tablet */
+	 order: 2;/* FIN tablet */
     }
+}
