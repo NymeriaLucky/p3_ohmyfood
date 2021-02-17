@@ -1,3 +1,6 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@200;300;500;700;900&display=swap");
 /**** STYLE GÉNÉRAL ****/
 html {
 	box-sizing: border-box;
@@ -24,8 +27,8 @@ html {
   
   footer a {
 	color: white;
-  }/* ****************************** smartphone only ****************************** *//**** SMARTPHONE ***/
-@media (max-width: 768px) {
+  }/* ****************************** smartphone only ****************************** *//**** SMARTPHONE ***
+@media (max-width: 768px) {*/
 body, html {
    margin: 0;
    font-family: Roboto, sans-serif;
@@ -305,9 +308,9 @@ footer .footer__seclect a, ul, li {
 	font-size: 18px; 
 	line-height: 140%;
    }
-}  /* FIN smartphone only */
-  /**** TABLETTE ***/
-@media (max-width: 1024px) {
+/*}  FIN smartphone only */
+  /**** TABLETTE ***
+@media (max-width: 1024px) {*/
    body{
 		overflow-x:hidden;
 	  }
@@ -326,6 +329,6 @@ footer .footer__seclect a, ul, li {
 	 flex-basis: 100%;
 	 margin-right: 0;
 	 margin-top: 20px;
-	 order: 2;/* FIN tablet */
-    }
+	 order: 2;/* FIN tablet *
+    }*/
 }

@@ -1,3 +1,4 @@
 
-Url du repository GitHub: https://github.com/NymeriaLucky/p3_ohmyfood.git
+Url du repository GitHub page: https://github.com/NymeriaLucky/p3_ohmyfood.git
+ My site is published at https://nymerialucky.github.io/p3_ohmyfood/
 

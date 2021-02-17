@@ -1,4 +1,6 @@
-
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@200;300;500;700;900&display=swap");
 /**** STYLE GÉNÉRAL ****/
 html {
 	box-sizing: border-box;
@@ -102,7 +104,7 @@ body, html {
   color:chartreuse;
 }
 */
-space_spinner{
+.Space_spinner{
   width: 100%;
   height: 100%;
   background-color: rgba(255, 255, 255,0.9);
@@ -113,7 +115,7 @@ space_spinner{
 }
 
 .space_spinner > .spinner{
-                  animation: spin infinite 3000ms ease-in-out;
+      animation: spin infinite 3000ms ease-in-out;
             }
 
 .spinner{
@@ -126,7 +128,10 @@ space_spinner{
   border-radius: 100%;
 }
 
-.restaurant_list {margin: 0 -5px;}
+.restaurant_list {
+  margin: 0 -5px;
+  display: block;
+}
 
 .restaurant_list:after {
   content: "";
@@ -188,7 +193,6 @@ main > h1, p, section {
   margin-inline-end: 0px;
   font-weight: bold;
 }
-
 
 .barrehr{
 text-align: center;
@@ -327,14 +331,14 @@ aside {
   counter-reset: compteListe;
 }
 
-img {
-  text-align: center;
-   margin-left: auto;
-   margin-right: auto;
-   display: bloc;
-   width: 500px;
-   height:auto;
-}
+.barre_img{
+    text-align: center;
+     margin-left: auto;
+     margin-right: auto;
+     display: inline inline-block;
+     width: 550px;
+     height: 48px;
+  }
 
 .info1 li {
   padding: 1.5rem;
@@ -351,7 +355,8 @@ li:first-child {
 }
 
 h2 .filters_name .restaurants {
-  text-align: left;
+  border: solid 3px blueviolet;
+  border-style: inset;
 }
 
 .filters {
@@ -396,6 +401,7 @@ h2 .filters_name .restaurants {
   background-color: #f6f6f6;
   display: flex;
   position: relative;
+  font-weight: bold;
 }
 
 ol {
@@ -443,8 +449,8 @@ i.fas.fa-mobile-alt:hover, i.fas.fa-list-ul:hover, i.fas.fa-store:hover {
 }
 
 .image2 {
-  max-height:220px;
-  max-width: 200%;
+  max-height:350px;
+  width: 530px;
   display:stretch;
   object-position:center;
   border-radius: 8%;
@@ -454,7 +460,7 @@ i.fas.fa-mobile-alt:hover, i.fas.fa-list-ul:hover, i.fas.fa-store:hover {
 
 .image1, .image3, .image4 {
     max-width: 100%;
-    max-height: 220px;
+    max-height: 350px;
     display: inline-block;
     object-position: center;
     border-radius: 8%;
@@ -573,7 +579,7 @@ border: transparent;
   counter-reset: compteListe;
 }
 
-.filters .filter_name {
+.filters .filters_name .restaurants {
   flex-basis: 100%;
   text-align: left;
 }
@@ -622,6 +628,14 @@ border: transparent;
   transition: opacity 1s;
 }
 
+i.far.fa-heart .border{
+  display: flex;
+  position :right;
+  justify-content: flex-end;
+  text-align: right;
+  align-items: flex-end;
+}
+
 .info1:first-child {
   margin-top: 0;
 }
@@ -656,13 +670,11 @@ li {
 
 .card_restaurant {
   display: block;
-  position: relative;
-  flex-basis: 45%;
   justify-content:space-between;
   background-color: #fff;
   margin-bottom: 20px;
-  align-items: center;
   text-decoration: none;
+  position:center;
 }
 
 .card__badge {
@@ -678,7 +690,7 @@ li {
 .retaurant_name .restaurant_localisation span h3 {
   justify-content: initial;
   text-decoration: none;
-  text-align: left;
+  text-align: justify;
   color:black;
 }
 
@@ -746,11 +758,9 @@ li {
     display: flex;
     justify-content: space-between;
     color:black;
-    text-align: left;
-    margin-top: 30px;
 }
     
-.restaurant_name i.fas .fa-heard{
+.restaurant_name {
       display: inline-block;
       text-decoration: none;
 }
@@ -771,7 +781,7 @@ footer {
 	align-items: flex-start;
 	padding: 30px;
 	color: white; 
-  }
+}
   
 footer img {
     display: flex;
@@ -781,12 +791,12 @@ footer img {
     font-size: 20px;
     height: 35px;
     margin-bottom: 8%;
-  } 
+} 
 
 footer ul li {
 	list-style-type: none;
 	padding: 5px ;
-  }
+}
   
 footer a {
 	color: white;
@@ -794,7 +804,7 @@ footer a {
 } /* FIN smartphone only */
 /**** TABLETTE ****/
 @media (max-width: 1024px) {
- .container {
+.container {
    width: 100%;
    padding: 0 16px;
  }
