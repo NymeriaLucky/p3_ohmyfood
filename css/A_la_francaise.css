@@ -31,24 +31,24 @@ footer {
 @media (max-width: 768px) {*/
  body, html {
    margin: 0;
-   font-family: Roboto, sans-serif;
+   font-family: "Roboto", sans-serif, "Shirkhand"; 
    scroll-behavior: smooth;
  }
 
  i.fas.fa-arrow-left {
-	align-items: flex-start;
+    align-items: flex-start;
 	height: 35px;
-	margin-top: 55px;
+	margin-top: 25px;
 	font-size: 1.5em !important;
     color:black;
- }
+}
 
  h1 h2 h3 h4 h5 {
-	font-family: Shirkhand;
+	font-family: "Shirkhand";
   }
 
 p {
-  font-family: Roboto, sans-serif;
+  font-family: "Roboto", sans-serif;
    font-style: initial;
    text-decoration: none;
 }  
@@ -80,9 +80,8 @@ i .far.fa-heard::before {
     background-size: cover;
 }
 
-.header__logo a i {
+.header__logo a  {
 	width: 100%;
-	padding-bottom: 10px;
 	display: inline-block;
 	flex-direction: row;
 	}
@@ -101,8 +100,10 @@ i .far.fa-heard::before {
 main.container_menu {
 		max-width: 1280px;
 		margin: auto;
-		position: relative;  
-	    display: block;
+		position: relative;
+}  
+main {	    
+	display: block;
 }
 
 .menu_header h2 {
@@ -299,8 +300,9 @@ footer .footer__seclect a, ul, li {
 	   text-decoration: none;
 	   font-size: 18px; 
 	   line-height: 140%;
-}/*}  /* FIN smartphone only *//**** TABLETTE ***
-@media (max-width: 1024px) {*/
+    }
+}  /* FIN smartphone only *//**** TABLETTE ***/
+@media (max-width: 1024px) {
    body{
 		overflow-x:hidden;
 	  }
@@ -320,5 +322,5 @@ footer .footer__seclect a, ul, li {
 	 margin-right: 0;
 	 margin-top: 20px;
 	 order: 2;
-	}/* FIN tablet 
-     }*/
+	}/* FIN tablet*/ 
+     }

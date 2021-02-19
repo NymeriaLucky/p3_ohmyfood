@@ -31,7 +31,7 @@ html {
 @media (max-width: 768px) { */
  body, html {
    margin: 0;
-   font-family: Roboto,sans-serif;
+   font-family: "Roboto", sans-serif "Shirkhand";
    scroll-behavior: smooth;
  }
 
@@ -43,12 +43,12 @@ html {
     color:black;
  }
 
- h2 h3 h4 h5 {
-	font-family: Shirkhand;
+ h1 h2 h3 h4 h5 {
+	font-family: "Shirkhand";
   }
   
   p {
-	font-family: Roboto, sans-serif;
+	font-family: "Roboto", sans-serif;
 	 font-style: initial;
 	 text-decoration: none;
   }  
@@ -82,7 +82,6 @@ html {
 
 .header__logo a {
 	width: 100%;
-	padding-bottom: 10px;
 	display: inline-block;
 	flex-direction: row;
 }  
@@ -189,11 +188,11 @@ i.far .fa-heart {
 	  
 .check i {
 		  transition: all 400ms;
-	  }
+}
 	  
 .casesmenu:hover .check i {
 		  transform: rotate(720deg);
-	  } 
+} 
 	  
 .casesmenu {
 	background-color: white;
@@ -323,5 +322,5 @@ footer .footer__seclect a, ul, li {
 	 margin-top: 20px;
 	 order: 2;
 	}
-	 /* }/* FIN tablette */
+	  }/* FIN tablette */
 

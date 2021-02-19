@@ -31,7 +31,7 @@ html {
 @media (max-width: 768px) {*/
 body, html {
    margin: 0;
-   font-family: Roboto, sans-serif;
+   font-family: "Roboto", sans-serif,"Shirkhand";
    scroll-behavior: smooth;
  }
 
@@ -44,10 +44,10 @@ body, html {
  }
 
  h2,h3,h4,h5 {
-	font-family: Shirkhand;
+	font-family: "Shirkhand";
   }
  p {
-	font-family: Roboto, sans-serif;
+	font-family: "Roboto", sans-serif;
 	 font-style: initial;
 	 text-decoration: none;
   }
@@ -79,16 +79,11 @@ body, html {
     background-size: cover;
 }
 
-.header__logo {
-	display: block;
-    margin-block-start: 0.67em;
-    margin-block-end: 0.67em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-    font-family: Shrikhand,"cursive";
-    margin: 0;
-    text-align: left;
+.header__logo a  {
+	width: 100%;
+	display: inline-block;
+	flex-direction: row;
+	position: relative;
 }
   
 #logo {
