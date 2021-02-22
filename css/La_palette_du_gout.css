@@ -80,6 +80,13 @@ html {
     background-size: cover;
 }
 
+.header {
+    padding: 1rem;
+    box-shadow: 0 0 0.5rem rgb(0 0 0 / 25%);
+    position: relative;
+    z-index: 1000;
+}
+
 .header__logo a {
 	width: 100%;
 	display: inline-block;
