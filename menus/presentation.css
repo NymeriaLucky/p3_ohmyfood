@@ -3,8 +3,12 @@ html {
     display: block;
 }
 
+title {
+    display: none;
+}
+
 h1 {
-    color: #eeee09;
+    color: #fdfd09;
     background: #4f9c85;
     text-align: center;
     height: 100px;
@@ -22,6 +26,56 @@ h1 {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     font-weight: bold;
+}
+
+h2 {
+    font-family: "Satisfy regular";
+    text-align: center;
+    font-size: 4.5rem;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 4rem;
+    text-align: center;
+    background: -webkit-linear-gradient(0deg, #cc6410 0% 30%, #a45be9, blue);
+    background-image: -webkit-linear-gradient(0deg, #cc6410 0%, #cc6410 30%, #a45be9, blue);
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    background-repeat-x: initial;
+    background-repeat-y: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: text;
+    background-color: initial;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+
+h5 {
+    display: block;
+    font-size: 0.83em;
+    margin-block-start: 1.67em;
+    margin-block-end: 1.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+h5 {
+    color: blue;
+    text-align: center;
+    font-size: 4rem;
 }
 
 body {
@@ -123,6 +177,22 @@ div {
     background-color: rgb(245, 239, 231);
 }
 
+.box2 a {
+    background: -webkit-linear-gradient(0deg, #cc6410 0% 30%, #a45be9, blue);
+    background-image: -webkit-linear-gradient(0deg, #cc6410 0%, #cc6410 30%, #a45be9, blue);
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    background-repeat-x: initial;
+    background-repeat-y: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: text;
+    background-color: initial;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+
 .box3 {
     background: #e4e4fa;
     background-image: initial;
@@ -163,23 +233,6 @@ div {
     text-align: center;
 }
 
-.box {
-    width: 100%;
-    max-width: 400px;
-    height: 350px;
-    margin: 15px;
-    padding-top: 230px;
-    font-size: 1.5em;
-    box-shadow: 5px 5px 5px 5px rgb(0 0 0 / 30%);
-    text-align: center;
-}
-
-a:-webkit-any-link {
-    color: -webkit-link;
-    cursor: pointer;
-    text-decoration: underline;
-}
-
 .fa, .fas {
     font-weight: 900;
 }
@@ -213,8 +266,6 @@ i {
 a:-webkit-any-link {
     color: -webkit-link;
     cursor: pointer;
-    text-decoration: underline;
-    text-decoration-line: underline;
     text-decoration-thickness: initial;
     text-decoration-style: initial;
     text-decoration-color: initial;
@@ -294,7 +345,255 @@ footer a {
     text-decoration: none;
     margin: 10px;
 }
+/***mentions css et pages menu***/
 
+.blocPg1 {
+    padding: 60px;
+    background-color: #f8ddf1;
+    border: 1px solid #eeb7e7;
+    border-top-color: rgb(238, 183, 231);
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-right-color: rgb(238, 183, 231);
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-bottom-color: rgb(238, 183, 231);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-left-color: rgb(238, 183, 231);
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    box-shadow: 5px 5px 5px 5px rgb(0 0 0 / 30%);
+    margin-bottom: 30px;
+}
+
+.E1t, .P1t {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    display: inline-block;
+    position: relative;
+}
+
+.E1t::before, .P1t::before {
+    content: "";
+    background: black;
+    position: absolute;
+    transform: scaleX(0);
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    transform-origin: bottom right;
+    transition: transform 1000ms ease-in-out;
+    transition-property: transform;
+    transition-duration: 1000ms;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+  }
+
+.D1t {
+    font-weight: bold;
+    font-size: 1.5rem;
+    display: inline-block;
+    position: relative;
+}
+
+.D1t::before {
+    content: "";
+    background: black;
+    position: absolute;
+    transform: scaleX(0);
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    transform-origin: bottom right;
+    transition: transform 1000ms ease-in-out;
+}
+
+.blocPg5 {
+    border: 1px solid #d4d4f0;
+    border-top-color: rgb(212, 212, 240);
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-right-color: rgb(212, 212, 240);
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-bottom-color: rgb(212, 212, 240);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-left-color: rgb(212, 212, 240);
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    padding: 10px;
+    box-shadow: 5px 5px 5px 5px rgb(0 0 0 / 30%);
+    margin-bottom: 30px;
+}
+
+.blocPg2 {
+        padding: 30px;
+        background: #fcf7f4;
+        border: 1px solid blanchedalmond;
+        box-shadow: 5px 5px 5px 5px rgb(0 0 0 / 30%);
+        margin-bottom: 30px;
+    }
+
+aside {
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+}
+
+p {
+        width: 100%;
+        text-align: center;
+        margin: 0px;
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+}
+
+.img {
+    text-align: center;
+}
+
+.Entree2 {
+    margin: 5px;
+    color: indianred;
+}
+
+.Plat2{
+        color: blue;
+}
+
+.Dessert2{
+ color: #7c6ae2;
+}
+
+.E2t {
+    font-weight: bold;
+    color: rgb(209, 52, 52);
+    font-size: 1.3rem;
+    display: inline-block;
+    position: relative;
+}
+
+.E2t::before {
+    content: "";
+    background: indianred;
+    position: absolute;
+    transform: scaleX(0);
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    transform-origin: bottom right;
+    transition: transform 1000ms ease-in-out;
+}
+
+.P2t {
+    color: blueviolet;
+    font-size: 1.3rem;
+    font-weight: bold;
+    display: inline-block;
+    position: relative;
+}
+
+.P2t::before {
+    content: "";
+    background: rgb(186, 129, 240);
+    background-image: initial;
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    background-repeat-x: initial;
+    background-repeat-y: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: rgb(186, 129, 240);
+    position: absolute;
+    transform: scaleX(0);
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    transform-origin: bottom right;
+    transition: transform 1000ms ease-in-out;
+}
+
+.D2t {
+    font-size: 1.3rem;
+    color: rgb(22, 205, 211);
+    font-weight: bold;
+    display: inline-block;
+    position: relative;
+}
+
+.D2t::before {
+    content: "";
+    background: rgb(22, 205, 211);
+    position: absolute;
+    transform: scaleX(0);
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    transform-origin: bottom right;
+    transition: transform 1000ms ease-in-out;
+    transition-property: transform;
+    transition-duration: 1000ms;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+}
+
+.E4t, .P4t, .D4t {
+    font-weight: bold;
+    display: inline-block;
+    position: relative;
+}
+
+.E4t::before, .P4t::before, .D4t::before {
+    content: "";
+    background: greenyellow;
+    background-image: initial;
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    background-repeat-x: initial;
+    background-repeat-y: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: greenyellow;
+    position: absolute;
+    transform: scaleX(0);
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    transform-origin: bottom right;
+    transition: transform 1000ms ease-in-out;
+    transition-property: transform;
+    transition-duration: 1000ms;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+}
+
+/*fin mentions css et pages menu*/
 @media screen and (max-width: 768px){
 body {
     margin: 0px;
@@ -310,10 +609,10 @@ header {
     display: block;
 }
 
-.box {
-    width: 100%;
-    height: auto;
-    padding: 20px;
+h2, h3, h4, h5, h6 {
+    width: auto;
+    font-size: 1.5rem;
+    text-align: center;
 }
 
 .box {
@@ -339,7 +638,6 @@ header h1 {
 .fa-music:before {
     content: "\f001";
 }
-
 
 header h1 {
     font-size: 1.5rem;
@@ -373,4 +671,16 @@ footer {
     background-color: #4f9c85;
     bottom: 0px;
 }
+/**mentions css et pages menu**/
+
+ .blocPg1, .blocPg2, .blocPg3, .blocPg4, .blocPg5 {
+    padding: 0px;
+    margin: 0px;
+ }
+     /**fin mentions css et pages menu**/
+
+.E2t, .P2t, .D2t, .delice1, .delice2, .delice3, .gout1, .gout2, .gout3 {
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }     
 }
