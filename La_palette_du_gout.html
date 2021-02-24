@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
   <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/La_palette_du_gout.css">    
   <link rel="shortcut icon" href="../../img/logo/ohmyfood_2x.svg" type="image/x-icon">
@@ -19,22 +20,21 @@
 </head>
 <body>
   <header>
-    <div class="header__logo">
-   <a href="logo"> 
-     <a href="index.html"><i class="fas fa-arrow-left"></i></a>
-   <image src="images/logo/ohmyfood_2x.svg
-           " alt="logo du site ohmyfood"id="logo">
-      </a>
-     </div>
-  </header>
+    <h1><a href="index.html"><i class="fas fa-arrow-left"></i>
+    <img src="images/logo/ohmyfood_2x.svg" alt="logo du site ohmyfood"
+     id="logo"></img></a></h1>    
+ </header>
     <div class="image_restaurant" id="imageA">
       <img src="images/restaurants/small/jay-wennington-N_Y88TWmGwA-unsplash-minSmall.png">
      </div>
      <main class="container_menu">
     <div class="menu_header">
-      <h2><span><em>La palette du goût</em></span>
-        <i class="far fa-heart"></i></h2>
-    <section>
+      <div class="menu__title">
+      <h2><span><em><strong>La palette du goût</strong></em>
+      <i class="far fa-heart border" aria-hidden="true"></i>
+      <i class="fas fa-heart content"aria-hidden="true"></i></span></h2>
+     </div>
+       <section>
      <div class="bloc__menu"> 
         <h3 class="bloc_menu__title">Entrées</h3>
         <div class="casesmenu">
@@ -46,8 +46,7 @@
             <i class="fas fa-check-circle"></i>
           </span>
         </div>
-      
-        <div class="casesmenu">
+      <div class="casesmenu">
         <p><strong>Foie-gras de canards mi-cuit</strong>
         <br>Et ses copeaux de truffe noire
         </p>
@@ -65,7 +64,7 @@
         <i class="fas fa-check-circle"></i>
       </span>
        </div>
-    </div>
+    </div><!--fin bloc-menu entree--> 
 </section>
   <section>
     <div class="bloc__menu"> 
@@ -99,7 +98,7 @@
          <i class="fas fa-check-circle"></i>
         </span>
       </div>
-    </div>
+    </div><!--fin bloc-menu plats-->
   </section>
 
   <section>
@@ -135,14 +134,15 @@
       <i class="fas fa-check-circle"></i>
      </span>
      </div>
-   </div>
+   </div><!--fin bloc-menu desserts-->
   </section>
- </div>
+ </div><!--fin bloc-menu -->
  <br>
   <section>
     <div class="commande_button" aria aria-hidden="true">&nbsp;Commander</div>  
   </section>
   <br><br>
+</div><!--fin bloc menu-header arrounded-->
   </main>               
       <footer>
         <div class="footer__select"> 

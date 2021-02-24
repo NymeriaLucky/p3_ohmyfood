@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap" rel="stylesheet">
+  
+  
   <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/Le_delice_des_sens.css">    
   <link rel="shortcut icon" href="../../img/logo/ohmyfood_2x.svg" type="image/x-icon">
@@ -15,26 +16,24 @@
   <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js" integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw==" crossorigin=""></script>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-  <script type="text/javascript" src="MONSCRIPT.js"></script>
   <title>Le_delice_des_sens</title>
 </head>
 <body>
 	<header>
-    <div class="header__logo">
-      <a href="index.html"><i class="fas fa-arrow-left"></i></a> 
-      <a href="logo">
-           <image src="images/logo/ohmyfood_2x.svg
-           " alt="logo du site ohmyfood"id="logo">
-      </a>
-    </div>
-  </header>
+    <h1><a href="index.html"><i class="fas fa-arrow-left"></i>
+    <img src="images/logo/ohmyfood_2x.svg" alt="logo du site ohmyfood"
+     id="logo"></img></a></h1>    
+ </header>
      <div class="image_restaurant" id="imageD">  
        <img src="images/restaurants/medium/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash-minM.png">
      </div>
      <main class="container_menu">
-     <div class="menu_header">
-      <h2><span><em>Le délice des sens</em></span>
-        <i class="far fa-heart"></i></h2>
+      <div class= "menu_header">
+        <div class="menu__title">
+           <h2><span><em><strong>Le délice des sens</strong></em>
+           <i class="far fa-heart border" aria-hidden="true"></i>
+           <i class="fas fa-heart content"aria-hidden="true"></i></span></h2>
+        </div>
         <section>
           <div class="bloc__menu"> 
           <h3 class="bloc_menu__title">Entrées</h3>
@@ -68,7 +67,7 @@
      <i class="fas fa-check-circle"></i>
      </span>
     </div>
-   </div>
+   </div><!--fin bloc-menu entree--> 
   </section>
   <section>
     <div class="bloc__menu"> 
@@ -102,7 +101,7 @@
     <i class="fas fa-check-circle"></i>
   </span>
   </div>
-</div>
+</div><!--fin bloc-menu plats-->
 </section>
 <section>
   <div class="bloc__menu"> 
@@ -137,14 +136,15 @@
      <i class="fas fa-check-circle"></i>
       </span>
     </div>
-  </div>
+  </div><!--fin bloc-menu desserts-->
   </section>
- </div>
+ </div><!--fin bloc-menu -->
  <br>
  <section>
  <div class="commande_button" aria aria-hidden="true">&nbsp;Commander</div>
  </section>
  <br><br>
+</div><!--fin bloc menu-header arrounded-->
 </main>
 <footer>
   <div class="footer__select"> 

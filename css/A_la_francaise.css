@@ -11,6 +11,7 @@ html {
 	box-sizing: inherit;
   }/*initialisation des navigateur*/
  
+  
 footer {
 	background-color: #252121;
 	display: flex;
@@ -37,10 +38,11 @@ footer {
 
  i.fas.fa-arrow-left {
     align-items: flex-start;
-	height: 35px;
-	margin-top: 25px;
-	font-size: 1.5em !important;
+	height: 11px;
+	margin-top: 95px;
     color:black;
+	vertical-align:text-bottom;
+    padding-top: 50px;
 }
 
  h1 h2 h3 h4 h5 {
@@ -80,19 +82,18 @@ i .far.fa-heard::before {
     background-size: cover;
 }
 
+h1{
+	position:relative;
+	margin-top: -100px;
+}
+
 .header {
     padding: 1rem;
     box-shadow: 0 0 0.5rem rgb(0 0 0 / 25%);
     position: relative;
     z-index: 1000;
 }
-
-.header__logo a  {
-	width: 100%;
-	display: inline-block;
-	flex-direction: row;
-	}
-  
+ 
 #logo {
 	margin:auto;
 	display: flex;
@@ -108,7 +109,8 @@ main.container_menu {
 		max-width: 1280px;
 		margin: auto;
 		position: relative;
-}  
+} 
+
 main {	    
 	display: block;
 }
@@ -122,24 +124,82 @@ main {
 h2 {
 		display: flex;
 		justify-content: space-between;
-		display: inline-block;
+		margin-top: 50px;
 }
 
-h2 span, i{
-	display: inline-block
+h2 span, i {
+	justify-content: space-between;
+	position: relative;
+	text-decoration: none;
+	display: inline-block;
+	vertical-align:top;
+	margin-top:-2px;	
 }
+
+.menu__title {
+    font-family: Shrikhand,"cursive";
+}
+
+.content{
+	opacity: 0;
+	 background: -webkit-linear-gradient( 
+  0deg
+   ,#9356dc,#ff79da);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	position: relative;
+	left: -38px;
+	font-size: 31px;
+	top: -0.2px;
+	display: block;
+  }
+  
+  .border {
+	font-size:35px;
+	top:-3px;
+	margin-left:398px;
+	vertical-align: baseline;
+	position: relative;
+  }
+  
+.content:hover {
+	opacity: 1;
+	transition: opacity 1s;
+  }
+  
+i.far.fa-heart .border{
+	display: flex;
+	position :right;
+	justify-content: flex-end;
+	align-items: flex-end;
+  }
+
+.menu__title {
+    font-family: Shrikhand,"cursive";
+}
+ 
+.border {
+	font-size:35px;
+	top:-3px;
+	margin-left:398px;
+	vertical-align: baseline;
+	position: relative;
+  }
+  
+.content:hover {
+	opacity: 1;
+	transition: opacity 1s;
+}
+  
+i.far.fa-heart .border{
+	display: flex;
+	position :right;
+	justify-content: flex-end;
+	align-items: flex-end;
+  }
 
 section {
 		  display: block;
-}
-
-i.far .fa-heart {
-    border: black;
-    color: hsl(317, 26%, 95%);
-    font-size: 13px;
-    top: 0;
-    align-items: stretch;
-	font-weight: lighter;
 }
 
 .bloc__menu {
@@ -249,6 +309,7 @@ i.far .fa-heart {
     margin-top: -2rem;
     background-color: #f6f6f6;
 }
+
 .commande_button {
 	padding: 8px;
 	line-height: 2;
@@ -329,5 +390,5 @@ footer .footer__seclect a, ul, li {
 	 margin-right: 0;
 	 margin-top: 20px;
 	 order: 2;
-	}/* FIN tablet*/ 
+	}/* FIN tablette*/ 
      }

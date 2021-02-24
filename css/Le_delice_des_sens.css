@@ -37,13 +37,14 @@ body, html {
 
  i.fas.fa-arrow-left {
 	align-items: flex-start;
-	height: 35px;
-	margin-top: 25px;
-	font-size: 1.5em !important;
+	height:11px;
+	margin-top: 95px;
     color:black;
+	vertical-align:text-bottom;
+    padding-top: 50px;
  }
 
- h2,h3,h4,h5 {
+ h1 h2 h3 h4 h5 {
 	font-family: "Shirkhand";
   }
  p {
@@ -79,6 +80,11 @@ body, html {
     background-size: cover;
 }
 
+h1{
+	position:relative;
+	margin-top:-100px;
+}
+
 .header {
     padding: 1rem;
     box-shadow: 0 0 0.5rem rgb(0 0 0 / 25%);
@@ -86,13 +92,6 @@ body, html {
     z-index: 1000;
 }
 
-.header__logo a  {
-	width: 100%;
-	display: inline-block;
-	flex-direction: row;
-	position: relative;
-}
-  
 #logo {
 	margin:auto;
 	display: flex;
@@ -104,7 +103,7 @@ body, html {
 	text-align: center;
  }
  
- .container_menu {
+ main.container_menu {
 		max-width: 1280px;
 		margin: auto;
 		position: relative;
@@ -118,29 +117,88 @@ body, html {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-	}
+}
   
  h2 {
 		display: flex;
 		justify-content: space-between;
-		display: inline-block;
+		margin-top: 50px;
 }
 
-h2 span,i {
+h2 span, i {
+	justify-content: space-between;
+	position: relative;
+	text-decoration: none;
 	display: inline-block;
+	vertical-align:top;
+	margin-top:-2px;	
 }
 
-section {
-		  display: block;
+.menu__title {
+    font-family: Shrikhand,"cursive";
 }
 
-i.far .fa-heart {
-    border: black;
-    color: hsl(317, 26%, 95%);
-    font-size: 13px;
-    top: 0;
-    align-items: stretch;
-	font-weight: lighter;
+.content{
+	opacity: 0;
+	 background: -webkit-linear-gradient( 
+  0deg
+   ,#9356dc,#ff79da);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	position: relative;
+	left: -38px;
+	font-size: 31px;
+	top: -0.2px;
+	display: block;
+  }
+
+  .border {
+	font-size:35px;
+	top:-3px;
+	margin-left:398px;
+	vertical-align: baseline;
+	position: relative;
+}
+  
+.content:hover {
+	opacity: 1;
+	transition: opacity 1s;
+}
+  
+i.far.fa-heart .border{
+	display: flex;
+	position :right;
+	justify-content: flex-end;
+	align-items: flex-end;
+}
+.menu__title {
+    font-family: Shrikhand,"cursive";
+}
+
+
+  
+  .border {
+	font-size:35px;
+	top:-3px;
+	margin-left:398px;
+	vertical-align: baseline;
+	position: relative;
+  }
+  
+  .content:hover {
+	opacity: 1;
+	transition: opacity 1s;
+  }
+  
+  i.far.fa-heart .border{
+	display: flex;
+	position :right;
+	justify-content: flex-end;
+	align-items: flex-end;
+  }
+  
+  section {
+	display: block;
 }
 
 .bloc__menu {
@@ -310,9 +368,8 @@ footer .footer__seclect a, ul, li {
 	font-size: 18px; 
 	line-height: 140%;
    }
-/*}  FIN smartphone only */
-  /**** TABLETTE ***
-@media (max-width: 1024px) {*/
+/*}  FIN smartphone only *//**** TABLETTE ***/
+@media (max-width: 1024px) {
    body{
 		overflow-x:hidden;
 	  }
@@ -331,6 +388,6 @@ footer .footer__seclect a, ul, li {
 	 flex-basis: 100%;
 	 margin-right: 0;
 	 margin-top: 20px;
-	 order: 2;/* FIN tablet *
-    }*/
+	 order: 2;
+	 } /* FIN tablet */
 }
