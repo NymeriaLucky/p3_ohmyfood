@@ -11,6 +11,27 @@ html {
 	box-sizing: inherit;
   }/*initialisation des navigateur*/
 
+  @keyframes progressif{
+	0%{opacity:0;}
+	100%{opacity:1;}
+  }
+  
+  .Entree4{
+	animation: progressif 2s linear;
+  }
+
+  .Plat4{
+	animation: progressif 2s linear;
+	animation-delay: 2s;
+	opacity:0;
+  }
+  
+  .Dessert4{
+	animation: progressif 2s linear;
+	animation-delay: 4s;
+	opacity:0;
+  }
+
   footer {
 	background-color: #252121;
 	display: flex;

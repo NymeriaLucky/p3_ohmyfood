@@ -346,7 +346,6 @@ footer a {
     margin: 10px;
 }
 /***mentions css et pages menu***/
-
 .blocPg1 {
     padding: 60px;
     background-color: #f8ddf1;
@@ -399,27 +398,28 @@ footer a {
   }
 
 .D1t {
-    font-weight: bold;
-    font-size: 1.5rem;
-    display: inline-block;
-    position: relative;
-    margin-left: 300px;
-    margin-right: 300px;
-    margin-top: -30px;
+       font-weight: bold;
+        font-size: 1.5rem;
+        display: inline-block;
+        position: relative;
 }
 
 .D1t::before {
-    content: "";
-    background: black;
-    position: absolute;
-    transform: scaleX(0);
-    width: 100%;
-    bottom: 0;
-    left: 0;
-    height: 2px;
-    transform-origin: bottom right;
-    transition: transform 1000ms ease-in-out;
-}
+        content: "";
+        background: black;
+        position: absolute;
+        transform: scaleX(0);
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        height: 2px;
+        transform-origin: bottom right;
+        transition: transform 1000ms ease-in-out;
+        transition-property: transform;
+        transition-duration: 1000ms;
+        transition-timing-function: ease-in-out;
+        transition-delay: 0s;
+    }
 
 .blocPg5 {
     border: 1px solid #d4d4f0;
@@ -464,8 +464,8 @@ aside {
         text-align: center;
         display: flex;
         justify-content: space-around;
-        margin-top:-42px;
-        margin-bottom:-30px;
+        margin-top:-32px;
+        margin-bottom:-20px;
 }
 
 p {
