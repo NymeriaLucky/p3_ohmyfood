@@ -226,7 +226,7 @@ div {
 }
 
 .box4 a {
-    color: green;
+    color:green;
 }
 
 .box5 {
@@ -400,7 +400,7 @@ footer a {
 .D1t {
        font-weight: bold;
         font-size: 1.5rem;
-        display: inline-block;
+        display: block;
         position: relative;
 }
 
@@ -451,11 +451,12 @@ footer a {
         border: 1px solid blanchedalmond;
         box-shadow: 5px 5px 5px 5px rgb(0 0 0 / 30%);
         margin-bottom: 30px;
-    }
-
+}
+       
 .blocPg3 {
     background-image:url("images_menus/bleucla_024.jpg") ;
 }
+
 .blocPg4{
     background-image:url' ;
 }    
@@ -490,16 +491,16 @@ article {
     text-align: center;
 }
 
-.Entree2 .Plat3 .Dessert4 .Plat1{
+article .Entree2 {
     margin: 5px;
     color: indianred;
 }
 
-.Plat2 .Entree3 .Entree4 .Dessert1{
+article .Plat2 {
     color: blue;
 }
 
-.Dessert2 .Dessert3 .Plat4 .Entree1{
+article .Dessert2 {
  color: #7c6ae2;
 }
 
@@ -522,6 +523,11 @@ article {
     height: 2px;
     transform-origin: bottom right;
     transition: transform 1000ms ease-in-out;
+}
+
+.E2t:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 
 .P2t {
@@ -555,6 +561,11 @@ article {
     transition: transform 1000ms ease-in-out;
 }
 
+.P2t:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
 .D2t {
     font-size: 1.3rem;
     color: rgb(22, 205, 211);
@@ -578,6 +589,11 @@ article {
     transition-duration: 1000ms;
     transition-timing-function: ease-in-out;
     transition-delay: 0s;
+}
+
+.D2t:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 
 .E4t, .P4t, .D4t {
@@ -612,8 +628,7 @@ article {
     transition-timing-function: ease-in-out;
     transition-delay: 0s;
 }
-
-/*fin mentions css et pages menu*/
+/*fin mentions css et pages menu-----mobile-----------------------------------------------*/
 @media screen and (max-width: 768px){
 body {
     margin: 0px;
@@ -691,15 +706,15 @@ footer {
     background-color: #4f9c85;
     bottom: 0px;
 }
-/**mentions css et pages menu**/
+/**mentions css des pages menu**/
 
- .blocPg1, .blocPg2, .blocPg3, .blocPg4, .blocPg5 {
+.blocPg1, .blocPg2, .blocPg3, .blocPg4, .blocPg5 {
     padding: 0px;
     margin: 0px;
  }
-     /**fin mentions css et pages menu**/
+     /**fin mentions css des pages menu**/
    
-.E2t, .P2t, .D2t, .delice1, .delice2, .delice3, .gout1, .gout2, .gout3 {
+.E2t, .P2t, .D2t, .E1t, .P1t, .D1t, .E3t, .P3t, .D3t, {
         font-size: 1rem;
         margin-bottom: 10px;
     }     

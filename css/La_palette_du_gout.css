@@ -16,17 +16,17 @@ html {
 	100%{opacity:1;}
   }
   
-  .Entree4{
+  #Entree4{
 	animation: progressif 2s linear;
   }
 
-  .Plat4{
+  #Plat4{
 	animation: progressif 2s linear;
 	animation-delay: 2s;
 	opacity:0;
   }
   
-  .Dessert4{
+  #Dessert4{
 	animation: progressif 2s linear;
 	animation-delay: 4s;
 	opacity:0;
