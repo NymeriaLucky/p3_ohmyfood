@@ -16,6 +16,17 @@ html {
 	100%{opacity:1;}
   }
   
+  .mypage {
+	animation-delay: 3s;
+	animation: loadpage 3s;
+  }
+  
+  @keyframes loadpage { 
+	0%   { width: 0%; opacity: 0;}
+	99%  { width: 100%; opacity: 0;} 
+	100% { width: 100%; opacity: 1;} 
+  } 
+  
   #Entree2{
 	animation: progressif 2s linear;
 	opacity: 0;
@@ -61,7 +72,7 @@ footer {
     align-items: flex-start;
 	height: 11px;
 	margin-top: 95px;
-    color:black;
+    color:#353535;
 	vertical-align:text-bottom;
     padding-top: 50px;
 }
