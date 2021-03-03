@@ -108,7 +108,7 @@ Circuit de validation : toutes les étapes du projet seront validées par Paul.
 PROJET 3 read-me post projet:
 
 Dynamisez une page web avec des animations CSS
-Intégration maquette HTML/CSS Dynamiser la page avec des animations CSS Troisième projet du parcours développeur web d'OpenClassRooms.
+Intégration maquette HTML/CSS Dynamiser la page avec des animations CSS Troisième projet du parcours développeur front-end d'OpenClassRooms.
 
 Objectif :
 Intégration et animation d'une maquette fournie au format PNG d'un site de commande de repas en ligne
@@ -179,7 +179,7 @@ Projet Ohmyfood réalisé par Myriam Greder et hébergé sur [GitPages] .
 My site is published at https://nymerialucky.github.io/p3_ohmyfood/ .
 Répo:https://github.com/NymeriaLucky/p3_ohmyfood.git
 
-publié sur le site legoll.fr ,wordpress;
+publié sur le site legoll.fr, wordpress;
 
 Languages
 CSS

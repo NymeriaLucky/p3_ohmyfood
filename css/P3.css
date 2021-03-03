@@ -116,6 +116,7 @@ body, html {
 
 section .container {
   padding: 0;
+  display:flex;
 }
 
 main {
@@ -169,7 +170,13 @@ main > h1, p, section {
 }
 
 .barrehr{
-text-align: center;
+  margin-top: -20px;
+  margin-bottom:- 25px;
+  margin-left:  31%; 
+  margin-right: auto;
+  display: inline-block;
+  width: 550px;
+  height: 40px;
 }
 
 h1 h2 h5 {
@@ -306,15 +313,6 @@ aside {
   position:center;
 }
 
-.barre_img{
-    text-align: center;
-     margin-left: auto;
-     margin-right: auto;
-     display: inline-block;
-     width: 550px;
-     height: 48px;
-  }
-
 .info1 li {
   padding: 1.5rem;
   margin: 1rem 0 1rem .75rem;
@@ -329,9 +327,8 @@ li:first-child {
   margin-top: 0;
 }
 
-h2 .filters_name .restaurants {
-  border-bottom: solid 3px blueviolet;
-  border-style: inset;
+h2 {
+  text-align: center;
 }
 
 .filters {
@@ -397,19 +394,16 @@ i.fas.fa-mobile-alt:hover, i.fas.fa-list-ul:hover, i.fas.fa-store:hover {
   color:#9356dc;
 }
 
-.container .restaurant_description:hover :check-box {
-  transform: translatex(0%);
-}
-
-.restaurants{
-  text-align: left;
-}
-
 .card_restaurant { 
-  width: 100%;
+  flex: auto;
+  width: auto;
   display: inline-block;
   justify-content: space-between;
-  max-height: 380px;
+  max-height: 410px;
+}
+
+#card1 #card2{
+width:300px;
 }
 
 .card__badge {
@@ -418,26 +412,15 @@ i.fas.fa-mobile-alt:hover, i.fas.fa-list-ul:hover, i.fas.fa-store:hover {
     padding: .5rem;
     border-radius: .125rem;
     position: relative;
-    top: 35px;
-    left: 70%;
+    top: -300px;
+    left: 85%;
+    margin-bottom:-270px;
 }
 
-.image2 {
-  height:350px;
-  width: 530px;
-  border-radius: 10px 10px 0 0;
-  background-size:cover;
-  max-width: 100%;
-  display: inline-block;
-  object-position: 50% 50%;
-  align-items: stretch; 
-  flex-wrap: wrap;
-  border-style: groove;
-}
-
-.restaurant_liste_groupe1 .restaurant_liste_groupe2{
+.restaurant_liste_groupe1 .restaurant_liste_groupe2 {
   flex-direction: row;
-  vertical-align:middle;
+  vertical-align: baseline;
+  justify-content: space-between;
 }
 
 .restaurant_description {
@@ -446,7 +429,7 @@ i.fas.fa-mobile-alt:hover, i.fas.fa-list-ul:hover, i.fas.fa-store:hover {
   position: relative;
   text-decoration: none;
   color: inherit;
-  display: block; 
+  display: inline-block; 
   margin-left:50px;
   margin-right:50px ;
   margin-top: 10px;  
@@ -454,121 +437,28 @@ i.fas.fa-mobile-alt:hover, i.fas.fa-list-ul:hover, i.fas.fa-store:hover {
 
 .card__restaurant__localisation{
   align-items: flex-start;
-}
-
-.restaurant_description .image {
-  max-height: 380px;
-  width: 100%;
-}
-
-.image1, .image3, .image4 {
-    max-width: 100%;
-    max-height: 350px;
-    display: inline-block;
-    object-position: 50% 50%;
-    border-radius: 10px 10px 0 0;
-    background-size: cover;
-    align-items: stretch; 
-    flex-wrap: wrap;
-    border-style: groove;
-    justify-content: space-between;  
-}
-
-.card__restaurant__title {
-	display: flex;
-	justify-content: space-between;
-}
-
-.card__restaurant__title span i {
-	justify-content: space-between;
-	position: relative;
-	text-decoration: none;
-	display: inline-block;
-	vertical-align:top;
-	margin-top:-2px;
-  background-color: #fff!important;	
-}
-
-.restaurant_name h3 span {
-  text-decoration: none;
-  display: flex;
-  justify-content: space-between;
+  margin-top: -88px;
   color: black;
+  margin-left: -16px;
 }
 
-.card__body{
-  color:black;
-  margin: left 450px;
-  border-radius: 0 O 10px 10px;
+.image4{
+  height: 336px;
 }
 
-.like_btn{
-  align-items: flex-end;
-  margin-left: 250px;
-  margin-right: 10px;
-  position:relative;
+.image1 .image2 .image3 .image4 {
+  flex: 1;
+  object-position: 50% 50%;
+  border-radius: 10px 10px 0 0;
+  height: 340px ;
+  justify-content: center;
+  border: none;
+  margin-left: none;
 }
-
-.content{
-  opacity: 0;
-   background: -webkit-linear-gradient( 
-0deg
- ,#9356dc,#ff79da);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  position: relative;
-  left: -37px;
-  font-size: 30px;
-  top: -2px;
 }
-
-.border{
-  font-size: 35px;
-}
-
-.content:hover {
-  opacity: 1;
-  transition: opacity 1s;
-}
-
-.fa, .fas {
-  font-weight: 900;
-}
-
-.fa, .far, .fas {
-  font-family: "Font Awesome 5 Free";
-}
-
-.fa, .fab, .fal, .far, .fas {
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  line-height: 1;
-}
-
-footer {
-	background-color: #252121;
-	display: flex;
-	align-items: flex-start;
-	padding: 30px;
-	color: white; 
-  }
-  
-footer ul, li, a {
-	list-style-type: none;
-	padding: 5px ;
-  text-decoration: none;
-  }
-  
-footer a {
-	color: white;
-  }
   /* FIN smartphone, tablet and screen @media (max-width: 1280px) {*/
  /* ****************************** smartphone only ****************************** */
-  /**** SMARTPHONE ****/
+  /**** SMARTPHONE ****
  @media (max-width: 768px) { 
 .restaurant_list {
     margin: 0 -5px;
@@ -670,7 +560,7 @@ margin-bottom:-20px;
 #alaf{
   margin-left:422px; 
 }
-*/
+
 .border {
   font-size:35px;
   top:-5px;
@@ -794,9 +684,7 @@ li {
    text-decoration: none;  
 }
 /*
-.restaurant_name .card__restaurant__localisation h3 span, i{
-  display: inline-block;
-}*/
+
 
 .card__restaurant__localisation {
   display :flex;
@@ -829,15 +717,7 @@ li {
     border-radius: O O 10px 10px;
 }
 
-.image1 .image2 .image3 .image4 {
-    flex: 1;
-    object-position: center;
-    border-radius: 10px 10px 0 0;
-    max-height: 368px ;
-    justify-content: center;
-    border: none;
-    margin-left: none;
-}
+
 
 footer {
 	background-color: #252121;
@@ -865,7 +745,7 @@ footer ul li {
 footer a {
 	color: white;
   }
-} /* FIN smartphone only */
+}  FIN smartphone only */
 /**** TABLETTE ****/
 @media (max-width: 1024px) {
 .container {
@@ -876,17 +756,16 @@ footer a {
  .restaurant_liste_groupe1 .restaurant_liste_groupe2 {
    flex-direction: row;
    width: 100%;
-   display: flex;
-   align-items: center;
+   display: inline-block;
    flex-wrap: wrap;
    position:relative;
+   justify-content: space-between;
 }
 
- .restaurants .restaurant_list {
+ .restaurant_list {
    flex-basis: 100%;
+   display: flex;
    margin-right: 0;
-   margin-top: 10px;
-   order: 2;
  }
 } /* FIN tablet */
 

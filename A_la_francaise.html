@@ -18,18 +18,18 @@
  <title>A_la_francaise</title>
 </head>
 <body>
-  <div class="presentation.html"><!--sur l'exemple du loader_spinner avant l'apparition de la page-->
-    <a href="menus/menu2.html#Entree2"></a>
-    <a href="menus/menu2.html#Plat2"></a>
-    <a href="menus/menu2.html#Dessert2"></a>
-    </div>
+   <div class="presentation.html">
+     <a href="#Entree2"></a>
+     <a href="#Plat2"></a>
+     <a href="#Dessert2"></a>
+   </div>
   <div class="mypage"> <!-- chargement de la page-->
-  <header>
+   <header>
     <h1><a href="index.html"><i class="fas fa-arrow-left"></i>
     <img src="images/logo/ohmyfood_2x.svg" alt="logo du site ohmyfood"
      id="logo"></img></a></h1>    
- </header>
-<div class="image_restaurant" id="imageC">
+   </header>
+  <div class="image_restaurant" id="imageC">
    <img src="images/restaurants/medium/toa-heftiba-DQKerTsQwi0-unsplash-minM.png">
   </div>
   <main class="container_menu">
@@ -39,23 +39,22 @@
        <i class="far fa-heart border" aria-hidden="true"></i>
        <i class="fas fa-heart content"aria-hidden="true"></i></span></h2>
     </div>
-       <section>
-        <div class="bloc__menu"> 
+       <section id="Entree2">
+         <div class="bloc__menu"> 
               <h3 class="bloc_menu__title">Entrées</h3>
-        <div class="casesmenu">
-         <p><strong>Tartare de poulpe acidulé</strong>
-          <br>Aux zestes d'orange
-         </p>
-          <span class="prix">25€</span>
-         <span class="check">
-         <i class="fas fa-check-circle"></i>
-         </span>
-        </div>
-
-        <div class="casesmenu">
-          <p><strong>Velouté de légumes d'antan</strong>
-          <br>Carotte, panais, topinambour
-          </p>
+          <div class="casesmenu">
+            <p><strong>Tartare de poulpe acidulé</strong>
+              <br>Aux zestes d'orange
+            </p>
+            <span class="prix">25€</span>
+           <span class="check">
+            <i class="fas fa-check-circle"></i>
+           </span>
+         </div>
+         <div class="casesmenu">
+           <p><strong>Velouté de légumes d'antan</strong>
+           <br>Carotte, panais, topinambour
+           </p>
          <span class="prix">35€</span>
          <span class="check">
          <i class="fas fa-check-circle"></i>
@@ -72,7 +71,7 @@
         </div>
       </div><!--fin bloc-menu entree-->
     </section>
-    <section>
+    <section id="Plat2">
      <div class="bloc__menu"> 
        <h3 class="bloc_menu__title">Plats</h3>
        <div class="casesmenu">
@@ -104,7 +103,7 @@
       </div>
      </div><!--fin bloc-menu plats-->
     </section>
-    <section>
+    <section id="Dessert2">
      <div class="bloc__menu"> 
        <h3 class="bloc_menu__title">Desserts</h3>
        <div class="casesmenu">
@@ -135,27 +134,27 @@
         </span>
       </div>
      </div><!--fin bloc-menu desserts-->
-    </section>
-  </div><!--fin bloc-menu -->
-  <br>
+     </section>
+    </div><!--fin bloc-menu -->
+      <br>
     <section>
      <div class="commande_button" aria aria-hidden="true">&nbsp;Commander</div>
     </section>
-    <br><br>
-  </div><!--fin bloc menu-header arrounded-->
- </main>
- <footer>
-  <div class="footer__select"> 
-   <ul>
-    <li><a href="footer__logo" id="footer_logo">
-      <img src="images/logo/ohmyfoodwsmall.png" alt="logo du site ohmyfood"></a></li>
-     <li class="Proposer un restaurant"><i class="fas fa-utensils" aria-hidden="true"></i><a href="#">&nbsp;Proposer un restaurant</a></li>
-     <li class="Devenir partenaire"><i class="fas fa-hands-helping" aria-hidden="true"></i><a href="#">&nbsp;Devenir partenaire</a></li>
-     <li class="Mentions légales"><a href="#">Mentions légales</a></li>
-     <li class="contact"><a href="mailto:Ohmyfood@serveur.com">Contact</a></li>
-   </ul>
- </div>
-</footer>
+      <br><br>
+    </div><!--fin bloc menu-header arrounded-->
+  </main>
+   <footer>
+    <div class="footer__select"> 
+      <ul>
+        <li><a href="footer__logo" id="footer_logo">
+          <img src="images/logo/ohmyfoodwsmall.png" alt="logo du site ohmyfood"></a></li>
+        <li class="Proposer un restaurant"><i class="fas fa-utensils" aria-hidden="true"></i><a href="#">&nbsp;Proposer un restaurant</a></li>
+        <li class="Devenir partenaire"><i class="fas fa-hands-helping" aria-hidden="true"></i><a href="#">&nbsp;Devenir partenaire</a></li>
+        <li class="Mentions légales"><a href="#">Mentions légales</a></li>
+        <li class="contact"><a href="mailto:Ohmyfood@serveur.com">Contact</a></li>
+      </ul>
+    </div>
+   </footer>
 </div> <!-- fin chargement de la page-->
 </div> <!-- fin div loader -->
 </body>

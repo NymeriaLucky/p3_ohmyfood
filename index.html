@@ -6,9 +6,9 @@
   <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/P3.css">    
+  <link rel="stylesheet" href="css/P3.css">
+  <link rel="stylesheet" media="screen and (max-width: 768px)" href="mobile.css">   
   <link rel="shortcut icon" href="../../img/logo/ohmyfood_2x.svg" type="image/x-icon">
   <link rel="shortcut icon" href="images/logo/ohmyfood.png" type="image/x-icon">
   <script src="https://kit.fontawesome.com/9bc256f126.js" crossorigin="anonymous"></script>
@@ -18,7 +18,6 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 <title>Accueil</title>
 </head>
-
 <body>
   <div class="loader">
       <div class="loading">
@@ -26,11 +25,8 @@
         <span class="point point2"></span>
         <span class="point point3"></span>
       </div>
-
-      <div class="mypage"> <!-- chargement de la page-->
-
-    <main>
-
+  <div class="mypage"> <!-- chargement de la page-->
+      <main>
         <header>
           <div class="header__logo">
             <a href="logo">
@@ -38,14 +34,12 @@
             </a>
           </div>
         </header>
-
         <br>
         <div class="search_button" >
           <span class="fa fa-map-marker">      
     <!--Pour le fonctionnementdu bouton, nous chargeons les fichiers CDN de Leaflet. Le CSS AVANT le JS 
     <a href="Map/map.html/map.css/map.js"></a>--> &nbsp;Paris, Belleville</span>      
         </div>
-
         <section>
           <div class="index">
             <h1><strong>Réservez le menu qui vous convient</strong></h1>      
@@ -55,12 +49,9 @@
             </div>
           </div>
         </section>
-
         <h2 class="filters_name">Fonctionnement</h2>
-        <br>
-
         <aside>
-          <div class="filters"> <!-- incohérence -->
+          <div class="filters"> 
             <ol class="filter_list">
               <li class="info1">
                 <i class="fas fa-mobile-alt" aria-hidden="true"></i>
@@ -75,25 +66,22 @@
                 <span class="text">&nbsp; Dégustez au restaurant</span>
               </li>
             </ol>
-          </div> <!-- incohérence -->
-        </aside><br><br><br>
-
+          </div> 
+        </aside><br>
         <div class="barrehr"><img class="barre_img" src="images/Animations/001.gif" alt="barre_hr"></div>
-
         <div class="container">
           <h2 class="restaurants">Restaurants</h2>
           <br>
-
-          <div class="restaurant_list"><!--row-->
+        <div class="restaurant_list">
             <div class="restaurant_liste_groupe1">
-              <div class="restaurant_description">
+              <div class="restaurant_description"id="card1">
                 <a href="La_palette_du_gout.html" class="card_restaurant">
                   <div class="image">
                     <span class="card__badge">Nouveau</span>                                
-                    <img class="image1"src="images/restaurants/small/jay-wennington-N_Y88TWmGwA-unsplash-minSmall.png" alt="nouveau restaurant la palette du goût">
+                    <img class="image1"src="images/restaurants/small/LaPaletteduGoutSmall.png
+                    " alt="nouveau restaurant la palette du goût">
                   </div>
-                  <div class="card__body">
-                    <div class="restaurant_name">
+                  <div class="restaurant_name" id="restaurant_name1">
                       <h3 class="card__restaurant__title">
                         <span>La palette du goût
                           <div class="like_btn">
@@ -103,21 +91,18 @@
                         </span>
                       </h3>
                       <p class="card__restaurant__localisation">Ménilmontant</p>
-                    </div>
-                  </div><!--fin card body-->  
+                  </div>
                 </a>
-              </div><!--fin restaurant description-->
-
-              <div class="restaurant_description">
+              </div><!--fin 1er restaurant description-->
+              <div class="restaurant_description"id="card2">
                 <a href="La_note_enchantee.html" class="card_restaurant">
                   <div class="image">
-                    <span class="card__badge">Nouveau</span> 
-                    <img class="image2"src="images/restaurants/small/laNoteEnchantee.png" alt="nouveau restaurant la note enchantée">
-                    <!---<span class="card__badge">Nouveau</span>--->
+                    <span class="card__badge">Nouveau</span><!---<span class="card__badge">Nouveau</span>--->
+                    <img class="image2"src="images/restaurants/small/LaNtEnchant%C3%A9eSml.png"
+                     alt="nouveau restaurant la note enchantée">
                   </div>
-
-                  <div class="card__body">
-                    <div class="restaurant_name">
+                  
+               <div class="restaurant_name" id="restaurant_name2">
                       <h3 class="card__restaurant__title">
                         <span>la note enchantée
                           <div class="like_btn">
@@ -128,19 +113,16 @@
                       </h3>
                       <p class="card__restaurant__localisation">Charonne</p>
                     </div><!--fin restaurant name-->
-                  </div>  
-                </a>
+                 </a>
               </div><!--fin restaurant description--> 
             </div><!--fin restaurant_liste_groupe1-->
-
             <div class="restaurant_liste_groupe2">
-              <div class="restaurant_description">
+              <div class="restaurant_description"id="card3">
                 <a href="A_la_francaise.html" class="card_restaurant">
                   <div class="image">
                     <img class = "image3"src="images/restaurants/small/toa-heftiba-DQKerTsQwi0-unsplashsmall.png" alt="restaurant A la française">
                   </div>
-
-                  <div class="card__body">
+                    
                     <div class="restaurant_name">
                       <h3 class="card__restaurant__title">
                         <span>A la française
@@ -152,17 +134,14 @@
                       </h3>
                       <p class="card__restaurant__localisation">Cité Rouge</p>
                     </div>
-                  </div>  
-                </a>
+                   </a>
               </div>
-
-              <div class="restaurant_description">
+              <div class="restaurant_description"id="card4">
                 <a href="Le_delice_des_sens.html" class="card_restaurant"> 
                   <div class="image">
                     <img class="image4"src="images/restaurants/small/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplashsmall.png" alt="restaurant le délice des sens">
                   </div>
-
-                  <div class="card__body">
+                 
                     <div class="restaurant_name">
                       <h3 class="card__restaurant__title">
                         <span>Le délice des sens
@@ -174,14 +153,12 @@
                       </h3>
                       <p class="card__restaurant__localisation">Folie-Méricourt</p>
                     </div>
-                  </div>
-                </a>
+                 </a>
               </div><!--fin restaurant description-->     
-            </div><!--fin restaurant_list_groupe2-->
+            </div><!--fin restaurant_liste_groupe2-->
           </div><!--fin restaurant_liste-->
         </div><!--fin container-->
       </main>
-
       <footer>
         <div class="footer__select"> 
           <ul>
@@ -194,7 +171,6 @@
           </ul>
         </div>
       </footer>
-
     </div> <!-- fin chargement de la page-->
   </div> <!-- fin div loader -->
 </body>
