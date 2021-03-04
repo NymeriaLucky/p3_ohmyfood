@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@200;300;500;700;900&display=swap");
 /**** STYLE GÉNÉRAL ****/
+
 html {
 	box-sizing: border-box;
   margin: auto;
@@ -331,6 +332,14 @@ h2 {
   text-align: center;
 }
 
+.filters .filter_item:hover {
+  background-color: #88b1ee;
+  color: #fff;
+  border: 2px solid #DEEBFF;
+  transform: translateY(-1px);
+  box-shadow: 1px 1px 1px 1px #DEEBFF;
+ }
+
 .filters {
   position: relative;
   text-decoration: none;
@@ -413,7 +422,7 @@ width:300px;
     border-radius: .125rem;
     position: relative;
     top: -300px;
-    left: 85%;
+    left: 82%;
     margin-bottom:-270px;
 }
 
@@ -435,11 +444,84 @@ width:300px;
   margin-top: 10px;  
 }
 
-.card__restaurant__localisation{
+.card__restaurant__title{
+  display:flex;
+}
+
+.content{
+  opacity: 0;
+   background: -webkit-linear-gradient( 
+0deg
+ ,#9356dc,#ff79da);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  left: -37px;
+  font-size: 30px;
+  top: -2px;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+
+.border {
+  font-size:35px;
+  top:-1px;
+  margin-left:320px;
+  vertical-align: baseline;
+  position: relative;
+}
+
+.content:hover {
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+i.far.fa-heart .border{
+  display: flex;
+  position :right;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.like_btn {
+  display: inline-block;
+  position: relative;
+  justify-content: space-between;
+  vertical-align: middle;
+  margin-top: -2px;
+  align-content: stretch;
+}
+
+.card__restaurant__localisation {
   align-items: flex-start;
   margin-top: -88px;
   color: black;
   margin-left: -16px;
+}
+
+.restaurant_name h3 span {
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  color:black; 
+}
+
+#restaurant_name1, #restaurant_name2 {
+margin-left: 80px;
+}
+
+#card4{ 
+  margin-top:40px;
+}
+
+.card__restaurant__localisation {
+ display :flex;
+ justify-content: flex-start;
+ text-align: left;
+ margin-left: -13px;
+ margin-top:-30px;
+ border-radius: 0 0 30px 30px;
 }
 
 .image4{
@@ -455,7 +537,34 @@ width:300px;
   border: none;
   margin-left: none;
 }
+
+footer {
+	background-color: #252121;
+	display: flex;
+	align-items: flex-start;
+	padding: 30px;
+	color: white; 
 }
+  
+footer img {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    top: 0;
+    font-size: 20px;
+    height: 35px;
+    margin-bottom: 8%;
+} 
+
+footer ul li {
+	list-style-type: none;
+	padding: 5px ;
+}
+  
+footer a {
+	color: white;
+  }
+
   /* FIN smartphone, tablet and screen @media (max-width: 1280px) {*/
  /* ****************************** smartphone only ****************************** */
   /**** SMARTPHONE ****
@@ -717,8 +826,6 @@ li {
     border-radius: O O 10px 10px;
 }
 
-
-
 footer {
 	background-color: #252121;
 	display: flex;
@@ -745,6 +852,7 @@ footer ul li {
 footer a {
 	color: white;
   }
+
 }  FIN smartphone only */
 /**** TABLETTE ****/
 @media (max-width: 1024px) {
