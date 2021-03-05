@@ -196,9 +196,7 @@ i.far.fa-heart .border{
 .menu__title {
     font-family: Shrikhand,"cursive";
 }
-
-
-  
+ 
   .border {
 	font-size:35px;
 	top:-3px;
@@ -214,7 +212,7 @@ i.far.fa-heart .border{
   
   i.far.fa-heart .border{
 	display: flex;
-	position :right;
+	position :relative;
 	justify-content: flex-end;
 	align-items: flex-end;
   }

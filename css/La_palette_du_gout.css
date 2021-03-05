@@ -190,7 +190,7 @@ h2 span, i {
   
 i.far.fa-heart .border{
 	display: flex;
-	position :right;
+	object-position :right;
 	justify-content: flex-end;
 	align-items: flex-end;
 }
