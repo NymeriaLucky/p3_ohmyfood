@@ -7,8 +7,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/P3.css">
-  <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/mobile.css">   
+  <link rel="stylesheet" href="css/P3.css">   
   <link rel="shortcut icon" href="../../img/logo/ohmyfood_2x.svg" type="image/x-icon">
   <link rel="shortcut icon" href="images/logo/ohmyfood.png" type="image/x-icon">
   <script src="https://kit.fontawesome.com/9bc256f126.js" crossorigin="anonymous"></script>
@@ -19,14 +18,15 @@
 <title>Accueil</title>
 </head>
 <body>
-  <div class="loader">
+    <div class="loader">
       <div class="loading">
         <span class="point point1"></span>
         <span class="point point2"></span>
         <span class="point point3"></span>
       </div>
+    </div>  
   <div class="mypage"> <!-- chargement de la page-->
-      <main>
+    <main>
         <header>
           <div class="header__logo">
             <a href="logo">
@@ -37,8 +37,8 @@
         <br>
         <div class="search_button" >
           <span class="fa fa-map-marker">      
-    <!--Pour le fonctionnementdu bouton, nous chargeons les fichiers CDN de Leaflet. Le CSS AVANT le JS 
-    <a href="Map/map.html/map.css/map.js"></a>-->&nbsp;Paris, Belleville</span>      
+      <!--Pour le fonctionnementdu bouton, nous chargeons les fichiers CDN de Leaflet. Le CSS AVANT le JS 
+      <a href="Map/map.html/map.css/map.js"></a>-->&nbsp;Paris, Belleville</span>      
         </div>
         <section>
           <div class="index">
@@ -71,7 +71,7 @@
         <div class="barrehr"><img class="barre_img" src="images/Animations/001.gif" alt="barre_hr"></div>
         <div class="container">
           <h2 class="restaurants">Restaurants</h2>
-          <br>
+          <br><br>
         <div class="restaurant_list">
             <div class="restaurant_liste_groupe1">
               <div class="restaurant_description" id="card1">
@@ -117,10 +117,9 @@
                   <div class="image">
                     <img class = "image3" src="images/restaurants/small/toa-heftiba-DQKerTsQwi0-unsplashsmall.png" alt="restaurant A la française">
                   </div>
-                    
                     <div class="restaurant_name">
                       <h3 class="card__restaurant__title">A la française
-                        <span class="like_btn">
+                        <span class="like_btn" id=likeAlaF>
                           <i class="far fa-heart border" aria-hidden="true" id="alaf"></i>
                           <i class="fas fa-heart content" aria-hidden="true"></i>
                         </span>
@@ -134,7 +133,6 @@
                   <div class="image">
                     <img class="image4" src="images/restaurants/small/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplashsmall.png" alt="restaurant le délice des sens">
                   </div>
-                 
                     <div class="restaurant_name">
                       <h3 class="card__restaurant__title">Le délice des sens
                         <span class="like_btn">
@@ -147,9 +145,9 @@
                  </a>
               </div><!--fin restaurant description-->     
             </div><!--fin restaurant_liste_groupe2-->
-          </div><!--fin restaurant_liste-->
-        </div><!--fin container-->
-      </main>
+        </div><!--fin restaurant_liste-->
+      </div><!--fin container-->
+    </main>
       <footer>
         <div class="footer__select"> 
           <ul>
@@ -162,7 +160,7 @@
           </ul>
         </div>
       </footer>
-    </div> <!-- fin chargement de la page-->
+   </div> <!-- fin chargement de la page-->
   </div> <!-- fin div loader -->
 </body>
 </html>

@@ -190,7 +190,7 @@ h2 span, i {
   
 i.far.fa-heart .border{
 	display: flex;
-	position :right;
+	position:relative;
 	justify-content: flex-end;
 	align-items: flex-end;
   }
@@ -214,7 +214,7 @@ i.far.fa-heart .border{
   
 i.far.fa-heart .border{
 	display: flex;
-	position :right;
+	position :relative;
 	justify-content: flex-end;
 	align-items: flex-end;
   }
@@ -236,10 +236,6 @@ section {
 		font-weight: 400;
         display: block;
 	    font-size: 1.17em;
-	    margin-block-start: 1em;
-	    margin-block-end: 1em;
-	    margin-inline-start: 0px;
-	    margin-inline-end: 0px;
 	    font-weight: bold;
 	    border-bottom: skyblue;
 }
@@ -276,11 +272,11 @@ section {
 	  
 .check i {
 		  transition: all 400ms;
-	  }
+}
 	  
 .casesmenu:hover .check i {
 		  transform: rotate(720deg);
-	  } 
+} 
 	  
 .casesmenu {
 	background-color: white;
@@ -344,7 +340,8 @@ section {
 	text-shadow: 1px 1px 1px rgb(38, 27, 68);
 	border-radius: 30px;
 	background-color: #aa5edc;
-	background-image: linear-gradient(to bottom right, #ec73da, #ac5edb 50%);
+	background-image: linear-gradient(to bottom right,
+	 #ec73da, #ac5edb 50%);
 									  rgba(247, 208, 245, 0.959));
 	box-shadow: inset 2px 2px 3px   #a05adc,
 				inset -2px -2px 3px #aa5edc;
@@ -390,7 +387,7 @@ footer .footer__seclect a, ul, li {
 	   font-size: 18px; 
 	   line-height: 140%;
     }
-}  /* FIN smartphone only *//**** TABLETTE ***/
+/*}  /* FIN smartphone only *//**** TABLETTE ***/
 @media (max-width: 1024px) {
    body{
 		overflow-x:hidden;
