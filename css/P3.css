@@ -101,21 +101,9 @@ body, html {
   100% { width: 100%; opacity: 1;} 
 } 
 
-.restaurant_list {
-  margin: 0 -5px;
-  display: flex;
-  margin-left: 10px;
-}
-
-.restaurant_list:after {
-  content: "";
-  display: table;
-  clear: both;
-  padding: 10px;
-}
-
 section .container {
   padding: 0;
+  margin: 0;
   display:flex;
   background-color: #f1f1f1;
 }
@@ -236,6 +224,7 @@ aside {
 
 .filter_list {
   margin: 0 -5px;
+  justify-content: center;
 }
 
 .filter_list:after {
@@ -429,12 +418,6 @@ i.fas.fa-mobile-alt:hover, i.fas.fa-list-ul:hover, i.fas.fa-store:hover {
   flex-direction: column;
 }
 
-.card__restaurant__title{
-  display:flex;
-  text-decoration: none;
-  color:black;
-}
-
 .content{
 	opacity: 0;
   background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
@@ -479,18 +462,19 @@ i .far.fa-heard::before {
   display: inline-block;
   position: relative;
   justify-content: space-between;
-  vertical-align: bottom;
+  vertical-align: top;
   margin-top: -2px;
   align-content: end;
+  margon
 }
-
+/*
 #likeAlaF{
 margin-right: -10px;
 }
-
+*/
 .card_restaurant img {
   width: 100%;
-  height: 15rem; 
+  height: 16rem; 
   object-fit: cover;
   object-position: center;
   text-decoration: none;
@@ -499,60 +483,137 @@ margin-right: -10px;
   border-radius: 30px 30px 0 0;
 }
 
+.image{
+  background-color: rgba(255, 255, 255, .4);
+  border: none;
+  border-top-color: rgba(255, 255, 255, .4);
+  box-shadow: none;
+}
+
 .card_restaurant:hover {
   transform: scale(1.01);
   box-shadow: 0 0 3px 2px #F2F2F2;
 }
 
-.card_restaurant { 
-  flex: auto;
-  width: 50%;
-  display: inline-block;
-  justify-content: space-between;
-  max-height: 410px;
-  justify-content:space-between;
-  text-decoration: none;
-  display: block;
-  position:relative;
+.restaurant_liste_groupe2 {
   width: 100%;
-  border-radius: 30px 30px 0 0;
+  
+}
+
+.restaurant_liste_groupe1{
+  align-items: flex-start;
+  width: 100%;
+}
+
+.restaurant_liste_groupe1 .restaurant_liste_groupe2 {
+  flex-direction: row;
+  width: 100%;
+  display: inline-block;
+  flex-wrap: wrap;
+  position:relative;
+  justify-content: space-between;
+}
+
+.card__restaurant__title{
+  display:flex;
   text-decoration: none;
-  flex-direction: column;
-  margin-bottom: 20px;
-  overflow:hidden;
+  color:black;
+  flex-wrap: wrap;
+  margin-bottom: -22px;
+  flex-direction: row;
+}
+
+.restaurant_name .card__restaurant__localisation span h3  {
+  justify-content: space-between;
+  text-decoration: none;
+  color:black;
+  display: flex;
+  width:100%;
+  position:relative; 
 }
 
 .card__restaurant__localisation {
   align-items: flex-start;
-  margin-top: -88px;
+  margin-top: -180px;
   color: black;
   margin-left: -16px;
   text-decoration: none;
+  display :inline-block;
+  justify-content: center;
+  text-align: left;
 }
 
-.restaurant_name span{
-  text-decoration: none;
+.restaurant_name h3 span {
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    color:black; 
+    text-decoration: none;
+    padding-bottom: 4px;
+    margin-top:0;
+    flex-wrap: nowrap;
+    padding:2px;
+}
+
+ #card4{
+  margin-bottom: 33px;
+  height:312px;
+}
+
+#card3{
+  height:312px;
+}
+
+.restaurant_list {
+  margin: 5px;
   display: flex;
+  flex-basis: auto;
+  align-items: center;
+}
+
+.restaurant_list:after {
+  content: "";
+  display: table;
+  clear: both;
+  padding: 10px;
+}
+
+.restaurant_description{
+  width: 90%;
+  flex: auto;
+  height: 330px;
+  background-color: #fff;
+  position: relative;
+  color: black;
+  display: flex; 
+  overflow: hidden;
+  box-shadow: 0.25rem 0.25rem 10px rgb(0 0 0 / 25%);
   justify-content: space-between;
-  color:black;
-  padding-bottom: 5px;
-  margin-top:0;
+  object-fit: cover;
+  border-radius: 30px;
+  margin: 20px 0 20px 0;
+  margin-right: 40px;
+  margin-left: -2px;
 }
 
-#restaurant_name1, #restaurant_name2 {
-margin-left: -2px;
-color:black;
-text-decoration: none;
-align-items: flex-start;
+.restaurant_description img{
+  height: 12rem;
+  width:100%
+}
+ 
+.restaurant_name {
+  display: inline-block;
+  text-decoration: none;
+  text-align: left;
+  border-radius: O O 10px 10px;
 }
 
-.card__restaurant__localisation {
- display :flex;
+.restaurant_name .card__restaurant__localisation h3 {
+ color: black;
+ text-decoration: none;  
  justify-content: flex-start;
  text-align: left;
- margin-left: -13px;
- margin-top:-30px;
- border-radius: 0 0 30px 30px;
+ display: inline-table;
 }
 
 .image4{
@@ -566,7 +627,8 @@ align-items: flex-start;
   max-height: 340px ;
   justify-content: center;
   margin: 0;
-  position:relative;
+  position: relative;
+  object-fit: cover;
 }
 
 footer {
@@ -601,14 +663,6 @@ footer a {
  /* FIN smartphone, tablet and screen until 1024px */
 /* ****************************** smartphone only ****************************** */
 @media (max-width: 768px) {
-.restaurant_list {
-    margin: 0 -5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-left: 10px;
-}
-
 h1 {
   margin-top: 5px;
   text-align: center;
@@ -616,6 +670,7 @@ h1 {
 
  h2{
    text-align: left;
+   padding: 2px;
  }
 
 .barre_img {
@@ -649,7 +704,7 @@ header {
 }
 
 aside { 
-margin-bottom:-30px;
+margin-bottom:-20px;
 }
 
 .filters {
@@ -758,66 +813,67 @@ i.far.fa-heart .border{
   align-items: flex-end;
 }
 
-.restaurant_list{
-  flex-basis: content;
-  align-items: flex-start;
-  display:flex;
-  margin-right:30px;
-}
-
-.restaurant_description{
-  width: 90%;
-  height: 280px;
-  background-color: #fff;
-  position: relative;
-  color: black;
-  display: flex; 
-  overflow: hidden;
-  box-shadow: 0.25rem 0.25rem 10px rgb(0 0 0 / 25%);
+.restaurant_list {
+  flex-wrap: nowrap;
+  margin: auto;
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
-  object-fit: cover;
-  border-radius:15px;
-  margin: 20px 0 20px 0;
-  align-items: flex-start;
-  margin-right: 40px;
-  margin-left: -2px;
+  align-items: center;
+  justify-content: flex-start;
 }
 
-.restaurant_description img{
-  height: 10rem;
-  width:100%
-}
- 
-.restaurant_name .card__restaurant__localisation h3 {
-   display: flex;
-   color: black;
-   justify-content: space-between;
-   text-decoration: none; 
-   padding:2px; 
+.card_restaurant { 
+  flex: auto;
+  width: 50%;
+  display: inline-block;
+  max-height: 410px;
+  justify-content:space-between;
+  text-decoration: none;
+  display: inline-block;
+  position:relative;
+  width: 100%;
+  border-radius: 30px;
+  text-decoration: none;
+  flex-direction: column;
+  margin-bottom: 20px;
+  overflow:hidden;
+  align-items: stretch;
+  align-content: center;
 }
 
 .container {
- align-items: flex-start;
-  padding: O;
+  align-items: flex-start;
   background-color: #f1f1f1;
   display: flex;
   flex-direction: column;
-   padding: 0;
-   justify-content: space-between;
-   color:black;
+  padding: 0;
+  justify-content: space-between;
+  color:black;
   }
 
-  .restaurant_liste_groupe2 {
-    align-items: flex-start;
-    width: 100%;
-    margin-right:60px;
+.restaurant_list{
+    justify-content: center;
+    align-items: stretch;
   }
 
-  .restaurant_liste_groupe1{
-    margin-left: 50px;
-    width: 100%;
-  }
+.restaurant_liste_groupe1 .restaurant_liste_groupe2{
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: center;
+}
+
+.restaurant_liste_groupe2{
+  margin-left: 5px;
+}
+
+.like_btn{
+  position: relative;
+  display: inline-block;
+  margin-top:-2px;
+  align-items: flex-end;
+}
  
 footer {
 	background-color: #252121;
@@ -852,6 +908,7 @@ footer a {
    width: 100%;
    padding: 0 16px;
  }
+
 /*cartes restaurant alignées 2 par 2 pour tablette*/
  .restaurant_liste_groupe1 .restaurant_liste_groupe2 {
    flex-direction: row;
@@ -896,31 +953,4 @@ a voir desktop
     -webkit-box-shadow: 3px 0px 3px #73737338 inset;
     box-shadow: 3px 0px 3px #73737338 inset;
     border-bottom: 5px solid #9356dc;
-}
-.restaurant_name .card__restaurant__localisation span h3  {
-  justify-content: space space-between;
-  text-decoration: none;
-  color:black;
-  display: inline-block;
-  width:100%;
-}
-.card__restaurant__localisation {
-  display :flex;
-  justify-content: flex-start;
-  text-align: left;
-  margin-left: -13px;
-  margin-top:-30px;
-  border-radius: 0 0 10px 10px;
-}
-.restaurant_name {
-    display: inline-block;
-    text-decoration: none;
-    text-align: left;
-    border-radius: O O 10px 10px;
-}
-.restaurant_name h3 span {
-    text-decoration: none;
-    display: flex;
-    justify-content: space-between;
-    color:black; 
 }
