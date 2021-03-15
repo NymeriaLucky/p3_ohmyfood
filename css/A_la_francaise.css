@@ -342,12 +342,12 @@ section {
 	background-color: #aa5edc;
 	background-image: linear-gradient(to bottom right,
 	 #ec73da, #ac5edb 50%);
-									  rgba(247, 208, 245, 0.959));
-	box-shadow: inset 2px 2px 3px   #a05adc,
+	 rgba(247, 208, 245, 0.959));
+	box-shadow: inset 2px 2px 3px #a05adc,
 				inset -2px -2px 3px #aa5edc;
   }
   
-.commande_button:hover {
+.commande_button:hover{
 			opacity: 0.8;
   }
   
