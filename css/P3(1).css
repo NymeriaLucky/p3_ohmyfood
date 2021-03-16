@@ -304,6 +304,7 @@ aside {
   background-color: #f6f6f6;
   display: flex;
   position: relative;
+  flex-direction: row;
 }
 
 li:first-child {
@@ -371,6 +372,8 @@ h2 {
     align-content: center;
     width: 360px;
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
 ol {
@@ -509,7 +512,7 @@ i .far.fa-heard::before {
 .restaurant_liste_groupe1 .restaurant_liste_groupe2 {
   flex-direction: row;
   width: 100%;
-  display: inline-block;
+  display: grid;
   flex-wrap: wrap;
   position:relative;
   justify-content: space-between;
@@ -556,7 +559,7 @@ i .far.fa-heard::before {
     padding:2px;
 }
 
- #card4{
+#card4{
   margin-bottom: 33px;
   height:312px;
 }
@@ -577,24 +580,6 @@ i .far.fa-heard::before {
   display: table;
   clear: both;
   padding: 10px;
-}
-
-.restaurant_description{
-  width: 90%;
-  flex: auto;
-  height: 330px;
-  background-color: #fff;
-  position: relative;
-  color: black;
-  display: flex; 
-  overflow: hidden;
-  box-shadow: 0.25rem 0.25rem 10px rgb(0 0 0 / 25%);
-  justify-content: space-between;
-  object-fit: cover;
-  border-radius: 30px;
-  margin: 20px 0 20px 0;
-  margin-right: 40px;
-  margin-left: -2px;
 }
 
 .restaurant_description img{
@@ -633,8 +618,8 @@ i .far.fa-heard::before {
   position: relative;
   object-fit: cover;
 }
+
 .image1 .image2 {
-  height: 340px;
   margin-top: -10px;
 }
 
@@ -677,6 +662,7 @@ footer a {
   .container {
    width: 100%;
    padding: 0 16px;
+   flex-wrap: wrap;
  }
 
 /*cartes restaurant alignées 2 par 2 pour tablette*/
@@ -684,9 +670,14 @@ footer a {
    flex-direction: row;
    width: 100%;
    display: inline-block;
-   flex-wrap: wrap;
    position:relative;
    justify-content: space-between;
+   flex-wrap: wrap;
+}
+
+.info1{
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 
  .restaurant_list {
@@ -695,4 +686,21 @@ footer a {
    margin-right: 0;
  }
 } /* FIN tablette */
-
+/*a tester
+.restaurant_description{
+  width: 90%;
+  flex: auto;
+  height: 330px;
+  background-color: #fff;
+  position: relative;
+  color: black;
+  display: flex; 
+  overflow: hidden;
+  box-shadow: 0.25rem 0.25rem 10px rgb(0 0 0 / 25%);
+  justify-content: space-between;
+  object-fit: cover;
+  border-radius: 30px;
+  margin: 20px 0 20px 0;
+  margin-right: 40px;
+  margin-left: -2px;
+}*/
