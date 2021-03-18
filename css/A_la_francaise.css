@@ -59,7 +59,7 @@ footer {
 
  i.fas.fa-arrow-left {
     align-items: flex-start;
-	height: 11px;
+	height:11px;
 	margin-top: 95px;
     color:#353535;
 	vertical-align:text-bottom;
@@ -74,12 +74,12 @@ p {
   font-family: "Roboto", sans-serif;
    font-style: initial;
    text-decoration: none;
-}  
+}
 
 i .far.fa-heard::before {
-	  position: absolute;
-	  right: 0;
- }
+	position: absolute;
+	right: 0;
+}
 
 .image_restaurant img {
     width: 100%;
@@ -105,7 +105,7 @@ i .far.fa-heard::before {
 
 h1{
 	position:relative;
-	margin-top: -100px;
+	margin-top:-100px;
 }
 
 .header {
@@ -130,22 +130,24 @@ main.container_menu {
 		max-width: 1280px;
 		margin: auto;
 		position: relative;
+		display: block;
+	    background-color: f6f6f6;
 } 
-
-main {	    
-	display: block;
-}
 
 .menu_header h2 {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+		background-color: f6f6f6;
 }
   
 h2 {
 	display: flex;
 	justify-content: space-between;
-	margin-top: 50px;
+	margin-top: -5px;
+	font-weight: bold;
+	font-style: italic;
+	font-size: xx-large;
 }
 
 h2 span, i {
@@ -154,7 +156,8 @@ h2 span, i {
 	text-decoration: none;
 	display: inline-block;
 	vertical-align:top;
-	margin-top:-2px;	
+	flex-direction: row;
+	flex-wrap: wrap;	
 }
 
 .menu__title {
@@ -164,33 +167,32 @@ h2 span, i {
 .content{
 	opacity: 0;
 	 background: -webkit-linear-gradient( 
-  0deg
+    0deg
    ,#9356dc,#ff79da);
 	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+	-webkit-text-fill-color: transparent;/*--passe au validateur sous cette forme!--*/
 	position: relative;
-	left: -38px;
+	left: -4px;
 	font-size: 31px;
-	top: -0.2px;
+	top: 3.8px;
 	display: block;
-  }
-  
-  .border {
+}
+ 
+.border {
 	font-size:35px;
-	top:-3px;
-	margin-left:398px;
+	right: -35px;
 	vertical-align: baseline;
-	position: relative;
-  }
+	position: relative;	
+}
   
 .content:hover {
 	opacity: 1;
 	transition: opacity 1s;
-  }
+}
   
 i.far.fa-heart .border{
 	display: flex;
-	position:relative;
+	object-position :right;
 	justify-content: flex-end;
 	align-items: flex-end;
   }
@@ -198,14 +200,6 @@ i.far.fa-heart .border{
 .menu__title {
     font-family: Shrikhand,"cursive";
 }
- 
-.border {
-	font-size:35px;
-	top:-3px;
-	margin-left:398px;
-	vertical-align: baseline;
-	position: relative;
-  }
   
 .content:hover {
 	opacity: 1;
@@ -265,7 +259,7 @@ section {
 		  border-top-right-radius: 0.75rem;
 		  border-bottom-right-radius: 0.75rem; 
 		  background-color:#99E2D0;
-		  margin:-10px;
+		  margin:-7px;
 		  padding: 30px;
 		  width: auto;
 }
@@ -282,8 +276,8 @@ section {
 	background-color: white;
 	box-shadow:-1px 5px 10px 1px rgba(0, 0, 0,.1);
 	border-radius:0.75rem;
-	margin-top:20px;
-	padding:10px;
+	margin-bottom:20px;
+	padding:5px;
 	display: flex;
 	justify-content: space-between;
 } 
@@ -300,8 +294,9 @@ section {
 }
 	  
 .prix {
-	padding-top: 22px;
+	padding-top: 36px;
 	font-weight: bold;
+	margin-right: -20%;	
 }
 	  
 .bloc__menu {
@@ -314,15 +309,7 @@ section {
 .menu_header {
     position: relative;
     border-radius: 1.5rem 1.5rem 0 0;
-    border-top-left-radius: 1.5rem;
-    border-top-right-radius: 1.5rem;
-    border-bottom-right-radius: 0px;
-    border-bottom-left-radius: 0px;
     padding: 2.4rem 0 0 1.5rem;
-    padding-top: 2.4rem;
-    padding-right: 0px;
-    padding-bottom: 0px;
-    padding-left: 1.5rem;
     margin-top: -2rem;
     background-color: #f6f6f6;
 }
@@ -340,12 +327,13 @@ section {
 	text-shadow: 1px 1px 1px rgb(38, 27, 68);
 	border-radius: 30px;
 	background-color: #aa5edc;
-	background-image: linear-gradient(to bottom right,
-	 #ec73da, #ac5edb 50%);
-	 rgba(247, 208, 245, 0.959));
-	box-shadow: inset 2px 2px 3px #a05adc,
+	background-image: linear-gradient(to bottom right, 
+	#ec73da, #a35bdc 50%);
+	rgba(247, 208, 245, 0.959));
+	box-shadow: inset 2px 2px 3px   #a05adc,
 				inset -2px -2px 3px #aa5edc;
   }
+  
   
 .commande_button:hover{
 			opacity: 0.8;
@@ -387,7 +375,7 @@ footer .footer__seclect a, ul, li {
 	   font-size: 18px; 
 	   line-height: 140%;
     }
-/*}  /* FIN smartphone only *//**** TABLETTE ***/
+}  /** FIN smartphone only *//**** TABLETTE ***/
 @media (max-width: 1024px) {
    body{
 		overflow-x:hidden;
@@ -399,7 +387,7 @@ footer .footer__seclect a, ul, li {
     }
     /*cartes restaurant alignées 2 par 2 pour tablette*/
     .restaurant_list_groupe1 .restaurant_list_groupe2 {
-	  flex-direction: column;
+	 flex-direction: column;
 	 width: 100%;
     }
   
@@ -409,4 +397,4 @@ footer .footer__seclect a, ul, li {
 	 margin-top: 20px;
 	 order: 2;
 	}/* FIN tablette*/ 
-     }
+}

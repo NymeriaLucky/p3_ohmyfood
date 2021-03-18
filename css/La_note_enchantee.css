@@ -53,13 +53,13 @@ footer a {
 @media (max-width: 768px) {*/
 body, html {
    margin: 0;
-   font-family: "Roboto", sans-serif,"Shirkhand";
+   font-family: "Roboto", sans-serif, "Shirkhand";
    scroll-behavior: smooth;
  }
 
  i.fas.fa-arrow-left {
     align-items: flex-start;
-	height: 11px;
+	height:10px;
 	margin-top: 95px;
 	color:#353535;
 	vertical-align:text-bottom;
@@ -129,32 +129,34 @@ h1{
  main.container_menu {
 	max-width: 1280px;
 	margin: auto;
-	position: relative;
-}
-
-main {	    
+	position: relative;	    
 	display: block;
+	background-color: f6f6f6;
 }
 
-.menu_header h2 {
+.menu_header h2{ 
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	background-color: f6f6f6;
 }
 
 h2 {
 	display: flex;
 	justify-content: space-between;
-	margin-top: 50px;
-} 
-
+	margin-top:-5px;
+	font-weight: bold;
+	font-style: italic;
+	font-size: xx-large ;
+}
 h2 span, i {
 	justify-content: space-between;
 	position: relative;
 	text-decoration: none;
 	display: inline-block;
 	vertical-align:top;
-	margin-top:-2px;	
+    flex-direction: row;
+	flex-wrap: wrap;	
 }
 
 .menu__title {
@@ -163,22 +165,22 @@ h2 span, i {
 
 .content{
 	opacity: 0;
-	 background: -webkit-linear-gradient( 
-  0deg
-   ,#9356dc,#ff79da);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
+  background: -o-linear-gradient(top, #ff79da, #9356dc);
+  background: linear-gradient(to bottom, #ff79da, #9356dc);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;/*--passe au validateur sous cette forme!--*/
 	position: relative;
-	left: -38px;
+	left:-4px;
 	font-size: 31px;
-	top: -0.2px;
+	top: 3.8px;
 	display: block;
   }
   
 .border {
 	font-size:35px;
-	top:-3px;
-	margin-left:398px;
+    right: -35px;
 	vertical-align: baseline;
 	position: relative;
 }
@@ -190,7 +192,7 @@ h2 span, i {
   
 i.far.fa-heart .border{
 	display: flex;
-	position :right;
+	object-position :right;
 	justify-content: flex-end;
 	align-items: flex-end;
 }
@@ -226,7 +228,7 @@ section {
 		position: relative;
 		padding-bottom: .5rem;
 		font-weight: 400;
-	     display: block;
+	    display: block;
 	    font-size: 1.17em;
 	    font-weight: bold;
 		border-bottom: skyblue;
@@ -257,25 +259,25 @@ section {
 		  border-top-right-radius: 0.75rem;
 		  border-bottom-right-radius: 0.75rem; 
 		  background-color:#99E2D0;
-		  margin:-10px;
+		  margin:-7px;
 		  padding: 30px;
 		  width: auto;
 }
 	  
 .check i {
 		  transition: all 400ms;
-	  }
+}
 	  
 .casesmenu:hover .check i {
 		  transform: rotate(720deg);
-	  } 
+} 
 	  
 .casesmenu {
 	background-color: white;
 	box-shadow:-1px 5px 10px 1px rgba(0, 0, 0,.1);
 	border-radius:0.75rem;
-	margin-top:20px;
-	padding:10px;
+	margin-bottom:20px;
+	padding:5px;
 	display: flex;
 	justify-content: space-between;
 } 
@@ -292,8 +294,9 @@ section {
 }
 	  
 .prix {
-	padding-top: 22px;
+	padding-top: 36px;
 	font-weight: bold;
+	margin-right: -20%;
 }
 	  
 .bloc__menu {
@@ -306,38 +309,31 @@ section {
 .menu_header {
 		position: relative;
 		border-radius: 1.5rem 1.5rem 0 0;
-		border-top-left-radius: 1.5rem;
-		border-top-right-radius: 1.5rem;
-		border-bottom-right-radius: 0px;
-		border-bottom-left-radius: 0px;
 		padding: 2.4rem 0 0 1.5rem;
-		padding-top: 2.4rem;
-		padding-right: 0px;
-		padding-bottom: 0px;
-		padding-left: 1.5rem;
 		margin-top: -2rem;
 		background-color: #f6f6f6;
 }
 
 .commande_button {
-		padding: 8px;
-		line-height: 2;
-		justify-content: initial;
-		align-items: center;
-		margin: auto;
-		text-align: center;
-		height: 50px;
-		width: 210px;
-		color:white;
-		text-shadow: 1px 1px 1px rgb(38, 27, 68);
-		border-radius: 30px;
-		background-color: #aa5edc;
-		background-image: linear-gradient(to bottom right, #ec73da, #ac5edb 50%);
-										  rgba(247, 208, 245, 0.959));
-		box-shadow: inset 2px 2px 3px   #a05adc,
-					inset -2px -2px 3px #aa5edc;
-}
-	  
+	padding: 8px;
+	line-height: 2;
+	justify-content: initial;
+	align-items: center;
+	margin: auto;
+	text-align: center;
+	height: 50px;
+	width: 210px;
+	color:white;
+	text-shadow: 1px 1px 1px rgb(38, 27, 68);
+	border-radius: 30px;
+	background-color: #aa5edc;
+	background-image: linear-gradient(to bottom right, 
+	#ec73da, #a35bdc 50%);
+	rgba(247, 208, 245, 0.959));
+	box-shadow: inset 2px 2px 3px   #a05adc,
+				inset -2px -2px 3px #aa5edc;
+  }
+  
 .commande_button:hover {
 				opacity: 0.8;
 }
@@ -346,8 +342,7 @@ section {
 		box-shadow: inset -2px -2px 3px rgba(233, 9, 203, 0.6),
 					inset 2px 2px 3px rgba(0, 0, 0, 0.6);
 }
-	
-	 
+		 
 #footer_logo a {
 	   justify-content: initial;
 		width: 50px;
@@ -379,7 +374,8 @@ footer .footer__seclect a, ul, li {
 	   font-size: 18px; 
 	   line-height: 140%;
 	  }
-} /* FIN smartphone only *//**** TABLETTE ***/
+} /** FIN smartphone only */
+/**** TABLETTE ***/
 @media (max-width: 1024px) {
    body{
 		overflow-x:hidden;
@@ -399,6 +395,5 @@ footer .footer__seclect a, ul, li {
 	 flex-basis: 100%;
 	 margin-right: 0;
 	 margin-top: 20px;
-	 order: 2;
-	}/* FIN tablette */
+	}/* FIN tablette*/
 }
