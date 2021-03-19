@@ -59,11 +59,12 @@ footer {
 
  i.fas.fa-arrow-left {
     align-items: flex-start;
-	height:11px;
+	height:10px;
 	margin-top: 95px;
     color:#353535;
 	vertical-align:text-bottom;
     padding-top: 50px;
+	font-size: smaller;
 }
 
  h1 h2 h3 h4 h5 {
@@ -83,7 +84,7 @@ i .far.fa-heard::before {
 
 .image_restaurant img {
     width: 100%;
-    max-height: 220px;
+    max-height: 260px;
     object-fit: cover;
     object-position: center;
     text-decoration: none;
@@ -134,7 +135,7 @@ main.container_menu {
 	    background-color: f6f6f6;
 } 
 
-.menu_header h2 {
+.menu_header h2{
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
@@ -143,8 +144,7 @@ main.container_menu {
   
 h2 {
 	display: flex;
-	justify-content: space-between;
-	margin-top: -5px;
+	margin-top:-5px;
 	font-weight: bold;
 	font-style: italic;
 	font-size: xx-large;
@@ -162,6 +162,7 @@ h2 span, i {
 
 .menu__title {
     font-family: Shrikhand,"cursive";
+	display:flex;
 }
 
 .content{
@@ -172,7 +173,7 @@ h2 span, i {
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;/*--passe au validateur sous cette forme!--*/
 	position: relative;
-	left: -4px;
+	right: -340px;
 	font-size: 31px;
 	top: 3.8px;
 	display: block;
@@ -180,9 +181,11 @@ h2 span, i {
  
 .border {
 	font-size:35px;
-	right: -35px;
+	right: -380px;
 	vertical-align: baseline;
-	position: relative;	
+	position: relative;
+	font-weight: 100;
+	font-style: small;
 }
   
 .content:hover {
@@ -191,10 +194,11 @@ h2 span, i {
 }
   
 i.far.fa-heart .border{
-	display: flex;
+	display: inline-block;
 	object-position :right;
 	justify-content: flex-end;
 	align-items: flex-end;
+	position: relative;
   }
 
 .menu__title {
@@ -315,7 +319,7 @@ section {
 }
 
 .commande_button {
-	padding: 8px;
+	padding:8px;
 	line-height: 2;
 	justify-content: initial;
 	align-items: center;
@@ -333,8 +337,7 @@ section {
 	box-shadow: inset 2px 2px 3px   #a05adc,
 				inset -2px -2px 3px #aa5edc;
   }
-  
-  
+   
 .commande_button:hover{
 			opacity: 0.8;
   }
@@ -364,6 +367,7 @@ footer img {
 footer .footer__seclect {
 		margin-bottom: 32px;
 		list-style-type: none;
+		width:100%;
 }
 	 
 footer .footer__seclect a, ul, li {
@@ -375,7 +379,8 @@ footer .footer__seclect a, ul, li {
 	   font-size: 18px; 
 	   line-height: 140%;
     }
-}  /** FIN smartphone only *//**** TABLETTE ***/
+}  /** FIN smartphone only */
+/**** TABLETTE ***/
 @media (max-width: 1024px) {
    body{
 		overflow-x:hidden;
@@ -390,11 +395,14 @@ footer .footer__seclect a, ul, li {
 	 flex-direction: column;
 	 width: 100%;
     }
-  
+
     .restau .restaurant_list {
 	 flex-basis: 100%;
 	 margin-right: 0;
 	 margin-top: 20px;
-	 order: 2;
-	}/* FIN tablette*/ 
-}
+	}
+
+	 footer {
+		width:100%;
+	}
+}/* FIN tablette*/ 
