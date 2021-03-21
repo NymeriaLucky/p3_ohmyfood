@@ -135,28 +135,12 @@ h1{
 	background-color: f6f6f6;
 }
 
-.menu_header h2{ 
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	background-color: f6f6f6;
-}
-
 h2 {
 	display: flex;
 	margin-top:-5px;
 	font-weight: bold;
 	font-style: italic;
 	font-size: xx-large ;
-}
-h2 span, i {
-	justify-content: space-between;
-	position: relative;
-	text-decoration: none;
-	display: inline-block;
-	vertical-align:top;
-    flex-direction: row;
-	flex-wrap: wrap;	
 }
 
 .menu__title {
@@ -172,15 +156,15 @@ h2 span, i {
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;/*--passe au validateur sous cette forme!--*/
 	position: relative;
-	right: -340px;
+	left:calc(50% - 38px);
 	font-size: 31px;
-	top: 3.8px;
+	top: 0;
 	display: block;
 }
 
 .border {
 	font-size:35px;
-    right: -380px;
+	left: 50%;
 	vertical-align: baseline;
 	position: relative;
 	font-weight: 100;
@@ -337,7 +321,7 @@ section {
 				inset -2px -2px 3px #aa5edc;
   }
   
-.commande_button:hover {
+.commande_button:hover{
 				opacity: 0.8;
 }
 	  
@@ -366,7 +350,7 @@ footer img {
 footer .footer__seclect {
 		margin-bottom: 32px;
 		list-style-type: none;
-		width: 100%;
+		width:100%;
 }
 	 
 footer .footer__seclect a, ul, li {

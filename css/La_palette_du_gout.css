@@ -134,13 +134,6 @@ h1{
 		display: block;
 	    background-color: f6f6f6;
  }
-
-.menu_header h2 {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		background-color: f6f6f6;
-}
   
 h2 {
 	display: flex;
@@ -148,16 +141,6 @@ h2 {
 	font-weight: bold;
 	font-style: italic;
 	font-size: xx-large ;
-}
-
-h2 span, i {
-	justify-content: space-between;
-	position: relative;
-	text-decoration: none;
-	display: inline-block;
-	vertical-align:top;
-	flex-direction: row;
-	flex-wrap: wrap;	
 }
 
 .menu__title {
@@ -173,7 +156,7 @@ h2 span, i {
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;/*--passe au validateur sous cette forme!--*/
 	position: relative;
-	right: -340px;
+	left: 50%;
 	font-size: 31px;
 	top: 3.8px;
 	display: block;

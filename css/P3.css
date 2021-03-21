@@ -1,0 +1,934 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@200;300;500;700;900&display=swap");
+/**** STYLE GÉNÉRAL ****/
+html {
+	box-sizing: border-box;
+  margin: auto;
+  }
+  *,
+  *:before,
+  *:after {
+	box-sizing: inherit;
+  } /*initialisation des navigateur*/
+  body {
+    font-family: "Shrikhand, Roboto, Arial";
+    padding: 0;
+    box-sizing: border-box;
+    align-items: center;
+    cursor: pointer;
+    }
+  
+  body, html {
+      margin: 0;
+      font-family: Roboto, Arial;
+      scroll-behavior: auto;
+  }
+  
+  @font-face {
+    font-family: "Shrikhand";
+    src: url("../police/shrikhand/Shrikhand-Regular.ttf") format("truetype"),
+         url("../police/shrikhand/Shrikhand-Bold.ttf") format("truetype")
+  }
+  
+  @font-face {
+    font-family: "Roboto";
+    src: url("../police/roboto/Roboto-Regular.ttf") format("truetype"),
+         url("../police/roboto/Roboto-Bold.ttf") format("truetype")
+  }
+
+  .point {
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  border-radius: 25px;
+  margin: 10px;
+  animation-name: blink;
+  animation-duration: 1s;
+  animation-iteration-count: 3;
+  opacity: 0;
+}
+
+.point1 {
+  animation-delay: 0.3s;
+  background-color: #9356DC;
+}
+
+.point2 {
+  animation-delay: 0.6s;
+ background-color:#99E2D0;
+}
+
+.point3 {
+  animation-delay: 0.9s;
+  background-color: #FF79DA;
+}
+
+.loading {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 0px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation-name: load;
+  animation-duration: 4s;
+  background-color: lightgray;
+  animation-iteration-count: 1;
+}
+
+@keyframes blink {
+  0% { opacity: 0; }
+  50% {opacity: 1; }
+  100% {opacity: 0; }
+}
+
+@keyframes load {
+  0% { width: 100% }
+  75% { width: 100% }
+  100% { width: 0% }
+}
+
+.mypage {
+  animation-delay: 3s;
+  animation: loadpage 3s;
+}
+
+@keyframes loadpage { 
+  0%   { width: 0%; opacity: 0;}
+  99%  { width: 100%; opacity: 0;} 
+  100% { width: 100%; opacity: 1;} 
+} 
+/**** loader et animations menu progressif****/ 
+main {
+  padding: 4px;
+  background-color: white;
+}
+
+main > h1, p, section {
+  padding: 15px;
+}
+
+.header__logo a {
+  display: block;
+  font-size: 2em;
+  margin-left: 0.67em;
+  margin-right: 0.67em;
+  margin-top:4px;
+  font-weight: bold;
+  font-family: Shrikhand,"cursive";
+  top:0;
+  text-align: center;
+} 
+/*search button Paris-Belleville*/
+.search_button {
+  line-height: 2.5;
+  padding: 0px;
+  text-align: center;
+  background-color: rgb(126, 121, 125);
+}
+
+.search_button:hover {
+background-color: #eaeaea;
+}
+
+.search_button:active {
+box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+            inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+
+.index {
+  text-align: center;
+  background-color: #fafafa;
+  padding-bottom: 4%;
+}
+
+.index h3 {
+  font-weight: 300;
+  margin: 1.5rem 0;
+  display: block;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.index h1 {
+  display: block;
+  font-size: 1.5em;
+  margin-left: 0.83em;
+  margin-right: 0.83em;
+}
+
+h1 h2 h5 {
+  text-align: center;
+  font-weight: bold;
+}
+  
+h1 h2 h3 h4 h5 {
+    font-family: Shirkhand;
+}
+
+h2 {
+  text-align: center;
+}
+
+p, li {
+  font-family: Roboto;
+}
+
+p {
+  text-align: left;
+}
+/*exploration_button*/
+.exploration_button {
+  padding:8px;
+  line-height: 2;
+  justify-content: initial;
+  align-items: center;
+  margin: auto;
+  text-align: center;
+  height: 50px;
+  width: 210px;
+  color:white;
+  text-shadow: 1px 1px 1px rgb(38, 27, 68);
+  border-radius: 30px;
+  background-color: #aa5edc;
+  background-image: linear-gradient(to bottom right, #ec73da, #ac5edb 50%);
+                    rgba(247, 208, 245, 0.959));
+  box-shadow: inset 2px 2px 3px   #a05adc,
+              inset -2px -2px 3px #aa5edc;
+}
+
+.exploration_button:hover{
+          opacity: 0.8;
+}
+
+.exploration_button:active{
+  box-shadow: inset -2px -2px 3px rgba(233, 9, 203, 0.6),
+              inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+aside {
+  display: flex;
+  flex-direction: column; 
+  border-color: darkgrey;
+  padding: 5px;  
+}
+
+aside .filters {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.filter_list {
+  margin: 0 -5px;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: compteListe;
+  margin-left: 240px;
+}
+
+.filter_list:after {
+  content: "";
+  display: table;
+  clear: both;
+  padding: 10px;
+}
+
+.info1 {
+  padding: 1.5rem;
+  margin: 1rem 0 1rem .75rem;
+  box-shadow: 0.25rem 0.25rem 0.5rem rgb(0 0 0 / 13%);
+  border-radius: 1.25rem;
+  background-color: #f6f6f6;
+  text-align: center;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  width: 70%;   
+}
+
+.info1:before {
+  counter-increment: compteListe 1;
+  content: counter(compteListe) " ";
+  background: #9356dc;
+  background-image: initial;
+  background-size: initial;
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: rgb(147, 86, 220);
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  position: absolute;
+}
+
+i.fas.fa-mobile-alt, i.fas.fa-list-ul, i.fas.fa-store {
+  color:#7e7e7e;
+ }
+
+i.fas.fa-mobile-alt:hover, i.fas.fa-list-ul:hover, i.fas.fa-store:hover {
+  color:#9356dc;
+}
+
+.text{
+  font-weight: bold;
+}
+
+section .container {
+  padding: 0;
+  margin: 0;
+  display:flex;
+  background-color: #f1f1f1;
+}
+
+.card__badge {
+  background-color: #99e2d0;
+  color: #1b6150;
+  text-decoration: none;
+  text-decoration-line: none;
+  padding: .5em;
+  border-radius: .125rem;
+  position: relative;
+  top: 38px;
+  left: 84%;
+  margin-bottom:-270px;
+}
+
+.restaurant_list {
+ display: flex;
+ justify-content: space-between;
+ flex-direction: row;
+}
+
+.restaurant_list:after {
+  content: "";
+  display: table;
+  clear: both;
+  padding: 10px;
+}
+
+.restaurant_liste_groupe1 .restaurant_liste_groupe2 {
+  flex-direction: row;
+  vertical-align: bottom;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-content: center;
+  margin:auto;
+}
+
+.restaurant_liste_groupe1{
+  vertical-align: top;
+  position: relative;
+  margin-top:-18px;
+}
+
+#card4{
+  margin-top: 20px;
+  height: 312px;
+}
+
+.card__restaurant__localisation {
+  margin-top: -180px;
+  color: black;
+  text-decoration: none;
+  display :inline-block;
+  text-align: left;
+  margin-left: -2px;
+  border:none;
+  outline: none;
+}
+
+.card__restaurant__localisation{
+  border-color: rgba(255, 255, 255, .4);
+}
+
+.card__restaurant__title{
+  display:flex;
+  text-decoration: none;
+  color:black;
+  flex-wrap: wrap;
+  margin-bottom: -5px;
+  flex-direction: row;
+}
+
+.restaurant_name {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  border-radius: O O 10px 10px;
+}
+
+.restaurant_name .card__restaurant__localisation h3 { 
+  justify-content: flex-start;
+  display: inline-table;
+  padding:5px;
+  position: initial;
+ }
+
+ .content{
+	opacity: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
+  background: -o-linear-gradient(top, #ff79da, #9356dc);
+  background: linear-gradient(to bottom, #ff79da, #9356dc);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;/*--passe au validateur sous cette forme!--*/
+	position: relative;
+	left:-37px;
+	font-size: 31px;
+	top: -0.2px;
+	display: block;
+  }
+  
+.border {
+	font-size:35px;
+	top: -0.2px;
+	margin-left:398px;
+	vertical-align: baseline;
+	position: relative;
+}
+  
+.content:hover {
+	opacity: 1;
+	transition: opacity 1s;
+}
+  
+i.far.fa-heart .border{
+	display: flex;
+	position :relative;
+	justify-content: flex-end;
+	align-items: flex-end;
+}
+
+i .far.fa-heard::before {
+  position: absolute;
+  right: 0;
+}
+
+.like_btn {
+  display: inline-block;
+  position: relative;
+  justify-content: space-between;
+  vertical-align: top;
+  top: -2;
+  align-content: end;
+  object-position: right top;
+}
+
+.card_restaurant{
+ flex-wrap: wrap;
+}
+
+.card_restaurant:hover {
+  transform: scale(1.01);
+  box-shadow: 0 0 3px 2px #F2F2F2;
+}
+
+.card_restaurant img{
+  width: 100%;
+  height: 15rem; 
+  object-fit: cover;
+  object-position: center;
+  text-decoration: none;
+  overflow: hidden;
+  justify-content: space-between;
+  border-radius: 30px 30px 0 0;
+}
+
+footer {
+	background-color: #252121;
+	display: flex;
+	align-items: flex-start;
+	padding: 30px;
+	color: white;
+  text-decoration: none; 
+}
+  
+footer img {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    top: 0;
+    font-size: 20px;
+    height: 35px;
+    margin-bottom: 8%;
+} 
+
+footer ul li {
+	list-style-type: none;
+	padding: 5px ;
+}
+  
+footer a {
+	color: white;
+  text-decoration:none;
+  }
+/********************************** STYLE Mobile ********/
+@media (max-width: 768px) {
+  body {
+  font-family: "Shrikhand, Roboto, Arial";
+  box-sizing: border-box;
+  cursor: pointer;
+  display: block;
+  font-family: Roboto, Arial;
+  scroll-behavior: auto;
+  padding: 0;
+  color: #232323;
+  margin: 5px;
+}
+  
+h1 {
+    margin-top: 5px;
+    text-align: center;
+  } 
+
+@font-face {
+    font-family: "Shrikhand";
+    src: url("../police/shrikhand/Shrikhand-Regular.ttf") format("truetype"),
+         url("../police/shrikhand/Shrikhand-Bold.ttf") format("truetype")
+  }
+  
+@font-face {
+    font-family: "Roboto";
+    src: url("../police/roboto/Roboto-Regular.ttf") format("truetype"),
+         url("../police/roboto/Roboto-Bold.ttf") format("truetype")
+  }
+
+section .container {
+    display: flex;
+    background-color: #f1f1f1;
+    align-items: center;
+  }
+  
+main {
+    padding: 0;
+    margin:0;
+    background-color: white;
+  }
+  
+main > h1, p, section {
+    padding: 2px;
+  }
+
+h2{
+     padding: 10px;
+     margin-bottom: -2px;
+     text-align: left;
+}
+
+h1  h5 {
+    font-weight: bold;
+    color:black;
+}
+    
+h1 h2 h3 h4 h5 {
+      font-family: Shirkhand;
+}
+    
+p, li {
+      font-family: Roboto;
+    }
+
+h3 {
+  font-weight: 100;
+}    
+    
+p {
+  text-align: left;
+}
+
+#logo {
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  top: 0;
+  align-items: center;
+  margin-top: 2%;
+  height: 35px;
+}
+/*bouton de recherche Paris-Belleville*/
+.search_button {
+  margin-top: 2%;
+  line-height: 2.5;
+  padding: 0px;
+  text-align: center;
+  background-color: rgb(126, 121, 125);
+}
+    
+.search_button:hover {
+      background-color: #eaeaea;
+  }
+    
+.search_button:active {
+      box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                  inset 2px 2px 3px rgba(0, 0, 0, .6);
+    }
+   
+header {
+  margin:auto;
+    width: 100%;
+    text-align: center;
+    padding: 2px;
+}
+
+.index {
+  display:block;
+  text-align: center;
+  padding: 3rem;
+  background-color: #f1f1f1;
+  padding-bottom: 5%;
+}
+/*boutton exploration*/
+.exploration_button {
+  font-weight: bold;
+  display: flex;
+  padding: 2px;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  height: 45px;
+  width: 210px;
+  color:white;
+  text-shadow: 1px 1px 1px rgb(38, 27, 68);
+  border-radius: 30px;
+  background-color: #aa5edc;
+  background-image: linear-gradient(to bottom right, #ec73da, #ac5edb 50%);
+                   rgba(247, 208, 245, 0.959));
+  box-shadow: inset 2px 2px 3px   #a05adc,
+              inset -2px -2px 3px #aa5edc;
+}
+
+.exploration_button:hover{
+          opacity: 0.8;
+}
+
+.exploration_button:active{
+  box-shadow: inset -2px -2px 3px rgba(233, 9, 203, 0.6),
+              inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.filters_name .restaurants {
+ text-align: left;
+  padding: 5px;
+  font-weight: 700;
+} 
+
+aside .filters {
+cursor: pointer; 
+counter-reset: compteListe;
+display: flex;
+text-decoration: none;
+justify-content: initial;
+margin: 0;
+}
+    
+.filter_list {
+  display:flex;
+  list-style-type: decimal; 
+  list-style: none;
+  border-color: darkgrey;
+  counter-reset: compteListe;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 4% auto;
+}
+
+.filter_list:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+  
+aside .filter_list .info1 {
+    display: flex;
+    justify-content: center;
+   
+}
+
+ .text{
+   content:"\00a0 \00a0";
+   font-weight: bold;
+   text-align: center;
+   flex-direction: row;
+ } 
+
+ .info1:before {
+    counter-increment: compteListe 1;
+    content: counter(compteListe) " ";
+    background: #9356dc;
+    background-image: initial;
+    background-size: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: rgb(147, 86, 220);
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: absolute;
+    left: -.75rem;
+  }
+  
+  .filter_list ol {
+    margin: 0;
+    display: flex;
+  }
+  
+  .info1 {
+    padding: 1.5rem;
+    margin: 1rem 0 1rem .75rem;
+    box-shadow: 0.25rem 0.25rem 0.5rem rgb(0 0 0 / 13%);
+    border-radius: 1.25rem;
+    background-color: #f6f6f6;
+    position: relative;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    align-content: center;
+    width: 360px;
+    display: flex;
+  }
+  
+  li:first-child {
+    margin-top: 0;
+  }
+    
+  .filters .filter_item:hover {
+    background-color: #88b1ee;
+    color: #fff;
+    border: 2px solid #DEEBFF;
+    transform: translateY(-1px);
+    box-shadow: 1px 1px 1px 1px #DEEBFF;
+   }
+
+.container{
+    background-position: center;
+    padding: 0;
+    background-color: #f1f1f1;
+    color:black;
+    margin-top: -15px;
+    margin-bottom: 0;   
+}
+
+.restaurant_list{
+width: 100%;
+margin: 0;
+padding: 0;
+flex-direction: column; 
+}
+
+.restaurant_liste_groupe2{
+margin-top: -12px;
+}
+
+ #card4{
+ margin-top: -3px;
+  }
+
+  .content:hover {
+    opacity: 1;
+    transition: opacity 1s;
+  }
+  
+  .info1:first-child {
+    margin-top: 0;
+  }
+  
+  .card__badge {
+    background-color: #99e2d0;
+    color: #1b6150;
+    padding: .5em;
+    border-radius: .125rem;
+    position: relative;
+    top: 28px;
+    left: 83%;
+    margin-bottom:-270px;
+    text-decoration: none;
+}
+
+  i.fas.fa-mobile-alt, i.fas.fa-list-ul, i.fas.fa-store {
+    color:#7e7e7e;
+    justify-content: flex-start;
+   }
+  
+  i.fas.fa-mobile-alt:hover, i.fas.fa-list-ul:hover, i.fas.fa-store:hover {
+    color:#9356dc;
+  }
+  
+  .content{
+    opacity: 0;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
+    background: -o-linear-gradient(top, #ff79da, #9356dc);
+    background: linear-gradient(to bottom, #ff79da, #9356dc);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;/*--passe au validateur sous cette forme!--*/
+    position: relative;
+    left:-38px;
+    font-size: 31px;
+    top: -1px;
+    display: block;
+    }
+    
+  .border {
+    font-size:35px;
+    top: -0.2px;
+    margin-left:398px;
+    vertical-align: baseline;
+    position: relative;
+  }
+    
+  .content:hover{
+    opacity: 1;
+    transition: opacity 1s;
+  }
+    
+  i.far.fa-heart .border{
+    display: flex;
+    align-items: flex-end;
+    position :relative;
+    justify-content: flex-end;
+    align-items: flex-end;
+    vertical-align: bottom;
+  }
+  
+  i .far.fa-heard::before{
+    position: absolute;
+    right: 0;
+  }
+ 
+.image img{
+    height: 12rem;
+    width: 100%;
+    border: 0 solid transparent;
+    border-radius: 1rem 1rem 0 0;
+    box-shadow: none;
+    object-fit: cover;
+    overflow: hidden;
+    margin-top:-20px;
+  }
+
+.card_restaurant{
+    width: 95%;
+    display: block;
+    box-shadow: 0 0 6px 3px rgba(180, 178, 178, 0.274);
+    border-radius: 30px;
+    text-decoration: none;
+    color:black;
+    max-height: 300px;
+    background-color: white;
+    position:relative;
+    overflow: hidden;
+    margin: 2.5% ;
+    padding: 0;
+    justify-content: space-between;
+}
+
+.restaurant_name {
+  display:block;
+  object-fit: cover;
+  padding: 6px;
+  position: relative;
+  margin-top: 0;
+}
+
+.card__restaurant__title {
+  font-weight: bold;
+  justify-content: space-between;
+  vertical-align: top;
+  flex-wrap: wrap;
+}
+
+.card__restaurant__localisation {
+text-align: left;
+margin-top: -15px;
+}
+ 
+span .like_btn {
+    position: relative;
+    display: inline-block;
+    top:0;
+    justify-content: space-between;
+    vertical-align: top; 
+    align-content: flex-end;   
+}
+   
+footer {
+    background-color: #252121;
+    display: flex;
+    align-items: flex-start;
+    padding: 0;
+    color: white;
+    justify-content: initial; 
+    width:100%
+  }
+    
+footer img {
+      display: flex;
+      flex-wrap: wrap;
+      position: relative;
+      top: 0;
+      font-size: 20px;
+      height: 35px;
+      margin-bottom: 6%;
+} 
+  
+footer ul li {
+    list-style-type: none;
+    padding: 5px ;
+  }
+    
+footer a {
+    color: white;
+    text-decoration: none;
+    }
+
+} /* FIN smartphone only */
+  /* ****************************** Tablette *******************************/
+  @media (min-width: 766px) and (max-width: 1200px) {
+  body{
+  overflow-x:hidden;
+ }
+  
+.background-color: rgb(241, 241, 241); {
+     margin:auto;
+     width: 100%;
+     padding: 0 16px;
+}
+
+.card_restaurant{
+  margin-right: 4px;
+}
+  
+.restaurants{
+  flex-direction: column;
+  width: 100%;
+}
+
+.restaurant_list {
+  flex-basis: 100%;
+  margin-right: 0;
+  margin-top: 20px;
+  }
+
+  footer{
+    width:100%;
+  }
+} /* FIN tablette */
+  
+  
+  
