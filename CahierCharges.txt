@@ -170,23 +170,24 @@ Le styles du sites à été réalisé en css
 Les styles, on été "découpé" en morceaux afin de faciliter le travail sur les différentes parties du site. Voir le répertoire css. Mobile first à été utilisé.
 
 Des repères, comme ceux présent dans Gimp m'on permis d'aligner correctement les éléments comme sur la maquette. 
-Je pense d'ailleurs améliorer le concept avec JS et d'autres frameworks(Bootstrap, jQuery, google map... afin d'obtenir un véritable outil de développement pour les dévelopeurs front-end.
+Je pense d'ailleurs améliorer le concept avec JS et d'autres frameworks(Bootstrap, jQuery, google map... afin d'obtenir un véritable outil de développement pour les dévelopeurs front-end. 
 
-Projet vraiment intéressant qui m'as permit de pratiquer les animations avec CSS et de comprendre à quelle moment utiliser les transitions ou les keyframes
+Projet vraiment intéressant qui m'as permit de pratiquer les animations avec CSS et de comprendre à quelle moment utiliser les transitions ou les keyframes. J'ai également refait le premier P3.
 
 Liens d'hébergements :
 Projet Ohmyfood réalisé par Myriam Greder et hébergé sur [GitPages] .
-My site is published at https://nymerialucky.github.io/p3_ohmyfood/ .
-Répo:https://github.com/NymeriaLucky/p3_ohmyfood.git
+Mon site est publié sur la page: https://nymerialucky.github.io/p3_ohmyfood/ .
+Répo:https://github.com/NymeriaLucky/p3_ohmyfood.git .
 
-publié sur le site legoll.fr, wordpress;
+
+Publié également sur le site legoll.fr, wordpress: https://www.legoll.fr/p3_ohmyfood/ 
 
 Languages
 CSS
-51.7%
+56.7%
  
 HTML
-48.3%
+43.3%
  
 Batchfile
 0.4%

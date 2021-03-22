@@ -33,6 +33,10 @@ html {
 	opacity:1;
   }
 
+  #imageA {
+	max-height: 370px;
+  }
+
   footer {
 	background-color: #252121;
 	display: flex;
@@ -96,7 +100,6 @@ html {
     flex-shrink: 1;
     flex-basis: 0%;
     object-position: center center;
-    max-height: 370px;
     justify-content: center;
     max-width: 100%;
     height: auto;
@@ -132,7 +135,7 @@ h1{
 		margin: auto;
 		position: relative;
 		display: block;
-	    background-color: f6f6f6;
+	    background-color: #f6f6f6;
  }
   
 h2 {
@@ -146,6 +149,7 @@ h2 {
 .menu__title {
     font-family: Shrikhand,"cursive";
 	display:flex;
+	flex-wrap: nowrap;
 }
 
 .content{
@@ -156,19 +160,19 @@ h2 {
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;/*--passe au validateur sous cette forme!--*/
 	position: relative;
-	left: 50%;
+	left:calc(50% - 39px);
 	font-size: 31px;
-	top: 3.8px;
+	top: 0;
 	display: block;
 }
   
 .border {
 	font-size:35px;
-	right: -380px;
+	left: 50%;
 	vertical-align: baseline;
 	position: relative;
 	font-weight: 100;
-	font-style: small;
+	font-style: normal;
 }
   
 .content:hover {
@@ -183,6 +187,12 @@ i.far.fa-heart .border{
 	align-items: flex-end;
 	position: relative;
 }
+
+i .far.fa-heard::before{
+    position: absolute;
+    right: 0;
+  }
+  
 .menu__title {
     font-family: Shrikhand,"cursive";
 }
@@ -291,12 +301,15 @@ section {
 	padding: 0 1rem;
 	background-color: #f6f6f6;
 }
+
 .menu_header {
+	display:inline-block;
     position: relative;
     border-radius: 1.5rem 1.5rem 0 0;
     padding: 2.4rem 0 0 1.5rem;
     margin-top: -2rem;
     background-color: #f6f6f6;
+	width:100%;
 }
 
 .commande_button {
@@ -314,8 +327,7 @@ section {
 	background-color: #aa5edc;
 	background-image: linear-gradient(to bottom right, 
 	#ec73da, #a35bdc  50%);
-	rgba(247, 208, 245, 0.959));
-	box-shadow: inset 2px 2px 3px   #a05adc,
+	box-shadow: inset 2px 2px 3px   #a05adc
 				inset -2px -2px 3px #aa5edc;
   }
   
@@ -338,26 +350,27 @@ footer img {
 	   display: flex;
 	   flex-wrap: wrap;
 	   position: relative;
-	   top: 0;
+	   margin-top: 5px;
 	   font-size: 20px;
 	   height: 35px;
-	   margin-bottom: 8%;
+	   margin-bottom: 6%;
 } 
 	 
 footer .footer__seclect {
 		margin-bottom: 32px;
 		list-style-type: none;
-		width: 100%;
+		width:100%;
 }
 	 
 footer .footer__seclect a, ul, li {
 	   list-style-type: none;
 	   margin-top: 8px;
-	   margin: 0;
+	   margin-left: 8px;
 	   padding: 0; 
 	   text-decoration: none;
 	   font-size: 18px; 
 	   line-height: 140%;
+	   white-space: nowrap;
 	  }
 } /* FIN smartphone only */
 /**** TABLETTE ****/

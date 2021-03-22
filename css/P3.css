@@ -195,8 +195,7 @@ p {
   border-radius: 30px;
   background-color: #aa5edc;
   background-image: linear-gradient(to bottom right, #ec73da, #ac5edb 50%);
-                    rgba(247, 208, 245, 0.959));
-  box-shadow: inset 2px 2px 3px   #a05adc,
+  box-shadow: inset 2px 2px 3px   #a05adc
               inset -2px -2px 3px #aa5edc;
 }
 
@@ -247,7 +246,8 @@ aside .filters {
   text-align: center;
   justify-content: space-around;
   flex-wrap: nowrap;
-  width: 70%;   
+  width: 70%;
+  white-space: nowrap;   
 }
 
 .info1:before {
@@ -268,6 +268,11 @@ aside .filters {
   align-items: center;
   color: #fff;
   position: absolute;
+}
+
+.info1:hover {
+  transform: scale(1.01);
+  box-shadow: 0 0 3px 2px #F2F2F2;
 }
 
 i.fas.fa-mobile-alt, i.fas.fa-list-ul, i.fas.fa-store {
@@ -363,7 +368,11 @@ section .container {
   display: inline-block;
   text-decoration: none;
   color: black;
-  border-radius: O O 10px 10px;
+  border-top-left-radius:0;
+  border-top-right-radius:0;
+  border-bottom-right-radius:10px;
+  border-bottom-left-radius:10px;
+  border-color: lightslategrey;
 }
 
 .restaurant_name .card__restaurant__localisation h3 { 
@@ -406,6 +415,7 @@ i.far.fa-heart .border{
 	position :relative;
 	justify-content: flex-end;
 	align-items: flex-end;
+  object-position :right;
 }
 
 i .far.fa-heard::before {
@@ -418,7 +428,7 @@ i .far.fa-heard::before {
   position: relative;
   justify-content: space-between;
   vertical-align: top;
-  top: -2;
+  top: -2px;
   align-content: end;
   object-position: right top;
 }
@@ -447,9 +457,11 @@ footer {
 	background-color: #252121;
 	display: flex;
 	align-items: flex-start;
-	padding: 30px;
+	padding: 20px;
 	color: white;
-  text-decoration: none; 
+  text-decoration: none;
+  width: 100%; 
+  align-content: stretch;
 }
   
 footer img {
@@ -471,7 +483,7 @@ footer a {
 	color: white;
   text-decoration:none;
   }
-/********************************** STYLE Mobile ********/
+/********************************** STYLE Mobile **********************/
 @media (max-width: 768px) {
   body {
   font-family: "Shrikhand, Roboto, Arial";
@@ -602,8 +614,7 @@ header {
   border-radius: 30px;
   background-color: #aa5edc;
   background-image: linear-gradient(to bottom right, #ec73da, #ac5edb 50%);
-                   rgba(247, 208, 245, 0.959));
-  box-shadow: inset 2px 2px 3px   #a05adc,
+  box-shadow: inset 2px 2px 3px   #a05adc
               inset -2px -2px 3px #aa5edc;
 }
 
@@ -643,6 +654,11 @@ margin: 0;
   margin: 4% auto;
 }
 
+.info1:hover {
+  transform: scale(1.01);
+  box-shadow: 0 0 3px 2px #F2F2F2;
+}
+
 .filter_list:after{
     content: "";
     display: table;
@@ -651,16 +667,15 @@ margin: 0;
   
 aside .filter_list .info1 {
     display: flex;
-    justify-content: center;
-   
+    justify-content: center;   
 }
 
- .text{
+.text{
    content:"\00a0 \00a0";
    font-weight: bold;
    text-align: center;
    flex-direction: row;
- } 
+} 
 
  .info1:before {
     counter-increment: compteListe 1;
@@ -707,13 +722,13 @@ aside .filter_list .info1 {
     margin-top: 0;
   }
     
-  .filters .filter_item:hover {
+.filters .filter_item:hover {
     background-color: #88b1ee;
     color: #fff;
     border: 2px solid #DEEBFF;
     transform: translateY(-1px);
     box-shadow: 1px 1px 1px 1px #DEEBFF;
-   }
+}
 
 .container{
     background-position: center;
@@ -739,23 +754,18 @@ margin-top: -12px;
  margin-top: -3px;
   }
 
-  .content:hover {
-    opacity: 1;
-    transition: opacity 1s;
-  }
-  
-  .info1:first-child {
+.info1:first-child {
     margin-top: 0;
   }
   
-  .card__badge {
+.card__badge {
     background-color: #99e2d0;
     color: #1b6150;
     padding: .5em;
     border-radius: .125rem;
     position: relative;
     top: 28px;
-    left: 83%;
+    left: 80%;
     margin-bottom:-270px;
     text-decoration: none;
 }
@@ -769,7 +779,7 @@ margin-top: -12px;
     color:#9356dc;
   }
   
-  .content{
+.content{
     opacity: 0;
     background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
     background: -o-linear-gradient(top, #ff79da, #9356dc);
@@ -778,25 +788,25 @@ margin-top: -12px;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;/*--passe au validateur sous cette forme!--*/
     position: relative;
-    left:-38px;
     font-size: 31px;
+    left: -38px;
     top: -1px;
     display: block;
-    }
+  }
     
   .border {
     font-size:35px;
     top: -0.2px;
-    margin-left:398px;
-    vertical-align: baseline;
+    vertical-align: top;
     position: relative;
+    top:-2px;
   }
     
   .content:hover{
     opacity: 1;
     transition: opacity 1s;
   }
-    
+   
   i.far.fa-heart .border{
     display: flex;
     align-items: flex-end;
@@ -805,14 +815,14 @@ margin-top: -12px;
     align-items: flex-end;
     vertical-align: bottom;
   }
-  
+
   i .far.fa-heard::before{
     position: absolute;
     right: 0;
   }
  
 .image img{
-    height: 12rem;
+    height: 11rem;
     width: 100%;
     border: 0 solid transparent;
     border-radius: 1rem 1rem 0 0;
@@ -820,6 +830,10 @@ margin-top: -12px;
     object-fit: cover;
     overflow: hidden;
     margin-top:-20px;
+  }
+
+  .image:hover{
+    transform: scale(1.01);;
   }
 
 .card_restaurant{
@@ -841,9 +855,10 @@ margin-top: -12px;
 .restaurant_name {
   display:block;
   object-fit: cover;
-  padding: 6px;
+  padding-left: 5px;
   position: relative;
-  margin-top: 0;
+  margin-top: -5px;
+  white-space: nowrap;
 }
 
 .card__restaurant__title {
@@ -854,19 +869,19 @@ margin-top: -12px;
 }
 
 .card__restaurant__localisation {
-text-align: left;
-margin-top: -15px;
+ text-align: left;
+ padding-bottom: 14px;
 }
  
 span .like_btn {
     position: relative;
     display: inline-block;
-    top:0;
+    top:-2px;
     justify-content: space-between;
     vertical-align: top; 
     align-content: flex-end;   
 }
-   
+  
 footer {
     background-color: #252121;
     display: flex;
@@ -877,34 +892,38 @@ footer {
     width:100%
   }
     
-footer img {
+#footer_logo {
       display: flex;
       flex-wrap: wrap;
       position: relative;
-      top: 0;
+      margin-top: 10%;
       font-size: 20px;
-      height: 35px;
-      margin-bottom: 6%;
+      margin-bottom: 2%;
 } 
   
-footer ul li {
-    list-style-type: none;
-    padding: 5px ;
-  }
+footer .footer__seclect {
+  margin-bottom: 32px;
+  list-style-type: none;
+  width:100%;
+}
     
-footer a {
-    color: white;
-    text-decoration: none;
-    }
-
+footer .footer__seclect a, ul, li {
+  list-style-type: none;
+  margin-top: 8px;
+  margin-left: 10px;
+  padding: 0; 
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 140%;
+ }
 } /* FIN smartphone only */
   /* ****************************** Tablette *******************************/
   @media (min-width: 766px) and (max-width: 1200px) {
   body{
   overflow-x:hidden;
  }
-  
-.background-color: rgb(241, 241, 241); {
+ 
+.container{
      margin:auto;
      width: 100%;
      padding: 0 16px;
@@ -927,6 +946,7 @@ footer a {
 
   footer{
     width:100%;
+    align-content: stretch;
   }
 } /* FIN tablette */
   
