@@ -1,67 +1,71 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@200;300;500;700;900&display=swap");
-/**** STYLE GÉNÉRAL ****/
+@media screen and (min-width: 1024px){
 html {
 	box-sizing: border-box;
   }
-  *,
-  *:before,
-  *:after {
-	box-sizing: inherit;
-  }/*initialisation des navigateur*/
-
-  @keyframes progressif{
+  
+@keyframes progressif{
 	0%{opacity:0;}
 	100%{opacity:1;}
   }
   
-  #Entree4{
+#Entree4{
 	animation: progressif 2s linear;
 	opacity:1;
-  }
+}
 
-  #Plat4{
+#Plat4{
 	animation: progressif 2s linear;
 	animation-delay: 2s;
 	opacity:1;
   }
   
-  #Dessert4{
+#Dessert4{
 	animation: progressif 2s linear;
 	animation-delay: 4s;
 	opacity:1;
-  }
+}
 
-  #imageA {
+#imageA {
 	max-height: 370px;
-  }
+}
 
-  footer {
+.prix{
+	margin-right: 0px;
+}
+
+.border{
+	left:0px;
+}
+
+footer {
 	background-color: #252121;
 	display: flex;
 	align-items: flex-start;
 	padding: 30px;
 	color: white; 
-  }
+}
   
   footer ul li a {
 	list-style-type: none;
 	padding: 5px;
 	text-decoration: none;
-  }
+}
   
   footer a {
 	color: white;
-  }/* ****************************** smartphone only ****************************** *//**** SMARTPHONE ****
+  }
+}/************************* smartphone only ****************************** *//**** SMARTPHONE ****
 @media (max-width: 768px) {*/
- body, html {
+body, html {
    margin: 0;
-   font-family: "Roboto", sans-serif "Shirkhand";
+   font-family: "Roboto", sans-serif, "Shirkhand";
    scroll-behavior: smooth;
  }
 
- i.fas.fa-arrow-left {
+i.fas.fa-arrow-left {
 	align-items: flex-start;
 	height:10px;
 	margin-top: 95px;
@@ -71,17 +75,17 @@ html {
 	font-size: smaller;
  }
 
- h1 h2 h3 h4 h5 {
+h1 h2 h3 h4 h5 {
 	font-family: "Shirkhand";
   }
   
-  p {
+p {
 	font-family: "Roboto", sans-serif;
 	 font-style: initial;
 	 text-decoration: none;
   }  
  
-  i .far.fa-heard::before {
+i .far.fa-heard::before {
 	  position: absolute;
 	  right: 0;
  }
@@ -137,7 +141,7 @@ h1{
 		display: block;
 	    background-color: #f6f6f6;
  }
-  
+ 
 h2 {
 	display: flex;
 	margin-top:-5px;
@@ -319,7 +323,6 @@ section {
 	align-items: center;
 	margin: auto;
 	text-align: center;
-	height: 50px;
 	width: 210px;
 	color:white;
 	text-shadow: 1px 1px 1px rgb(38, 27, 68);
@@ -339,39 +342,37 @@ section {
 	box-shadow: inset -2px -2px 3px rgba(233, 9, 203, 0.6),
 				inset 2px 2px 3px rgba(0, 0, 0, 0.6);
   }
-  #footer_logo a {
-	   justify-content: initial;
-		width: 50px;
-		height: 10px;
-		padding: 0;
+
+  footer {
+	background-color: #252121;
+	display: flex;
+	align-items: flex-start;
+	padding: 20px;
+	color: white;
+  text-decoration: none;
+  width: 100%; 
+  align-content: stretch;
 }
-	 
+  
 footer img {
-	   display: flex;
-	   flex-wrap: wrap;
-	   position: relative;
-	   margin-top: 5px;
-	   font-size: 20px;
-	   height: 35px;
-	   margin-bottom: 6%;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    top: 0;
+    font-size: 20px;
+    height: 35px;
+    margin-bottom: 8%;
 } 
-	 
-footer .footer__seclect {
-		margin-bottom: 32px;
-		list-style-type: none;
-		width:100%;
+
+footer ul li {
+	list-style-type: none;
+	padding: 5px ;
 }
-	 
-footer .footer__seclect a, ul, li {
-	   list-style-type: none;
-	   margin-top: 8px;
-	   margin-left: 8px;
-	   padding: 0; 
-	   text-decoration: none;
-	   font-size: 18px; 
-	   line-height: 140%;
-	   white-space: nowrap;
-	  }
+  
+footer a {
+	color: white;
+  text-decoration:none;
+  }
 } /* FIN smartphone only */
 /**** TABLETTE ****/
 @media (max-width: 1024px) {
@@ -398,5 +399,11 @@ footer .footer__seclect a, ul, li {
 	footer{
 		width:100%;
 	}
+
+  *,
+  *:before,
+  *:after {
+	box-sizing: inherit;
+  }/*initialisation des navigateur*/
 }/* FIN tablette */
 

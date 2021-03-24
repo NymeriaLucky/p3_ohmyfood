@@ -6,11 +6,7 @@ html {
 	box-sizing: border-box;
   margin: auto;
   }
-  *,
-  *:before,
-  *:after {
-	box-sizing: inherit;
-  } /*initialisation des navigateur*/
+  
   body {
     font-family: "Shrikhand, Roboto, Arial";
     padding: 0;
@@ -188,7 +184,6 @@ p {
   align-items: center;
   margin: auto;
   text-align: center;
-  height: 50px;
   width: 210px;
   color:white;
   text-shadow: 1px 1px 1px rgb(38, 27, 68);
@@ -439,6 +434,8 @@ i .far.fa-heard::before {
 
 .card_restaurant:hover {
   transform: scale(1.01);
+  transition-property: transform;
+  transition-duration:400ms;
   box-shadow: 0 0 3px 2px #F2F2F2;
 }
 
@@ -797,6 +794,7 @@ margin-top: -12px;
   .border {
     font-size:35px;
     top: -0.2px;
+    margin-left: 0px;
     vertical-align: top;
     position: relative;
     top:-2px;
@@ -948,6 +946,12 @@ footer .footer__seclect a, ul, li {
     width:100%;
     align-content: stretch;
   }
+
+  *,
+  *:before,
+  *:after {
+	box-sizing: inherit;
+  } /*initialisation des navigateur*/
 } /* FIN tablette */
   
   
