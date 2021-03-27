@@ -283,7 +283,7 @@ section {
 } 
 	  
 .casesmenu p {
-		  width:300px;
+	width: 268px;
 		  white-space: nowrap;
 		  overflow: hidden;
 		  text-overflow: ellipsis;
