@@ -4,11 +4,16 @@
 @media screen and (min-width: 1024px){/**** STYLE GÉNÉRAL ****/
 html {
 	box-sizing: border-box;
+	margin:auto;
   }
   
 @keyframes progressif{
 	0%{opacity:0;}
 	100%{opacity:1;}
+}
+
+body{
+	padding:0;
 }
    
 #Entree2{
@@ -44,7 +49,6 @@ footer {
 	background-color: #252121;
 	display: flex;
 	align-items: flex-start;
-	padding: 30px;
 	color: white; 
   }
   
@@ -153,7 +157,8 @@ h2 {
 .menu__title {
     font-family: Shrikhand,"cursive";
 	display:flex;
-	flex-wrap: nowrap;
+	flex-wrap: wrap;
+	object-position: left;
 }
 
 .content{
@@ -194,6 +199,7 @@ i.far.fa-heart .border{
 
 .menu__title {
     font-family: Shrikhand,"cursive";
+	overflow-wrap: break-word;
 }
   
 .content:hover {
@@ -210,7 +216,7 @@ i.far.fa-heart .border{
 	display: flex;
 	position :relative;
 	justify-content: flex-end;
-	align-items: flex-end;
+	align-items: center;
   }
 
 section {
@@ -218,6 +224,7 @@ section {
 }
 
 .bloc__menu {
+	  margin:auto;
 	  max-width: 100%;
 	  overflow: hidden;
 	  padding: 0 1rem;
@@ -347,7 +354,7 @@ section {
 	background-color: #252121;
 	display: flex;
 	align-items: flex-start;
-	padding: 20px;
+	padding: 0;
 	color: white;
   text-decoration: none;
   width: 100%; 
