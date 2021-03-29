@@ -73,6 +73,7 @@ html {
   animation-duration: 4s;
   background-color: lightgray;
   animation-iteration-count: 1;
+  z-index: 100;
 }
 
 @keyframes blink {
@@ -492,6 +493,7 @@ footer a {
   padding: 0;
   color: #232323;
   margin: 5px;
+  flex-grow: 1;
 }
   
 h1 {
@@ -762,9 +764,10 @@ margin-top: -12px;
     border-radius: .125rem;
     position: relative;
     top: 28px;
-    left: 80%;
+    left: 78%;
     margin-bottom:-270px;
     text-decoration: none;
+    flex-grow: 1;
 }
 
   i.fas.fa-mobile-alt, i.fas.fa-list-ul, i.fas.fa-store {

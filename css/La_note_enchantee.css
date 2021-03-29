@@ -2,18 +2,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@200;300;500;700;900&display=swap");
 @media screen and (min-width: 1024px){/**** STYLE GÉNÉRAL ****/
-html {
+
+html, body {
+	margin: 0;
 	box-sizing: border-box;
-	margin:auto;
+	padding: 0;
 }
-  
+
 @keyframes progressif{
 	0%{opacity:0;}
 	100%{opacity:1;}
-}
-
-body{
-	padding:0;
 }
      
 #Entree1{
@@ -67,6 +65,7 @@ body, html {
    margin: 0;
    font-family: "Roboto", sans-serif, "Shirkhand";
    scroll-behavior: smooth;
+   flex-grow: 1;
  }
 
  i.fas.fa-arrow-left {
@@ -77,6 +76,7 @@ body, html {
 	vertical-align:text-bottom;
     padding-top: 50px;
 	font-size: smaller;
+	flex-grow: 1;
 }
 
  h1 h2 h3 h4 h5 {
@@ -88,11 +88,6 @@ p {
 	 font-style: initial;
 	 text-decoration: none;
 }  
- 
-i .far.fa-heard::before {
-	  position: absolute;
-	  right: 0;
-}
 
 .image_restaurant img {
     width: 100%;
@@ -158,6 +153,7 @@ h2 {
     font-family: Shrikhand,"cursive";
 	display:flex;
 	flex-wrap: nowrap;
+	object-position: left;
 }
 
 .content{
@@ -177,7 +173,7 @@ h2 {
 i .far.fa-heard::before{
     position: absolute;
     right: 0;
-  }
+}
 
 .border {
 	font-size:35px;
@@ -192,30 +188,27 @@ i .far.fa-heard::before{
 	opacity: 1;
 	transition: opacity 1s;
 }
-  
+
 i.far.fa-heart .border{
 	position:relative;
-	object-position :right;
+	object-position :center;
 	justify-content: flex-end;
 	align-items: flex-end;
-	display:inline-block;	
+	display:inline-block;
+	flex-grow: 1;
+	font-size: 1.4rem;
+    font-weight: normal;	
 }
 
 .menu__title {
     font-family: Shrikhand,"cursive";
+	overflow-wrap: break-word;
 }
   
 .content:hover {
 	opacity: 1;
 	transition: opacity 1s;
 }
-
-i.far.fa-heart .border{
-	display: flex;
-	position :relative;
-	justify-content: flex-end;
-	align-items: flex-end;
-  }
   
 section {
 	display: block;
@@ -284,6 +277,7 @@ section {
 	padding:5px;
 	display: flex;
 	justify-content: space-between;
+	flex-grow: 1;	
 } 
 	  
 .casesmenu p {
@@ -300,7 +294,7 @@ section {
 .prix {
 	padding-top: 36px;
 	font-weight: bold;
-	margin-right: -20%;
+	margin-right: -5%;
 }
 	  
 .bloc__menu {
@@ -377,13 +371,6 @@ footer a {
 	color: white;
   text-decoration:none;
   }
-
-	 
-
-	 
-
-	 
-
 }/** FIN smartphone only */
 /**** TABLETTE ***/
 @media (max-width: 1024px) {
