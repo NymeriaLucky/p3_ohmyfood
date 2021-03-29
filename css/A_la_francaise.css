@@ -60,7 +60,7 @@ footer {
 	color: white;
  }
 }/* ****************************** smartphone only ****************************** *//**** SMARTPHONE ***
-@media (max-width: 768px) {*/
+@media (min-width: 768px) {*/
  body, html {
    margin: 0;
    font-family: "Roboto", sans-serif, "Shirkhand"; 
