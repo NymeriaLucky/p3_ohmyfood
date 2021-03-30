@@ -201,8 +201,7 @@ i.far.fa-heart .border{
 	display:inline-block;
 	flex-grow: 1;
 	font-size: 1.4rem;
-    font-weight: normal;
-	flex-grow: 1;	
+    font-weight: normal;	
 }
 
 .menu__title {
@@ -300,6 +299,7 @@ section {
 	padding-top: 36px;
 	font-weight: bold;
 	margin-right: -5%;
+	flex-grow: 1;
 }
 	  
 .bloc__menu {

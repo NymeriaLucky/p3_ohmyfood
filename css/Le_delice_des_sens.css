@@ -139,8 +139,7 @@ h1{
  }
  
  main.container_menu {
-	
-		max-width: 1280px;
+	    max-width: 1280px;
 		margin: auto;
 		position: relative;
 		display: block;
@@ -302,7 +301,8 @@ section {
 .prix {
 	padding-top: 36px;
 	font-weight: bold;
-	margin-right: -5%;	
+	margin-right: -5%;
+	flex-grow: 1;	
 }
   
 .bloc__menu {

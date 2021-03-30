@@ -12,7 +12,6 @@ html, body {
 	0%{opacity:0;}
 	100%{opacity:1;}
 }
-
    
 #Entree2{
 	animation: progressif 2s linear;
@@ -197,7 +196,6 @@ i.far.fa-heart .border{
 	justify-content: flex-end;
 	align-items: flex-end;
 	position: relative;
-	overflow-wrap: break-word;
 	flex-grow: 1;
 	font-size: 1.4rem;
     font-weight: normal;
@@ -286,7 +284,6 @@ section {
 	display: flex;
 	justify-content: space-between;
 	flex-grow: 1;
-	position:absolute;
 } 
 	  
 .casesmenu p {
@@ -304,7 +301,7 @@ section {
 	padding-top: 36px;
 	font-weight: bold;
 	margin-right: -5%;
-	position:absolute;	
+	flex-grow: 1;	
 }
 	  
 .bloc__menu {
