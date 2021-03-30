@@ -158,8 +158,10 @@ h2 {
 .menu__title {
     font-family: Shrikhand,"cursive";
 	display:flex;
-	flex-wrap: nowrap;
+	flex-wrap: wrap;
 	object-position: left;
+	position:relative;
+	width:60%;
 }
 
 .content{

@@ -152,8 +152,10 @@ h2 {
 .menu__title {
     font-family: Shrikhand,"cursive";
 	display:flex;
-	flex-wrap: nowrap;
+	flex-wrap: wrap;
 	object-position: left;
+	position:relative;
+	width:60%;
 }
 
 .content{
@@ -168,6 +170,7 @@ h2 {
 	font-size: 31px;
 	top: 0;
 	display: block;
+	flex-grow: 1;
 }
 
 i .far.fa-heard::before{
@@ -182,6 +185,7 @@ i .far.fa-heard::before{
 	position: relative;
 	font-weight: 100;
 	font-style: normal;
+	flex-grow: 1;
 }
   
 .content:hover {
@@ -197,7 +201,8 @@ i.far.fa-heart .border{
 	display:inline-block;
 	flex-grow: 1;
 	font-size: 1.4rem;
-    font-weight: normal;	
+    font-weight: normal;
+	flex-grow: 1;	
 }
 
 .menu__title {
