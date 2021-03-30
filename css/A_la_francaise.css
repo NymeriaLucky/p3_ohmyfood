@@ -286,6 +286,7 @@ section {
 	display: flex;
 	justify-content: space-between;
 	flex-grow: 1;
+	position:absolute;
 } 
 	  
 .casesmenu p {
@@ -302,7 +303,8 @@ section {
 .prix {
 	padding-top: 36px;
 	font-weight: bold;
-	margin-right: -5%;	
+	margin-right: -5%;
+	position:absolute;	
 }
 	  
 .bloc__menu {
