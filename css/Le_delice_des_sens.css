@@ -302,7 +302,7 @@ section {
 	padding-top: 36px;
 	font-weight: bold;
 	margin-right: -5%;
-	flex-grow: 1;	
+	width: -5%;	
 }
   
 .bloc__menu {
