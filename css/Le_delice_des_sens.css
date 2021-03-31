@@ -157,7 +157,7 @@ h2 {
 .menu__title {
     font-family: Shrikhand,"cursive";
 	display:flex;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
 	object-position: left;
 	position:relative;
 	width:60%;

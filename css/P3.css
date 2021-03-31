@@ -299,8 +299,8 @@ section .container {
   border-radius: .125rem;
   position: relative;
   top: 38px;
-  left: 84%;
-  margin-bottom:-270px;
+  left: 68%;
+  margin-bottom:-270px; 
 }
 
 .restaurant_list {
@@ -853,6 +853,11 @@ margin-top: -12px;
     justify-content: space-between;
 }
 
+@media screen and (max-width: 350px){
+  .card__badge{
+    left:68%;
+  }
+}
 .restaurant_name {
   display:block;
   object-fit: cover;
