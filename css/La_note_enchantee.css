@@ -185,7 +185,6 @@ i .far.fa-heard::before{
 	position: relative;
 	font-weight: 100;
 	font-style: normal;
-	flex-grow: 1;
 }
   
 .content:hover {
@@ -207,6 +206,7 @@ i.far.fa-heart .border{
 .menu__title {
     font-family: Shrikhand,"cursive";
 	overflow-wrap: break-word;
+	padding: 15px 0px 0px 15px;
 }
   
 .content:hover {
@@ -285,7 +285,7 @@ section {
 } 
 	  
 .casesmenu p {
-		  width: 268px;
+		  width: 50%;
 		  white-space: nowrap;
 		  overflow: hidden;
 		  text-overflow: ellipsis;
@@ -299,7 +299,6 @@ section {
 	padding-top: 36px;
 	font-weight: bold;
 	margin-right: -5%;
-	width: -5%;
 }
 	  
 .bloc__menu {
@@ -313,7 +312,6 @@ section {
 	    display:inline-block;
 		position: relative;
 		border-radius: 1.5rem 1.5rem 0 0;
-		padding: 2.4rem 0 0 1.5rem;
 		margin-top: -2rem;
 		background-color: #f6f6f6;
 		width:100%;
