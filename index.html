@@ -1,28 +1,44 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, maximum-scale=1"/>
+  <meta name="viewport" content="width=device-width, maximum-scale=1" />
   <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap"
+    rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/P3.css">   
+  <link rel="stylesheet" href="css/P3.css">
   <link rel="shortcut icon" href="../../img/logo/ohmyfood_2x.svg" type="image/x-icon">
   <link rel="shortcut icon" href="images/logo/ohmyfood.png" type="image/x-icon">
-  <script src="https://kit.fontawesome.com/9bc256f126.js" crossorigin="anonymous"></script><!--lien google map leaflet supprimé-->
+  <script src="https://kit.fontawesome.com/9bc256f126.js" crossorigin="anonymous"></script>
+  <!--lien google map leaflet supprimé-->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-<title>Accueil</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <title>Accueil</title>
 </head>
+
 <body>
   <div class="loader">
-      <div class="loading">
-        <span class="point point1"></span>
-        <span class="point point2"></span>
-        <span class="point point3"></span>
+    <div class="loading">
+      <span class="point point1"></span>
+      <span class="point point2"></span>
+      <span class="point point3"></span>
+    </div>
+    <div class="mypage">
+      <!-- z-index: 1 nécessaire dans le css pour avoir le lien au 1er plan , target="_blank" ouvre un nouvel onglet -->
+      <div class="fab-container">
+        <div class="iconbutton">
+          <a href="https://nymerialucky.github.io/Mon-Portfolio/" target="_self">
+            <!-- _self on reste dans le même onglet -->
+            <i class="fas fa-share-square fa-2x" title="Revenir au portfolio"></i>
+          </a>
+        </div>
       </div>
-  <div class="mypage"> <!-- chargement de la page-->
+
+      <!-- chargement de la page-->
       <main>
         <header>
           <div class="header__logo">
@@ -32,14 +48,15 @@
           </div>
         </header>
         <br>
-        <div class="search_button" >
-          <span class="fa fa-map-marker">      
-    <!--Pour le fonctionnementdu bouton, nous chargeons les fichiers CDN de Leaflet. Le CSS AVANT le JS 
-    <a href="Map/map.html/map.css/map.js"></a>-->&nbsp; Paris, Belleville</span>      
+        <div class="search_button">
+          <span class="fa fa-map-marker">
+            <!--Pour le fonctionnementdu bouton, nous chargeons les fichiers CDN de Leaflet. Le CSS AVANT le JS 
+    <a href="Map/map.html/map.css/map.js"></a>-->&nbsp; Paris, Belleville
+          </span>
         </div>
         <section>
           <div class="index">
-            <h1><strong>Réservez le menu qui vous convient</strong></h1>      
+            <h1><strong>Réservez le menu qui vous convient</strong></h1>
             <h3>Découvrez des restaurants d'exception, selectionnés par nos soins.</h3>
             <!--exploration button--><br>
             <div class="exploration_button" aria-hidden="true">&nbsp; Explorer nos restaurants
@@ -48,109 +65,123 @@
         </section>
         <h2 class="filters_name">Fonctionnement</h2>
         <aside>
-          <div class="filters"> 
+          <div class="filters">
             <ol class="filter_list">
               <li class="info1">
-               <i class= "fas fa-mobile-alt" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;
+                <i class="fas fa-mobile-alt" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;
                 <span class="text">&nbsp;&nbsp;&nbsp;&nbsp; Choisissez un restaurants</span>
               </li>
               <li class="info1">
-                <i class= "fas fa-list-ul" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;
+                <i class="fas fa-list-ul" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;
                 <span class="text">&nbsp;&nbsp;&nbsp;&nbsp; Composez votre menu</span>
               </li>
               <li class="info1">
-                <i class= "fas fa-store" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;
+                <i class="fas fa-store" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;
                 <span class="text">&nbsp;&nbsp;&nbsp;&nbsp; Dégustez au restaurant</span>
               </li>
             </ol>
-          </div> 
+          </div>
         </aside>
-      <div class="container">
+        <div class="container">
           <h2 class="restaurants">Restaurants</h2>
           <br>
-        <div class="restaurant_list">
+          <div class="restaurant_list">
             <div class="restaurant_liste_groupe1">
               <div class="restaurant_description" id="card1">
                 <a href="La_palette_du_gout.html" class="card_restaurant">
                   <div class="image">
-                    <span class="card__badge">Nouveau</span>                                
+                    <span class="card__badge">Nouveau</span>
                     <img class="image1" src="images/restaurants/small/LaPaletteduGoutSmall.png
                     " alt="nouveau restaurant la palette du goût">
                   </div>
                   <div class="restaurant_name" id="restaurant_name1">
-                      <h3 class="card__restaurant__title">La palette du goût
-                        <span class="like_btn"> 
-                          <i class="far fa-heart border" aria-hidden="true"></i>
-                          <i class="fas fa-heart content" aria-hidden="true"></i>
-                        </span>
-                      </h3>
-                      <p class="card__restaurant__localisation">Ménilmontant</p>
+                    <h3 class="card__restaurant__title">La palette du goût
+                      <span class="like_btn">
+                        <i class="far fa-heart border" aria-hidden="true"></i>
+                        <i class="fas fa-heart content" aria-hidden="true"></i>
+                      </span>
+                    </h3>
+                    <p class="card__restaurant__localisation">Ménilmontant</p>
                   </div>
                 </a>
-              </div><!--fin 1er restaurant description-->
+              </div>
+              <!--fin 1er restaurant description-->
               <div class="restaurant_description" id="card2">
                 <a href="La_note_enchantee.html" class="card_restaurant">
                   <div class="image">
-                    <span class="card__badge">Nouveau</span><!--banniere nouveau-->
+                    <span class="card__badge">Nouveau</span>
+                    <!--banniere nouveau-->
                     <img class="image2" src="images/restaurants/small/LaNtEnchant%C3%A9eSml.png"
-                     alt="nouveau restaurant la note enchantée">
+                      alt="nouveau restaurant la note enchantée">
                   </div>
                   <div class="restaurant_name" id="restaurant_name2">
-                      <h3 class="card__restaurant__title">La note enchantée
-                        <span class="like_btn">
-                          <i class="far fa-heart border" aria-hidden="true"></i>
-                           <i class="fas fa-heart content" aria-hidden="true"></i>
-                        </span>
-                      </h3>
-                      <p class="card__restaurant__localisation">Charonne</p>
-                    </div><!--fin restaurant name-->
-                 </a>
-              </div><!--fin restaurant description--> 
-            </div><!--fin restaurant_liste_groupe1-->
+                    <h3 class="card__restaurant__title">La note enchantée
+                      <span class="like_btn">
+                        <i class="far fa-heart border" aria-hidden="true"></i>
+                        <i class="fas fa-heart content" aria-hidden="true"></i>
+                      </span>
+                    </h3>
+                    <p class="card__restaurant__localisation">Charonne</p>
+                  </div>
+                  <!--fin restaurant name-->
+                </a>
+              </div>
+              <!--fin restaurant description-->
+            </div>
+            <!--fin restaurant_liste_groupe1-->
             <div class="restaurant_liste_groupe2">
               <div class="restaurant_description" id="card3">
                 <a href="A_la_francaise.html" class="card_restaurant">
                   <div class="image">
-                    <img class = "image3" src="images/restaurants/small/toa-heftiba-DQKerTsQwi0-unsplashsmall.png" alt="restaurant A la française">
+                    <img class="image3" src="images/restaurants/small/toa-heftiba-DQKerTsQwi0-unsplashsmall.png"
+                      alt="restaurant A la française">
                   </div>
-                    <div class="restaurant_name">
-                      <h3 class="card__restaurant__title">A la française
-                        <span class="like_btn">
-                          <i class="far fa-heart border" aria-hidden="true"></i>
-                          <i class="fas fa-heart content" aria-hidden="true"></i>
-                        </span>
-                      </h3>
-                      <p class="card__restaurant__localisation">Cité Rouge</p>
-                    </div>
-                   </a>
+                  <div class="restaurant_name">
+                    <h3 class="card__restaurant__title">A la française
+                      <span class="like_btn">
+                        <i class="far fa-heart border" aria-hidden="true"></i>
+                        <i class="fas fa-heart content" aria-hidden="true"></i>
+                      </span>
+                    </h3>
+                    <p class="card__restaurant__localisation">Cité Rouge</p>
+                  </div>
+                </a>
               </div>
               <div class="restaurant_description" id="card4">
-                <a href="Le_delice_des_sens.html" class="card_restaurant"> 
+                <a href="Le_delice_des_sens.html" class="card_restaurant">
                   <div class="image">
-                    <img class="image4" src="images/restaurants/small/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplashsmall.png" alt="restaurant le délice des sens">
+                    <img class="image4"
+                      src="images/restaurants/small/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplashsmall.png"
+                      alt="restaurant le délice des sens">
                   </div>
-                     <div class="restaurant_name">
-                      <h3 class="card__restaurant__title">Le délice des sens
-                        <span class="like_btn">
-                          <i class="far fa-heart border" aria-hidden="true"></i>
-                          <i class="fas fa-heart content" aria-hidden="true"></i>
-                        </span>
-                      </h3>
-                      <p class="card__restaurant__localisation">Folie-Méricourt</p>
-                    </div>
-                 </a>
-              </div><!--fin restaurant description-->     
-            </div><!--fin restaurant_liste_groupe2-->
-          </div><!--fin restaurant_liste-->
-        </div><!--fin container-->
+                  <div class="restaurant_name">
+                    <h3 class="card__restaurant__title">Le délice des sens
+                      <span class="like_btn">
+                        <i class="far fa-heart border" aria-hidden="true"></i>
+                        <i class="fas fa-heart content" aria-hidden="true"></i>
+                      </span>
+                    </h3>
+                    <p class="card__restaurant__localisation">Folie-Méricourt</p>
+                  </div>
+                </a>
+              </div>
+              <!--fin restaurant description-->
+            </div>
+            <!--fin restaurant_liste_groupe2-->
+          </div>
+          <!--fin restaurant_liste-->
+        </div>
+        <!--fin container-->
       </main>
       <footer>
-        <div class="footer__select"> 
+        <div class="footer__select">
           <ul>
             <li><a href="footer__logo" id="footer_logo">
-              <img src="images/logo/ohmyfoodwsmall.png" alt="logo du site ohmyfood"></a></li>
-            <li class="Proposer un restaurant"><i class="fas fa-utensils" aria-hidden="true"></i><a href="#">&nbsp;Proposer un restaurant</a></li>
-            <li class="Devenir partenaire"><i class="fas fa-hands-helping" aria-hidden="true"></i><a href="#">&nbsp;Devenir partenaire</a></li>
+                <img src="images/logo/ohmyfoodwsmall.png" alt="logo du site ohmyfood"></a></li>
+            <li class="Proposer un restaurant"><i class="fas fa-utensils" aria-hidden="true"></i><a
+                href="#">&nbsp;Proposer un restaurant</a></li>
+            <li class="Devenir partenaire"><i class="fas fa-hands-helping" aria-hidden="true"></i><a
+                href="#">&nbsp;Devenir partenaire</a></li>
             <li class="Mentions légales"><a href="./ML/mentions.html">Mentions légales</a></li>
             <li class="contact"><a href="mailto:Ohmyfood@serveur.com">Contact</a></li>
           </ul>
@@ -159,4 +190,5 @@
     </div> <!-- fin chargement de la page-->
   </div> <!-- fin div loader -->
 </body>
+
 </html>

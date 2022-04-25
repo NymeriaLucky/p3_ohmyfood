@@ -481,6 +481,25 @@ footer a {
 	color: white;
   text-decoration:none;
   }
+
+   /* Défilement */
+ .fab-container{
+  position:fixed;
+  bottom:50px;
+  right:50px;
+  cursor:pointer;
+  z-index: 1;
+  }
+
+  .iconbutton{
+    /*
+    width:50px;
+    height:50px;
+    border-radius: 100%;
+    background: #ae00ff;
+    */
+    }
+
 /********************************** STYLE Mobile **********************/
 @media (max-width: 768px) {
   body {
@@ -967,7 +986,8 @@ footer .footer__seclect a, ul, li {
   *:after {
 	box-sizing: inherit;
   } /*initialisation des navigateur*/
+
 } /* FIN tablette */
-  
+
   
   
